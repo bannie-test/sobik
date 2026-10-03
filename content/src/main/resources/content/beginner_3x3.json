@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "title": "Hướng dẫn giải Rubik 3x3 cho người mới (Layer by Layer)",
+  "lessons": [
+    {
+      "id": "structure-notation",
+      "order": 1,
+      "title": "1. Cấu tạo cube và ký hiệu",
+      "goal": "Hiểu các loại mảnh của Rubik 3x3 và đọc được ký hiệu công thức.",
+      "targetState": "Bạn biết cách cầm cube, gọi tên 6 mặt và thực hiện đúng các bước như R, U', F2.",
+      "recognition": "Tâm (center) không bao giờ đổi vị trí so với nhau: màu tâm chính là màu của mặt đó.",
+      "paragraphs": [
+        "Rubik 3x3 có 26 mảnh nhìn thấy: 6 tâm (1 màu), 12 cạnh (2 màu) và 8 góc (3 màu). Tâm chỉ xoay tại chỗ, nên mặt có tâm trắng luôn là mặt trắng.",
+        "Bảng màu chuẩn: trắng đối diện vàng, xanh lá đối diện xanh dương, đỏ đối diện cam. Khi trắng ở trên và xanh lá ở trước thì đỏ ở bên phải.",
+        "Giải cube nghĩa là đưa mỗi cạnh và góc về đúng chỗ (hoán vị) và đúng hướng (định hướng). Phương pháp người mới giải theo từng tầng: tầng dưới (trắng), tầng giữa, rồi tầng trên (vàng).",
+        "Mỗi chữ cái là một lần xoay 90° theo chiều kim đồng hồ khi bạn nhìn thẳng vào mặt đó. Dấu phẩy (') là xoay ngược chiều kim đồng hồ. Số 2 là xoay 180° (chiều nào cũng được)."
+      ],
+      "notation": [
+        {
+          "symbol": "R",
+          "meaning": "Right — xoay mặt phải theo chiều kim đồng hồ (phần phía trước đi lên)."
+        },
+        {
+          "symbol": "L",
+          "meaning": "Left — xoay mặt trái theo chiều kim đồng hồ khi nhìn từ bên trái (phần phía trước đi xuống)."
+        },
+        {
+          "symbol": "U",
+          "meaning": "Up — xoay mặt trên theo chiều kim đồng hồ (phần phía trước đi sang trái)."
+        },
+        {
+          "symbol": "D",
+          "meaning": "Down — xoay mặt dưới theo chiều kim đồng hồ khi nhìn từ dưới lên (phần phía trước đi sang phải)."
+        },
+        {
+          "symbol": "F",
+          "meaning": "Front — xoay mặt trước theo chiều kim đồng hồ."
+        },
+        {
+          "symbol": "B",
+          "meaning": "Back — xoay mặt sau theo chiều kim đồng hồ khi nhìn từ phía sau."
+        },
+        {
+          "symbol": "X'",
+          "meaning": "Dấu phẩy: xoay ngược chiều kim đồng hồ, ví dụ R' (đọc là “R phẩy”)."
+        },
+        {
+          "symbol": "X2",
+          "meaning": "Số 2: xoay 180°, ví dụ U2."
+        },
+        {
+          "symbol": "x, y, z",
+          "meaning": "Xoay cả khối theo trục của R, U, F (không thay đổi trạng thái, chỉ đổi cách cầm)."
+        },
+        {
+          "symbol": "r / Rw",
+          "meaning": "Xoay 2 lớp phía phải cùng lúc (mặt R và lớp giữa)."
+        },
+        {
+          "symbol": "M, E, S",
+          "meaning": "Lớp giữa: M theo chiều L, E theo chiều D, S theo chiều F."
+        }
+      ],
+      "cases": [
+        {
+          "title": "R",
+          "recognition": "Mặt phải xoay theo chiều kim đồng hồ.",
+          "algorithm": "R",
+          "explanation": "Phần ô phía trước của mặt phải đi lên trên.",
+          "whenToUse": "Động tác phổ biến nhất trong mọi công thức."
+        },
+        {
+          "title": "R'",
+          "recognition": "Mặt phải xoay ngược chiều.",
+          "algorithm": "R'",
+          "explanation": "Ngược lại với R: phần phía trước đi xuống.",
+          "whenToUse": "Thường đi cặp với R để đưa mảnh lên rồi trả về."
+        },
+        {
+          "title": "U và U'",
+          "recognition": "Mặt trên xoay.",
+          "algorithm": "U U'",
+          "explanation": "U: ô phía trước chạy sang trái. U': chạy sang phải.",
+          "whenToUse": "Dùng để đưa mảnh ở tầng trên tới vị trí cần thiết."
+        },
+        {
+          "title": "F",
+          "recognition": "Mặt trước xoay.",
+          "algorithm": "F",
+          "explanation": "Như xoay vô lăng sang phải.",
+          "whenToUse": "Dùng trong bước dấu cộng vàng và chèn cạnh."
+        },
+        {
+          "title": "R2",
+          "recognition": "Xoay 180°.",
+          "algorithm": "R2",
+          "explanation": "Bằng hai lần R.",
+          "whenToUse": "Dùng khi cần lật hẳn một mặt."
+        },
+        {
+          "title": "Sexy move",
+          "recognition": "R U R' U'",
+          "algorithm": "R U R' U'",
+          "explanation": "Bốn động tác quan trọng nhất của phương pháp người mới. Lặp 6 lần sẽ quay về như cũ.",
+          "whenToUse": "Chèn góc trắng, tầng giữa, dấu cộng vàng."
+        }
+      ],
+      "tips": [
+        "Luôn cầm cube cố định khi làm một công thức — chỉ xoay các mặt, không xoay cả khối giữa chừng.",
+        "Tập mỗi ký hiệu chậm trước, đúng quan trọng hơn nhanh."
+      ]
+    },
+    {
+      "id": "white-cross",
+      "order": 2,
+      "title": "2. Dấu cộng trắng (White Cross)",
+      "goal": "Đưa 4 cạnh trắng về mặt dưới tạo thành dấu cộng, mỗi cạnh khớp màu với tâm bên cạnh.",
+      "targetState": "Mặt dưới có dấu cộng trắng; nhìn mỗi mặt bên, ô cạnh dưới cùng màu với tâm của mặt đó.",
+      "recognition": "Tìm các cạnh có màu trắng (trắng-đỏ, trắng-xanh lá, trắng-cam, trắng-xanh dương). Cầm mặt trắng ở dưới, đưa vị trí cần điền về phía trước.",
+      "paragraphs": [
+        "Bước này chủ yếu là trực giác: mỗi lần chỉ đưa một cạnh vào đúng vị trí mà không làm hỏng các cạnh đã xong.",
+        "Trước khi chèn, xoay mặt trên (U) để màu còn lại của cạnh khớp với tâm mặt trước. Sau đó dùng một trong các trường hợp bên dưới.",
+        "Dấu cộng phải khớp với tâm: dấu cộng trắng nhưng cạnh lệch màu với tâm bên cạnh là chưa đúng."
+      ],
+      "cases": [
+        {
+          "title": "Cạnh ở tầng trên, trắng hướng lên",
+          "recognition": "Cạnh trắng ở vị trí trên-trước, màu trắng nhìn lên trên, màu còn lại khớp tâm trước.",
+          "algorithm": "F2",
+          "explanation": "Xoay mặt trước 180° đưa cạnh thẳng xuống dưới, trắng úp xuống.",
+          "whenToUse": "Trường hợp dễ nhất — nhớ dùng U để khớp màu trước."
+        },
+        {
+          "title": "Cạnh ở tầng trên, trắng hướng ra trước",
+          "recognition": "Cạnh trắng ở trên-trước nhưng màu trắng nhìn ra phía bạn.",
+          "algorithm": "U' R' F R",
+          "explanation": "U' đưa cạnh sang phải, R' hạ cạnh xuống tầng giữa, F đưa cạnh vào chỗ với trắng úp xuống, R trả lại cạnh trắng bên phải.",
+          "whenToUse": "Khi cạnh bị lật so với trường hợp trên."
+        },
+        {
+          "title": "Cạnh ở tầng giữa, trắng nhìn sang phải",
+          "recognition": "Cạnh trắng ở vị trí trước-phải của tầng giữa, mặt trắng nhìn sang phải, màu còn lại khớp tâm trước.",
+          "algorithm": "F",
+          "explanation": "Một lần F đưa cạnh từ tầng giữa xuống đúng chỗ.",
+          "whenToUse": "Nếu màu còn lại chưa khớp tâm trước, đưa cạnh lên tầng trên trước (R U R')."
+        },
+        {
+          "title": "Cạnh ở tầng giữa, trắng nhìn ra trước",
+          "recognition": "Cạnh trắng ở trước-phải tầng giữa, mặt trắng nhìn ra phía trước.",
+          "algorithm": "R U R' F2",
+          "explanation": "R U R' đưa cạnh lên tầng trên (trắng hướng lên) mà không làm hỏng cạnh trắng bên phải, sau đó F2 như trường hợp 1.",
+          "whenToUse": "Khi không thể chèn trực tiếp."
+        },
+        {
+          "title": "Cạnh ở tầng dưới nhưng bị lật",
+          "recognition": "Cạnh ở đúng vị trí dưới-trước nhưng màu trắng nhìn ra trước.",
+          "algorithm": "F2 U' R' F R",
+          "explanation": "F2 đưa cạnh lên tầng trên, sau đó làm như trường hợp 2.",
+          "whenToUse": "Khi cạnh nằm dưới nhưng sai hướng hoặc sai vị trí."
+        }
+      ],
+      "tips": [
+        "Nhiều người làm 'bông hoa' (daisy): đưa 4 cạnh trắng lên quanh tâm vàng, rồi xoay từng cạnh khớp tâm và F2 xuống dưới — dễ nhưng chậm hơn.",
+        "Cố gắng làm cross trong tối đa 8 bước — app có thể gợi ý cross tối ưu ở mục Solve → Cross."
+      ]
+    },
+    {
+      "id": "white-corners",
+      "order": 3,
+      "title": "3. Góc trắng (White Corners)",
+      "goal": "Hoàn thành tầng thứ nhất: 4 góc trắng vào đúng chỗ giữa các cạnh trắng.",
+      "targetState": "Toàn bộ mặt dưới màu trắng; mỗi mặt bên có hàng dưới cùng một màu và khớp tâm.",
+      "recognition": "Tìm góc có màu trắng ở tầng trên. Hai màu còn lại của góc cho biết nó thuộc khe nào (ví dụ trắng-đỏ-xanh lá thuộc giữa tâm đỏ và tâm xanh lá).",
+      "paragraphs": [
+        "Giữ mặt trắng ở dưới. Xoay U để góc nằm ngay phía trên vị trí cần đến, rồi cầm cube sao cho vị trí đó ở trước-phải-dưới.",
+        "Lặp lại R U R' U' cho đến khi góc vào đúng chỗ với màu trắng úp xuống. Các phần đã xong luôn được trả về sau mỗi lần lặp.",
+        "Số lần lặp phụ thuộc hướng của màu trắng: nhìn sang phải → 1 lần, nhìn lên trên → 3 lần, nhìn ra trước → 5 lần."
+      ],
+      "cases": [
+        {
+          "title": "Trắng nhìn sang phải",
+          "recognition": "Góc ở trên-trước-phải, màu trắng nhìn sang phải.",
+          "algorithm": "R U R' U'",
+          "explanation": "Một lần sexy move: R hạ góc... góc đi vòng xuống khe.",
+          "whenToUse": "1 lần."
+        },
+        {
+          "title": "Trắng nhìn lên trên",
+          "recognition": "Góc ở trên-trước-phải, màu trắng nhìn lên trên.",
+          "algorithm": "R U R' U' R U R' U' R U R' U'",
+          "explanation": "Góc cần được xoay hướng hai lần, nên cần 3 lần lặp.",
+          "whenToUse": "3 lần."
+        },
+        {
+          "title": "Trắng nhìn ra trước",
+          "recognition": "Góc ở trên-trước-phải, màu trắng nhìn ra phía bạn.",
+          "algorithm": "R U R' U' R U R' U' R U R' U' R U R' U' R U R' U'",
+          "explanation": "5 lần lặp. (Cách nhanh hơn: F' U' F.)",
+          "whenToUse": "5 lần — hoặc dùng F' U' F."
+        },
+        {
+          "title": "Góc đúng chỗ nhưng xoay sai",
+          "recognition": "Góc trắng đã ở đúng khe dưới nhưng màu trắng nhìn sang phải (nếu nhìn ra trước thì cần 4 lần).",
+          "algorithm": "R U R' U' R U R' U'",
+          "explanation": "Cầm góc ở trước-phải-dưới và tiếp tục lặp R U R' U': 2 lần khi trắng nhìn sang phải, 4 lần khi trắng nhìn ra trước. Một góc trắng sai chỗ ở tầng dưới cũng xử lý vậy: 1 lần R U R' U' sẽ đưa nó lên tầng trên.",
+          "whenToUse": "Góc kẹt ở tầng dưới."
+        }
+      ],
+      "tips": [
+        "Đừng xoay cả khối giữa các lần lặp R U R' U' — chỉ xoay U khi chuẩn bị góc tiếp theo.",
+        "Kết thúc bước này, lật cube để mặt trắng ở dưới (nếu chưa)."
+      ]
+    },
+    {
+      "id": "middle-layer",
+      "order": 4,
+      "title": "4. Cạnh tầng giữa (Middle Layer)",
+      "goal": "Đưa 4 cạnh không có màu vàng vào tầng giữa để hoàn thành hai tầng đầu.",
+      "targetState": "Hai tầng dưới hoàn chỉnh: mỗi mặt bên có 2 hàng dưới cùng màu.",
+      "recognition": "Tìm ở tầng trên một cạnh không có màu vàng. Xoay U để màu mặt trước của cạnh khớp tâm trước (tạo chữ T ngược). Nhìn màu trên của cạnh: khớp tâm phải → chèn sang phải; khớp tâm trái → chèn sang trái.",
+      "paragraphs": [
+        "Mỗi công thức gồm hai nửa: một nửa đưa góc trắng lên để mở chỗ, nửa còn lại đưa góc về kèm cạnh vào tầng giữa. Vì vậy tầng trắng không bị phá.",
+        "Nếu không có cạnh nào ở tầng trên mà tầng giữa vẫn chưa xong, một cạnh đang bị kẹt sai trong tầng giữa: dùng công thức chèn sang phải với một cạnh vàng bất kỳ để đẩy nó lên."
+      ],
+      "cases": [
+        {
+          "title": "Chèn sang phải",
+          "recognition": "Cạnh ở trên-trước, màu trước khớp tâm trước, màu trên khớp tâm phải.",
+          "algorithm": "U R U' R' U' F' U F",
+          "explanation": "U R U' R' tách góc trắng phải-trước lên; U' F' U F đưa góc về cùng với cạnh vào vị trí trước-phải.",
+          "whenToUse": "Cạnh cần đi sang phải."
+        },
+        {
+          "title": "Chèn sang trái",
+          "recognition": "Cạnh ở trên-trước, màu trước khớp tâm trước, màu trên khớp tâm trái.",
+          "algorithm": "U' L' U L U F U' F'",
+          "explanation": "Đối xứng gương của công thức sang phải.",
+          "whenToUse": "Cạnh cần đi sang trái."
+        },
+        {
+          "title": "Cạnh bị kẹt / lật trong tầng giữa",
+          "recognition": "Cạnh nằm ở vị trí trước-phải của tầng giữa nhưng bị lật (hoặc là cạnh của khe khác).",
+          "algorithm": "U R U' R' U' F' U F U2 U R U' R' U' F' U F",
+          "explanation": "Lần chèn thứ nhất đẩy cạnh bị kẹt lên tầng trên (thay bằng một cạnh vàng). Sau đó U2 để đưa nó về phía trước với màu khớp tâm và chèn lại bằng công thức phù hợp.",
+          "whenToUse": "Khi không còn cạnh phù hợp ở tầng trên."
+        }
+      ],
+      "tips": [
+        "Học một công thức rồi suy ra cái còn lại bằng đối xứng gương: R ↔ L', F ↔ F' (đổi chiều)."
+      ]
+    },
+    {
+      "id": "yellow-cross",
+      "order": 5,
+      "title": "5. Dấu cộng vàng (Yellow Cross)",
+      "goal": "Tạo dấu cộng vàng ở mặt trên (chưa cần khớp màu với các mặt bên).",
+      "targetState": "Mặt trên có dấu cộng vàng; hai tầng dưới vẫn nguyên.",
+      "recognition": "Nhìn mặt trên, chỉ để ý các cạnh: chấm (không cạnh vàng nào hướng lên), chữ L (2 cạnh kề nhau), đường thẳng (2 cạnh đối diện), hoặc đã là dấu cộng.",
+      "paragraphs": [
+        "Công thức F R U R' U' F' đổi hướng các cạnh tầng trên mà không động đến hai tầng dưới.",
+        "Chấm → làm công thức → chữ L. Chữ L (cầm sao cho chữ L ở góc sau-trái) → làm công thức → đường thẳng. Đường thẳng (cầm nằm ngang) → làm công thức → dấu cộng."
+      ],
+      "cases": [
+        {
+          "title": "Đường thẳng",
+          "recognition": "Hai cạnh vàng đối diện nhau, cầm nằm ngang (trái-phải).",
+          "algorithm": "F R U R' U' F'",
+          "explanation": "F mở tầng giữa, R U R' U' lật hai cạnh, F' đóng lại.",
+          "whenToUse": "Đường thẳng phải nằm ngang, không dọc."
+        },
+        {
+          "title": "Chữ L",
+          "recognition": "Hai cạnh vàng kề nhau, cầm để chúng ở phía sau và bên trái.",
+          "algorithm": "F U R U' R' F'",
+          "explanation": "Biến thể của công thức trên giải chữ L chỉ trong một lần (với công thức cơ bản thì cần 2 lần: L → đường thẳng → dấu cộng).",
+          "whenToUse": "Hình chữ L."
+        },
+        {
+          "title": "Chấm",
+          "recognition": "Chỉ có tâm vàng, không cạnh nào hướng lên.",
+          "algorithm": "F R U R' U' F' f R U R' U' f'",
+          "explanation": "Làm công thức đường thẳng để ra hình chữ L, sau đó giải chữ L (ở đây dùng biến thể với f — xoay 2 lớp trước).",
+          "whenToUse": "Hình chấm."
+        }
+      ],
+      "tips": [
+        "Không cần quan tâm các góc ở bước này."
+      ]
+    },
+    {
+      "id": "yellow-face",
+      "order": 6,
+      "title": "6. Định hướng mặt vàng (Yellow Face)",
+      "goal": "Làm cả mặt trên thành màu vàng.",
+      "targetState": "Toàn bộ mặt trên màu vàng; hai tầng dưới nguyên vẹn.",
+      "recognition": "Đếm số góc có màu vàng hướng lên: 0, 1 hoặc 2.",
+      "paragraphs": [
+        "Dùng Sune: R U R' U R U2 R'. Sune xoay hướng ba góc tầng trên mà giữ nguyên dấu cộng vàng.",
+        "1 góc vàng hướng lên (hình con cá): cầm góc đó ở trước-trái rồi làm Sune; nếu vẫn chưa xong, lặp lại theo cùng quy tắc.",
+        "0 góc: cầm sao cho góc trước-trái có màu vàng nhìn sang trái. 2 góc: cầm sao cho góc trước-trái có màu vàng nhìn ra trước. Làm Sune rồi xét lại."
+      ],
+      "cases": [
+        {
+          "title": "Con cá (Sune)",
+          "recognition": "Một góc vàng hướng lên ở trước-trái; các góc khác có màu vàng nhìn ra trước.",
+          "algorithm": "R U R' U R U2 R'",
+          "explanation": "R U R' U R U2 R' đưa ba góc đi một vòng và xoay hướng chúng cùng lúc.",
+          "whenToUse": "Một góc vàng hướng lên."
+        },
+        {
+          "title": "Con cá ngược (Anti-Sune)",
+          "recognition": "Một góc vàng hướng lên ở trước-phải.",
+          "algorithm": "R U2 R' U' R U' R'",
+          "explanation": "Sune làm ngược. Người mới có thể dùng Sune 2 lần thay thế.",
+          "whenToUse": "Một góc vàng hướng lên, các góc khác nhìn sang phải."
+        },
+        {
+          "title": "Không có góc nào hướng lên",
+          "recognition": "Mặt trên chỉ có dấu cộng vàng.",
+          "algorithm": "R U2 R' U' R U R' U' R U' R'",
+          "explanation": "Có thể làm Sune với quy tắc cầm ở trên (sẽ ra con cá), hoặc dùng công thức này cho trường hợp hai cặp vàng nhìn sang hai bên.",
+          "whenToUse": "0 góc hướng lên."
+        }
+      ],
+      "tips": [
+        "Sau bước này các mặt bên có thể lộn xộn — đó là bình thường."
+      ]
+    },
+    {
+      "id": "yellow-corners",
+      "order": 7,
+      "title": "7. Sắp xếp góc vàng (Yellow Corners)",
+      "goal": "Đưa 4 góc vàng về đúng vị trí (khớp màu với các mặt bên).",
+      "targetState": "Mặt vàng hoàn chỉnh và ở mỗi mặt bên, hai góc trên cùng một màu ('đèn pha') khớp với tâm.",
+      "recognition": "Tìm 'đèn pha': một mặt bên có hai góc trên cùng màu.",
+      "paragraphs": [
+        "Nếu có đèn pha, xoay U để đèn pha khớp tâm, cầm đèn pha ở phía sau rồi làm công thức.",
+        "Nếu không có đèn pha nào, làm công thức một lần từ vị trí bất kỳ — sẽ xuất hiện đèn pha."
+      ],
+      "cases": [
+        {
+          "title": "Có đèn pha",
+          "recognition": "Một mặt bên có hai góc trên cùng màu: cầm mặt đó ở phía sau.",
+          "algorithm": "R' F R' B2 R F' R' B2 R2",
+          "explanation": "Công thức (A-perm) xoay vòng ba góc còn lại mà giữ nguyên hướng vàng của chúng và hai tầng dưới.",
+          "whenToUse": "Còn đúng một cặp đèn pha."
+        },
+        {
+          "title": "Không có đèn pha",
+          "recognition": "Không mặt nào có hai góc trên cùng màu (hai góc chéo nhau bị đổi chỗ).",
+          "algorithm": "R' F R' B2 R F' R' B2 R2",
+          "setupMoves": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+          "explanation": "Làm công thức một lần ở bất kỳ hướng nào để tạo đèn pha, sau đó làm lại theo trường hợp trên.",
+          "whenToUse": "Hai cặp góc chéo bị đổi chỗ."
+        }
+      ],
+      "tips": [
+        "Sau khi các góc đúng, xoay U để chúng khớp màu với tâm."
+      ]
+    },
+    {
+      "id": "yellow-edges",
+      "order": 8,
+      "title": "8. Sắp xếp cạnh vàng (Yellow Edges)",
+      "goal": "Đưa 4 cạnh tầng trên về đúng chỗ — hoàn thành cube!",
+      "targetState": "Cube được giải hoàn toàn.",
+      "recognition": "Tìm mặt bên đã hoàn chỉnh (cả hàng trên cùng màu). Cầm mặt đó ở phía sau.",
+      "paragraphs": [
+        "Công thức U-perm xoay vòng ba cạnh tầng trên và giữ nguyên các góc. Nhìn cạnh ở mặt trước để chọn chiều: cần đi sang phải hay sang trái.",
+        "Nếu không có mặt nào hoàn chỉnh, làm công thức một lần từ hướng bất kỳ, sau đó sẽ có một mặt hoàn chỉnh."
+      ],
+      "cases": [
+        {
+          "title": "Xoay vòng ngược chiều (Ua)",
+          "recognition": "Mặt hoàn chỉnh ở phía sau; cạnh trước cần đi sang trái.",
+          "algorithm": "R U' R U R U R U' R' U' R2",
+          "explanation": "Ba cạnh trước, trái, phải đổi chỗ cho nhau theo một vòng.",
+          "whenToUse": "Một mặt hoàn chỉnh."
+        },
+        {
+          "title": "Xoay vòng theo chiều (Ub)",
+          "recognition": "Mặt hoàn chỉnh ở phía sau; cạnh trước cần đi sang phải.",
+          "algorithm": "R2 U R U R' U' R' U' R' U R'",
+          "explanation": "Chiều ngược lại của Ua. Nếu chỉ nhớ một công thức, làm Ua hai lần.",
+          "whenToUse": "Một mặt hoàn chỉnh."
+        },
+        {
+          "title": "Không có mặt hoàn chỉnh",
+          "recognition": "Bốn mặt bên đều chưa hoàn chỉnh (cạnh đổi chéo hoặc kề).",
+          "algorithm": "R U' R U R U R U' R' U' R2",
+          "setupMoves": "M2 U M2 U2 M2 U M2",
+          "explanation": "Làm Ua một lần từ hướng bất kỳ để tạo một mặt hoàn chỉnh, sau đó làm lại theo trường hợp phù hợp.",
+          "whenToUse": "Không có mặt nào hoàn chỉnh."
+        }
+      ],
+      "tips": [
+        "Chúc mừng! Bước tiếp theo: học CFOP (F2L, OLL, PLL) trong Thư viện công thức để giải nhanh hơn."
+      ]
+    }
+  ]
+}

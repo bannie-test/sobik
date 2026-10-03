@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "guides": [
+    {
+      "cubeSize": 4,
+      "title": "Rubik 4x4 (Revenge)",
+      "summary": "Giải bằng phương pháp Reduction: ghép tâm, ghép cạnh, rồi giải như 3x3 và xử lý parity.",
+      "sections": [
+        {
+          "title": "Tổng quan",
+          "paragraphs": [
+            "4x4 không có tâm cố định: mỗi mặt có 4 mảnh tâm có thể di chuyển, mỗi cạnh gồm 2 nửa (wing). Vì vậy bạn phải tự xác định màu của từng mặt theo bảng màu (trắng đối vàng, xanh lá đối xanh dương, đỏ đối cam).",
+            "Phương pháp phổ biến nhất là Reduction: biến 4x4 thành một 3x3 lớn rồi dùng kiến thức 3x3."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 1 — Ghép tâm",
+          "paragraphs": [
+            "Ghép tâm trắng (2x2) trước, sau đó tâm vàng ở mặt đối diện.",
+            "Ghép 4 tâm còn lại theo đúng thứ tự bảng màu: thường làm theo cặp 1x2 rồi ghép thành 2x2, dùng các bước Rw U Rw' để đưa mảnh vào mà không phá tâm đã xong.",
+            "Kiểm tra thứ tự: khi trắng ở trên và xanh lá ở trước thì đỏ phải ở bên phải."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 2 — Ghép cạnh (Edge pairing)",
+          "paragraphs": [
+            "Mỗi cạnh của 3x3 tương ứng 2 nửa cạnh trên 4x4. Ghép 12 cặp.",
+            "Kỹ thuật 3-2-3: đưa hai nửa cùng màu vào tầng giữa (trái và phải), xoay lớp trong để ghép, thay cạnh vừa ghép bằng cạnh chưa ghép, rồi trả lớp trong về.",
+            "Hai cạnh cuối có thể gặp parity cạnh (một cạnh bị lật trong lúc ghép) — dùng công thức OLL parity."
+          ],
+          "algorithmIds": [
+            "4x4-edge-pairing"
+          ]
+        },
+        {
+          "title": "Bước 3 — Giải như 3x3",
+          "paragraphs": [
+            "Coi mỗi khối tâm 2x2 là một tâm và mỗi cặp cạnh là một cạnh, giải bằng phương pháp 3x3 quen thuộc (Layer by Layer hoặc CFOP).",
+            "Chỉ dùng các bước xoay mặt ngoài (R, U, F...) hoặc xoay 2 lớp đồng thời (Rw) để không phá tâm và cạnh đã ghép."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Parity",
+          "paragraphs": [
+            "OLL parity: ở bước tạo dấu cộng vàng / OLL có số cạnh lật là lẻ. Làm công thức OLL parity rồi tiếp tục.",
+            "PLL parity: hai cạnh đối diện đổi chỗ, hoặc hai góc đổi chỗ đơn lẻ (trên 3x3 không thể xảy ra). Làm PLL parity.",
+            "Parity xảy ra vì 4x4 có nhiều trạng thái hơn một 3x3 thật; đây là chuyện bình thường, không phải do làm sai."
+          ],
+          "algorithmIds": [
+            "4x4-oll-parity",
+            "4x4-pll-parity"
+          ]
+        }
+      ]
+    },
+    {
+      "cubeSize": 5,
+      "title": "Rubik 5x5 (Professor)",
+      "summary": "Reduction như 4x4 nhưng có tâm cố định và cạnh giữa cố định, nên chỉ có parity cạnh khi ghép, không có PLL parity.",
+      "sections": [
+        {
+          "title": "Tổng quan",
+          "paragraphs": [
+            "5x5 có tâm giữa cố định (giống 3x3) giúp xác định màu mặt. Mỗi mặt có 9 mảnh tâm, mỗi cạnh gồm 1 cạnh giữa (midge) và 2 cánh (wing)."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 1 — Ghép tâm 3x3",
+          "paragraphs": [
+            "Ghép tâm trắng, rồi tâm vàng.",
+            "Với 4 tâm còn lại: tạo các thanh 1x3 rồi đưa vào, mỗi tâm hoàn chỉnh gồm 3 thanh."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 2 — Ghép cạnh ba (tredges)",
+          "paragraphs": [
+            "Ghép 2 cánh vào cạnh giữa cùng màu cho 12 cạnh, dùng kỹ thuật tương tự 4x4 (xoay lớp trong, thay cạnh, trả lớp).",
+            "Ở hai cạnh cuối, nếu hai cánh bị đảo so với cạnh giữa, dùng công thức parity cạnh."
+          ],
+          "algorithmIds": [
+            "5x5-edge-parity"
+          ]
+        },
+        {
+          "title": "Bước 3 — Giải như 3x3",
+          "paragraphs": [
+            "Sau khi ghép, 5x5 giải giống hệt một 3x3. Không có PLL parity vì các tâm và cạnh giữa cố định."
+          ],
+          "algorithmIds": []
+        }
+      ]
+    },
+    {
+      "cubeSize": 6,
+      "title": "Rubik 6x6 (V-Cube 6)",
+      "summary": "Giống 4x4 nhưng có nhiều mảnh tâm hơn và hai lớp cánh độc lập — mỗi lớp có thể có parity riêng.",
+      "sections": [
+        {
+          "title": "Tổng quan",
+          "paragraphs": [
+            "6x6 không có tâm cố định (như 4x4). Mỗi mặt có 16 mảnh tâm; mỗi cạnh gồm 4 cánh thuộc hai lớp (lớp 2 và lớp 3)."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 1 — Ghép tâm 4x4",
+          "paragraphs": [
+            "Ghép theo thứ tự trắng, vàng, rồi 4 tâm còn lại; xây từng thanh 1x4 rồi gộp lại."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 2 — Ghép cạnh",
+          "paragraphs": [
+            "Ghép từng cặp cánh lớp trong trước, sau đó ghép với cánh lớp ngoài để có cạnh hoàn chỉnh.",
+            "Mỗi lớp cánh có thể bị parity riêng ở bước cuối."
+          ],
+          "algorithmIds": [
+            "6x6-oll-parity-outer",
+            "6x6-oll-parity-inner"
+          ]
+        },
+        {
+          "title": "Bước 3 — 3x3 và parity",
+          "paragraphs": [
+            "Giải như 3x3. Ở PLL có thể gặp PLL parity ở lớp ngoài, lớp trong hoặc cả hai — dùng công thức tương ứng."
+          ],
+          "algorithmIds": [
+            "6x6-pll-parity-outer",
+            "6x6-pll-parity-inner"
+          ]
+        }
+      ]
+    },
+    {
+      "cubeSize": 7,
+      "title": "Rubik 7x7 (V-Cube 7)",
+      "summary": "Giống 5x5 với nhiều lớp hơn: tâm cố định, ghép tâm 5x5 và cạnh 5 mảnh; chỉ có parity khi ghép cạnh.",
+      "sections": [
+        {
+          "title": "Tổng quan",
+          "paragraphs": [
+            "7x7 có tâm giữa và cạnh giữa cố định. Mỗi cạnh gồm cạnh giữa và 4 cánh (lớp 2 và lớp 3)."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 1 — Ghép tâm 5x5",
+          "paragraphs": [
+            "Ghép từng thanh 1x5 rồi gộp; làm trắng, vàng trước rồi đến các tâm bên theo bảng màu."
+          ],
+          "algorithmIds": []
+        },
+        {
+          "title": "Bước 2 — Ghép cạnh",
+          "paragraphs": [
+            "Ghép cánh lớp 3 vào cạnh giữa, rồi đến cánh lớp 2. Nếu hai cánh của một lớp bị đảo, dùng parity tương ứng."
+          ],
+          "algorithmIds": [
+            "7x7-edge-parity-2",
+            "7x7-edge-parity-3"
+          ]
+        },
+        {
+          "title": "Bước 3 — Giải như 3x3",
+          "paragraphs": [
+            "Không có PLL parity vì các tâm và cạnh giữa cố định."
+          ],
+          "algorithmIds": []
+        }
+      ]
+    }
+  ],
+  "algorithms": [
+    {
+      "id": "4x4-oll-parity",
+      "name": "OLL parity (4x4)",
+      "cubeSize": 4,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Sau khi đưa về 3x3, ở bước OLL có số cạnh bị lật là lẻ (ví dụ chỉ một cạnh vàng hướng xuống) — trạng thái không thể có trên 3x3.",
+      "notation": "2R2 B2 U2 2L U2 2R' U2 2R U2 F2 2R F2 2L' B2 2R2",
+      "alternatives": [
+        "Rw U2 x Rw U2 Rw U2 Rw' U2 Lw U2 Rw' U2 Rw U2 Rw' U2 Rw'"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Lật cạnh đôi ở trên-trước (UF) mà không ảnh hưởng mảnh nào khác. 2R là lớp thứ hai từ phải, 2L là lớp thứ hai từ trái. Công thức thay thế (dùng Rw, có x) phổ biến hơn để bấm nhanh, giữ nguyên F2L nhưng sẽ làm xáo trộn tầng trên.",
+      "tags": [
+        "4x4",
+        "parity"
+      ]
+    },
+    {
+      "id": "4x4-pll-parity",
+      "name": "PLL parity (4x4)",
+      "cubeSize": 4,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Ở bước PLL xuất hiện trường hợp không có trên 3x3: hai cạnh đối diện đổi chỗ, hoặc hai góc đổi chỗ đơn lẻ.",
+      "notation": "2R2 U2 2R2 Uw2 2R2 Uw2 U2",
+      "alternatives": [
+        "2R2 U2 2R2 Uw2 2R2 2U2"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Đổi chỗ hai cạnh đôi UF và UB, giữ nguyên mọi thứ khác. Uw2 là xoay 2 lớp trên, 2U2 là xoay riêng lớp thứ hai từ trên. Nếu là hai góc kề đổi chỗ, làm PLL parity rồi xử lý tiếp bằng một PLL thường.",
+      "tags": [
+        "4x4",
+        "parity"
+      ]
+    },
+    {
+      "id": "4x4-edge-pairing",
+      "name": "Ghép cạnh 3-2-3",
+      "cubeSize": 4,
+      "category": "BIG_CUBE",
+      "group": "Edge pairing",
+      "recognition": "Hai nửa cạnh cùng màu: một nửa ở vị trí trước-phải (FR) tầng giữa, nửa kia ở trước-trái (FL) ngang hàng — sau khi xoay lớp giữa chúng ghép lại.",
+      "notation": "Uw' R U R' F R' F' R Uw",
+      "difficulty": "MEDIUM",
+      "explanation": "Uw' ghép hai nửa cạnh thành một cặp, R U R' F R' F' R thay cạnh vừa ghép bằng một cạnh chưa ghép mà không đụng đến tâm, Uw trả các tâm về chỗ. Tâm luôn được bảo toàn.",
+      "tags": [
+        "4x4",
+        "reduction"
+      ]
+    },
+    {
+      "id": "5x5-edge-parity",
+      "name": "Parity cạnh cuối (5x5)",
+      "cubeSize": 5,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Khi ghép hai cạnh ba (tredge) cuối cùng, một cạnh có hai cánh bị lật ngược so với cạnh giữa.",
+      "notation": "2R2 B2 U2 2L U2 2R' U2 2R U2 F2 2R F2 2L' B2 2R2",
+      "difficulty": "HARD",
+      "explanation": "Đổi chỗ hai cánh (wing) của cạnh UF cho nhau, cạnh giữa và tâm giữ nguyên. Đây là cùng công thức OLL parity của 4x4 dùng lớp 2R/2L.",
+      "tags": [
+        "5x5",
+        "parity"
+      ]
+    },
+    {
+      "id": "6x6-oll-parity-outer",
+      "name": "OLL parity lớp ngoài (6x6)",
+      "cubeSize": 6,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Một cặp cánh lớp 2 bị lật (cạnh trông như bị lật một phần).",
+      "notation": "2R2 B2 U2 2L U2 2R' U2 2R U2 F2 2R F2 2L' B2 2R2",
+      "difficulty": "HARD",
+      "explanation": "Lật cặp cánh ở lớp thứ 2 của cạnh UF.",
+      "tags": [
+        "6x6",
+        "parity"
+      ]
+    },
+    {
+      "id": "6x6-oll-parity-inner",
+      "name": "OLL parity lớp trong (6x6)",
+      "cubeSize": 6,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Một cặp cánh lớp 3 (sát giữa) bị lật.",
+      "notation": "3R2 B2 U2 3L U2 3R' U2 3R U2 F2 3R F2 3L' B2 3R2",
+      "difficulty": "HARD",
+      "explanation": "Cùng cấu trúc công thức nhưng dùng lớp 3R/3L.",
+      "tags": [
+        "6x6",
+        "parity"
+      ]
+    },
+    {
+      "id": "6x6-pll-parity-outer",
+      "name": "PLL parity lớp ngoài (6x6)",
+      "cubeSize": 6,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Hai cặp cánh lớp 2 ở UF và UB đổi chỗ.",
+      "notation": "2R2 U2 2R2 3Uw2 2R2 3Uw2 U2",
+      "difficulty": "MEDIUM",
+      "explanation": "Đổi chỗ cặp cánh lớp 2 của UF và UB. 3Uw2 là xoay 3 lớp trên 180°.",
+      "tags": [
+        "6x6",
+        "parity"
+      ]
+    },
+    {
+      "id": "6x6-pll-parity-inner",
+      "name": "PLL parity lớp trong (6x6)",
+      "cubeSize": 6,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Hai cặp cánh lớp 3 ở UF và UB đổi chỗ.",
+      "notation": "3R2 U2 3R2 3Uw2 3R2 3Uw2 U2",
+      "difficulty": "MEDIUM",
+      "explanation": "Đổi chỗ cặp cánh lớp 3 của UF và UB.",
+      "tags": [
+        "6x6",
+        "parity"
+      ]
+    },
+    {
+      "id": "7x7-edge-parity-2",
+      "name": "Parity cánh lớp 2 (7x7)",
+      "cubeSize": 7,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Hai cánh lớp 2 của một cạnh bị lật so với cạnh giữa.",
+      "notation": "2R2 B2 U2 2L U2 2R' U2 2R U2 F2 2R F2 2L' B2 2R2",
+      "difficulty": "HARD",
+      "explanation": "Đổi chỗ hai cánh lớp 2 của cạnh UF.",
+      "tags": [
+        "7x7",
+        "parity"
+      ]
+    },
+    {
+      "id": "7x7-edge-parity-3",
+      "name": "Parity cánh lớp 3 (7x7)",
+      "cubeSize": 7,
+      "category": "PARITY",
+      "group": "Parity",
+      "recognition": "Hai cánh lớp 3 của một cạnh bị lật so với cạnh giữa.",
+      "notation": "3R2 B2 U2 3L U2 3R' U2 3R U2 F2 3R F2 3L' B2 3R2",
+      "difficulty": "HARD",
+      "explanation": "Đổi chỗ hai cánh lớp 3 của cạnh UF.",
+      "tags": [
+        "7x7",
+        "parity"
+      ]
+    }
+  ]
+}

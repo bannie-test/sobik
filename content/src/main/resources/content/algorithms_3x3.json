@@ -1,0 +1,1960 @@
+{
+  "version": 1,
+  "algorithms": [
+    {
+      "id": "beg-sexy",
+      "name": "Sexy move (trigger)",
+      "category": "BEGINNER",
+      "group": "Trigger",
+      "recognition": "Động tác nền tảng, dùng trong rất nhiều công thức.",
+      "notation": "R U R' U'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Bốn bước R U R' U' đưa góc phải-trước lên tầng trên rồi trả về. Lặp lại 6 lần sẽ quay về trạng thái ban đầu — vì thế có thể dùng nó lặp đi lặp lại để xoay một góc trắng vào đúng chỗ mà không phá các phần đã xong.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-cross-flip",
+      "name": "Cạnh trắng bị lật (Cross)",
+      "category": "BEGINNER",
+      "group": "Bước 2 - White Cross",
+      "recognition": "Cạnh trắng ở tầng trên, vị trí trước (UF), nhưng màu trắng hướng ra trước thay vì lên trên.",
+      "notation": "U' R' F R",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "U' đưa cạnh sang phải, R' hạ nó xuống tầng giữa, F xoay nó vào vị trí dưới-trước với màu trắng úp xuống, R trả lại cạnh trắng bên phải đã bị R' làm lệch.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-corner",
+      "name": "Chèn góc trắng",
+      "category": "BEGINNER",
+      "group": "Bước 3 - White Corners",
+      "recognition": "Góc trắng ở tầng trên, ngay phía trên vị trí cần đến (trên-trước-phải), mặt trắng ở dưới.",
+      "notation": "R U R' U'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Lặp lại R U R' U' cho đến khi góc vào đúng chỗ và mặt trắng úp xuống: 1 lần nếu trắng hướng sang phải... tổng cộng 1, 3 hoặc 5 lần tùy hướng của màu trắng.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-edge-right",
+      "name": "Cạnh tầng giữa sang phải",
+      "category": "BEGINNER",
+      "group": "Bước 4 - Middle Layer",
+      "recognition": "Cạnh không có màu vàng ở mặt trước tầng trên (UF), màu mặt trước khớp tâm trước, màu trên khớp tâm phải.",
+      "notation": "U R U' R' U' F' U F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Nửa đầu (U R U' R') tạm đưa góc trắng lên để mở chỗ cho cạnh; nửa sau (U' F' U F) đưa góc về và cạnh vào vị trí trước-phải. Tầng trắng được bảo toàn.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-edge-left",
+      "name": "Cạnh tầng giữa sang trái",
+      "category": "BEGINNER",
+      "group": "Bước 4 - Middle Layer",
+      "recognition": "Cạnh ở UF, màu mặt trước khớp tâm trước, màu trên khớp tâm trái.",
+      "notation": "U' L' U L U F U' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Đối xứng gương của công thức sang phải: mở chỗ ở góc trái-trước rồi đưa cạnh vào vị trí trước-trái.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-yellow-cross",
+      "name": "Tạo dấu cộng vàng",
+      "category": "BEGINNER",
+      "group": "Bước 5 - Yellow Cross",
+      "recognition": "Mặt vàng có dạng chấm, chữ L (cầm L ở góc sau-trái) hoặc đường thẳng (cầm nằm ngang).",
+      "notation": "F R U R' U' F'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "F mở tầng giữa, sexy move đổi hướng các cạnh trên, F' đóng lại. Hai tầng dưới không bị ảnh hưởng. Chấm → L → đường thẳng → dấu cộng.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-sune",
+      "name": "Sune (định hướng góc vàng)",
+      "category": "BEGINNER",
+      "group": "Bước 6 - Yellow Face",
+      "recognition": "Dấu cộng vàng đã có. Nếu có đúng 1 góc vàng hướng lên (hình cá), cầm góc đó ở trước-trái.",
+      "notation": "R U R' U R U2 R'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Sune xoay ba góc tầng trên mà không phá hai tầng dưới và dấu cộng vàng. Lặp lại (đổi cách cầm theo quy tắc) cho đến khi cả mặt trên vàng.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-corner-swap",
+      "name": "Hoán vị góc vàng (đèn pha)",
+      "category": "BEGINNER",
+      "group": "Bước 7 - Yellow Corners",
+      "recognition": "Tìm hai góc cùng màu ở một mặt bên (đèn pha). Cầm đèn pha ở mặt sau; nếu không có, làm công thức một lần từ góc bất kỳ.",
+      "notation": "R' F R' B2 R F' R' B2 R2",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Công thức hoán vị 3 góc tầng trên (A-perm) mà giữ nguyên hướng của chúng và hai tầng dưới.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "beg-edge-cycle",
+      "name": "Hoán vị cạnh vàng (U-perm)",
+      "category": "BEGINNER",
+      "group": "Bước 8 - Yellow Edges",
+      "recognition": "Các góc đã đúng. Nếu có một mặt bên hoàn chỉnh, cầm mặt đó ở phía sau.",
+      "notation": "R U' R U R U R U' R' U' R2",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Xoay vòng 3 cạnh tầng trên, giữ nguyên các góc. Nếu vòng xoay sai chiều, làm thêm lần nữa.",
+      "tags": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "f2l-01",
+      "name": "F2L 1",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "U R U' R'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-02",
+      "name": "F2L 2",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UL (trên-trái), màu tâm phải (R) hướng lên trên.",
+      "notation": "F' U' F",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-03",
+      "name": "F2L 3",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UB (trên-sau), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U R'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-04",
+      "name": "F2L 4",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "U' F' U F",
+      "alternatives": [
+        "U F R' F' R"
+      ],
+      "difficulty": "EASY",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-05",
+      "name": "F2L 5",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U2 R' U' R U R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-06",
+      "name": "F2L 6",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
+      "notation": "F U R U' R' F' R U' R'",
+      "alternatives": [
+        "U' F' U F U F' U F U' F' U F"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-07",
+      "name": "F2L 7",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U R' U2 R U R' U' R U R'",
+      "alternatives": [
+        "U R U' R' U' R U' R' U R U' R'"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-08",
+      "name": "F2L 8",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "F' U2 F U F' U' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-09",
+      "name": "F2L 9",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
+      "notation": "U2 R U R' U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-10",
+      "name": "F2L 10",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, vị trí sau-phải (UBR), màu trắng hướng lên trên; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "F' U2 F U' F' U F",
+      "alternatives": [
+        "U' F' U2 F U' F' U F"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-11",
+      "name": "F2L 11",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, vị trí trước-trái (UFL), màu trắng hướng lên trên; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U2 R' U R U' R'",
+      "alternatives": [
+        "U R U2 R' U R U' R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-12",
+      "name": "F2L 12",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UB (trên-sau), màu tâm phải (R) hướng lên trên.",
+      "notation": "U2 F' U' F U' F' U F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-13",
+      "name": "F2L 13",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "U' R U' R' U R U R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-14",
+      "name": "F2L 14",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
+      "notation": "R U' R' U2 F' U' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-15",
+      "name": "F2L 15",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
+      "notation": "U F' U2 F U' R U R'",
+      "alternatives": [
+        "R U' R' U R U' R' U2 R U' R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-16",
+      "name": "F2L 16",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
+      "notation": "U' R U R' U R U R'",
+      "alternatives": [
+        "U2 R U' R' U' R U R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-17",
+      "name": "F2L 17",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UL (trên-trái), màu tâm phải (R) hướng lên trên.",
+      "notation": "U F' U' F U2 F' U F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-18",
+      "name": "F2L 18",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UB (trên-sau), màu tâm phải (R) hướng lên trên.",
+      "notation": "U F' U2 F U2 F' U F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-19",
+      "name": "F2L 19",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
+      "notation": "U' R U2 R' U F' U' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-20",
+      "name": "F2L 20",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
+      "notation": "F' U F U2 R U R'",
+      "alternatives": [
+        "R U R' U2 R U' R' U R U' R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-21",
+      "name": "F2L 21",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "U F' U F U' F' U' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-22",
+      "name": "F2L 22",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
+      "notation": "U' R U2 R' U2 R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-23",
+      "name": "F2L 23",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UB (trên-sau), màu tâm trước (F) hướng lên trên.",
+      "notation": "U' R U R' U2 R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-24",
+      "name": "F2L 24",
+      "category": "F2L",
+      "group": "Góc và cạnh ở tầng trên",
+      "recognition": "Góc ở tầng trên, vị trí trước-trái (UFL), màu trắng hướng sang trái; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
+      "notation": "R U R' U2 F' U' F",
+      "alternatives": [
+        "U' R U' R' U F' U' F"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-25",
+      "name": "F2L 25",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh nằm trong slot, đúng chiều.",
+      "notation": "R U R' U' R U R' U' R U R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-26",
+      "name": "F2L 26",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh nằm trong slot nhưng bị lật.",
+      "notation": "R U' R' F' U2 F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-27",
+      "name": "F2L 27",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh nằm trong slot, đúng chiều.",
+      "notation": "U R U R' U2 R U R'",
+      "alternatives": [
+        "U F' U F U F' U2 F"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-28",
+      "name": "F2L 28",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh nằm trong slot nhưng bị lật.",
+      "notation": "U F' U' F U' R U R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-29",
+      "name": "F2L 29",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh nằm trong slot, đúng chiều.",
+      "notation": "U' R U' R' U2 R U' R'",
+      "alternatives": [
+        "U' R U' R' U' R U2 R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-30",
+      "name": "F2L 30",
+      "category": "F2L",
+      "group": "Góc ở tầng trên, cạnh trong slot",
+      "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh nằm trong slot nhưng bị lật.",
+      "notation": "U' R U R' U F' U' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-31",
+      "name": "F2L 31",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U R' U' R U R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-32",
+      "name": "F2L 32",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "F' U F U' F' U F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-33",
+      "name": "F2L 33",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "U' R' F R F' R U R'",
+      "alternatives": [
+        "U' F' U F U R U' R'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-34",
+      "name": "F2L 34",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "U R U' R' U' F' U F",
+      "alternatives": [
+        "R U' R' F R' F' R"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-35",
+      "name": "F2L 35",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
+      "notation": "R U' R' U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-36",
+      "name": "F2L 36",
+      "category": "F2L",
+      "group": "Góc trong slot, cạnh ở tầng trên",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
+      "notation": "R' F R F' U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-37",
+      "name": "F2L 37",
+      "category": "F2L",
+      "group": "Góc và cạnh trong slot",
+      "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh nằm trong slot nhưng bị lật.",
+      "notation": "R U' R' U F' U2 F U F' U2 F",
+      "alternatives": [
+        "R2 U2 F R2 F' U2 R' U R'"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-38",
+      "name": "F2L 38",
+      "category": "F2L",
+      "group": "Góc và cạnh trong slot",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh nằm trong slot, đúng chiều.",
+      "notation": "R U' R' U' R U R' U2 R U' R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-39",
+      "name": "F2L 39",
+      "category": "F2L",
+      "group": "Góc và cạnh trong slot",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh nằm trong slot nhưng bị lật.",
+      "notation": "F' L' U2 L F R U R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-40",
+      "name": "F2L 40",
+      "category": "F2L",
+      "group": "Góc và cạnh trong slot",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh nằm trong slot, đúng chiều.",
+      "notation": "R U' R' U R U2 R' U R U' R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "f2l-41",
+      "name": "F2L 41",
+      "category": "F2L",
+      "group": "Góc và cạnh trong slot",
+      "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh nằm trong slot nhưng bị lật.",
+      "notation": "R U' R' F' L' U2 L F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
+      "tags": [
+        "f2l",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-01",
+      "name": "OLL 1",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Không có cạnh vàng nào hướng lên; hai cặp góc vàng hướng ra hai bên (dạng chữ H ở mặt bên).",
+      "notation": "R U2 R2 F R F' U2 R' F R F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-02",
+      "name": "OLL 2",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Không có cạnh vàng hướng lên; nhóm Dot.",
+      "notation": "r U r' U2 r U2 R' U2 R U' r'",
+      "alternatives": [
+        "F R U R' U' F' f R U R' U' f'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-03",
+      "name": "OLL 3",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Nhóm Dot, một góc vàng hướng lên ở trước-trái.",
+      "notation": "f R U R' U' f' U' F R U R' U' F'",
+      "alternatives": [
+        "r' R2 U R' U r U2 r' U M'"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-04",
+      "name": "OLL 4",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Nhóm Dot, một góc vàng hướng lên ở sau-phải.",
+      "notation": "f R U R' U' f' U F R U R' U' F'",
+      "alternatives": [
+        "M U' r U2 r' U' R U' R' M'"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-05",
+      "name": "OLL 5",
+      "category": "OLL",
+      "group": "Square",
+      "recognition": "Hình vuông 2x2 vàng ở góc sau-trái.",
+      "notation": "r' U2 R U R' U r",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-06",
+      "name": "OLL 6",
+      "category": "OLL",
+      "group": "Square",
+      "recognition": "Hình vuông 2x2 vàng ở góc trước-trái.",
+      "notation": "r U2 R' U' R U' r'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-07",
+      "name": "OLL 7",
+      "category": "OLL",
+      "group": "Small Lightning",
+      "recognition": "Tia chớp nhỏ.",
+      "notation": "r U R' U R U2 r'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-08",
+      "name": "OLL 8",
+      "category": "OLL",
+      "group": "Small Lightning",
+      "recognition": "Tia chớp nhỏ (đối xứng).",
+      "notation": "l' U' L U' L' U2 l",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-09",
+      "name": "OLL 9",
+      "category": "OLL",
+      "group": "Fish",
+      "recognition": "Hình cá, hai cạnh vàng hướng lên.",
+      "notation": "R U R' U' R' F R2 U R' U' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-10",
+      "name": "OLL 10",
+      "category": "OLL",
+      "group": "Fish",
+      "recognition": "Hình cá (đối xứng).",
+      "notation": "R U R' U R' F R F' R U2 R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-11",
+      "name": "OLL 11",
+      "category": "OLL",
+      "group": "Small Lightning",
+      "recognition": "Tia chớp nhỏ có thêm góc.",
+      "notation": "r U R' U R' F R F' R U2 r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-12",
+      "name": "OLL 12",
+      "category": "OLL",
+      "group": "Small Lightning",
+      "recognition": "Tia chớp nhỏ có thêm góc (đối xứng).",
+      "notation": "M' R' U' R U' R' U2 R U' R r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-13",
+      "name": "OLL 13",
+      "category": "OLL",
+      "group": "Knight Move",
+      "recognition": "Hình quân mã.",
+      "notation": "F U R U' R2 F' R U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-14",
+      "name": "OLL 14",
+      "category": "OLL",
+      "group": "Knight Move",
+      "recognition": "Hình quân mã (đối xứng).",
+      "notation": "R' F R U R' F' R F U' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-15",
+      "name": "OLL 15",
+      "category": "OLL",
+      "group": "Knight Move",
+      "recognition": "Hình quân mã.",
+      "notation": "r' U' r R' U' R U r' U r",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-16",
+      "name": "OLL 16",
+      "category": "OLL",
+      "group": "Knight Move",
+      "recognition": "Hình quân mã (đối xứng).",
+      "notation": "r U r' R U R' U' r U' r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-17",
+      "name": "OLL 17",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Nhóm Dot, hai góc vàng hướng lên theo đường chéo.",
+      "notation": "F R' F' R2 r' U R U' R' U' M'",
+      "alternatives": [
+        "R U R' U R' F R F' U2 R' F R F'"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-18",
+      "name": "OLL 18",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Nhóm Dot, hai góc vàng hướng lên ở phía trước.",
+      "notation": "r U R' U R U2 r2 U' R U' R' U2 r",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-19",
+      "name": "OLL 19",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Nhóm Dot, hai góc vàng hướng lên ở phía sau.",
+      "notation": "r' R U R U R' U' M' R' F R F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-20",
+      "name": "OLL 20",
+      "category": "OLL",
+      "group": "Dot",
+      "recognition": "Chỉ có tâm vàng; cả 4 góc vàng đều hướng lên (dạng X).",
+      "notation": "r U R' U' M2 U R U' R' U' M'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-21",
+      "name": "OLL 21",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Có dấu cộng vàng; hai cặp góc vàng nhìn ra hai mặt bên đối diện (chữ H).",
+      "notation": "R U2 R' U' R U R' U' R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-22",
+      "name": "OLL 22",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Có dấu cộng vàng; Pi — hai góc nhìn sang trái, hai góc ở mặt bên.",
+      "notation": "R U2 R2 U' R2 U' R2 U2 R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-23",
+      "name": "OLL 23",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Có dấu cộng vàng; hai góc vàng hướng lên ở phía sau, hai góc trước nhìn ra trước (đèn pha).",
+      "notation": "R2 D' R U2 R' D R U2 R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-24",
+      "name": "OLL 24",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Có dấu cộng vàng; hai góc hướng lên ở bên trái, hai góc phải nhìn ra trước/sau (chữ T).",
+      "notation": "r U R' U' r' F R F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-25",
+      "name": "OLL 25",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Có dấu cộng vàng; hai góc vàng hướng lên theo đường chéo (nơ).",
+      "notation": "F' r U R' U' r' F R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-26",
+      "name": "OLL 26",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Anti-Sune: một góc vàng hướng lên ở trước-phải, các góc khác nhìn sang phải-trước.",
+      "notation": "R U2 R' U' R U' R'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-27",
+      "name": "OLL 27",
+      "category": "OLL",
+      "group": "Cross",
+      "recognition": "Sune: một góc vàng hướng lên ở trước-trái, ba góc còn lại nhìn ra trước.",
+      "notation": "R U R' U R U2 R'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-28",
+      "name": "OLL 28",
+      "category": "OLL",
+      "group": "Corners Oriented",
+      "recognition": "Bốn góc đã đúng, hai cạnh vàng chưa hướng lên (trước và trái).",
+      "notation": "r U R' U' r' R U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-29",
+      "name": "OLL 29",
+      "category": "OLL",
+      "group": "Awkward",
+      "recognition": "Nhóm Awkward.",
+      "notation": "R U R' U' R U' R' F' U' F R U R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-30",
+      "name": "OLL 30",
+      "category": "OLL",
+      "group": "Awkward",
+      "recognition": "Nhóm Awkward (đối xứng).",
+      "notation": "F R' F R2 U' R' U' R U R' F2",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-31",
+      "name": "OLL 31",
+      "category": "OLL",
+      "group": "P Shape",
+      "recognition": "Hình chữ P.",
+      "notation": "R' U' F U R U' R' F' R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-32",
+      "name": "OLL 32",
+      "category": "OLL",
+      "group": "P Shape",
+      "recognition": "Hình chữ P (đối xứng).",
+      "notation": "L U F' U' L' U L F L'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-33",
+      "name": "OLL 33",
+      "category": "OLL",
+      "group": "T Shape",
+      "recognition": "Hình chữ T.",
+      "notation": "R U R' U' R' F R F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-34",
+      "name": "OLL 34",
+      "category": "OLL",
+      "group": "C Shape",
+      "recognition": "Hình chữ C.",
+      "notation": "R U R2 U' R' F R U R U' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-35",
+      "name": "OLL 35",
+      "category": "OLL",
+      "group": "Fish",
+      "recognition": "Hình cá.",
+      "notation": "R U2 R2 F R F' R U2 R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-36",
+      "name": "OLL 36",
+      "category": "OLL",
+      "group": "W Shape",
+      "recognition": "Hình chữ W.",
+      "notation": "L' U' L U' L' U L U L F' L' F",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-37",
+      "name": "OLL 37",
+      "category": "OLL",
+      "group": "Fish",
+      "recognition": "Hình cá.",
+      "notation": "F R' F' R U R U' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-38",
+      "name": "OLL 38",
+      "category": "OLL",
+      "group": "W Shape",
+      "recognition": "Hình chữ W (đối xứng).",
+      "notation": "R U R' U R U' R' U' R' F R F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-39",
+      "name": "OLL 39",
+      "category": "OLL",
+      "group": "Big Lightning",
+      "recognition": "Tia chớp lớn.",
+      "notation": "L F' L' U' L U F U' L'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-40",
+      "name": "OLL 40",
+      "category": "OLL",
+      "group": "Big Lightning",
+      "recognition": "Tia chớp lớn (đối xứng).",
+      "notation": "R' F R U R' U' F' U R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-41",
+      "name": "OLL 41",
+      "category": "OLL",
+      "group": "Awkward",
+      "recognition": "Nhóm Awkward.",
+      "notation": "R U R' U R U2 R' F R U R' U' F'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-42",
+      "name": "OLL 42",
+      "category": "OLL",
+      "group": "Awkward",
+      "recognition": "Nhóm Awkward (đối xứng).",
+      "notation": "R' U' R U' R' U2 R F R U R' U' F'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-43",
+      "name": "OLL 43",
+      "category": "OLL",
+      "group": "P Shape",
+      "recognition": "Hình chữ P.",
+      "notation": "F' U' L' U L F",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-44",
+      "name": "OLL 44",
+      "category": "OLL",
+      "group": "P Shape",
+      "recognition": "Hình chữ P (đối xứng).",
+      "notation": "F U R U' R' F'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-45",
+      "name": "OLL 45",
+      "category": "OLL",
+      "group": "T Shape",
+      "recognition": "Hình chữ T.",
+      "notation": "F R U R' U' F'",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-46",
+      "name": "OLL 46",
+      "category": "OLL",
+      "group": "C Shape",
+      "recognition": "Hình chữ C.",
+      "notation": "R' U' R' F R F' U R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-47",
+      "name": "OLL 47",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ.",
+      "notation": "R' U' R' F R F' R' F R F' U R",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-48",
+      "name": "OLL 48",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ (đối xứng).",
+      "notation": "F R U R' U' R U R' U' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-49",
+      "name": "OLL 49",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ.",
+      "notation": "r U' r2 U r2 U r2 U' r",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-50",
+      "name": "OLL 50",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ (đối xứng).",
+      "notation": "r' U r2 U' r2 U' r2 U r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-51",
+      "name": "OLL 51",
+      "category": "OLL",
+      "group": "Line",
+      "recognition": "Đường thẳng ngang.",
+      "notation": "F U R U' R' U R U' R' F'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-52",
+      "name": "OLL 52",
+      "category": "OLL",
+      "group": "Line",
+      "recognition": "Đường thẳng dọc.",
+      "notation": "R U R' U R U' B U' B' R'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-53",
+      "name": "OLL 53",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ.",
+      "notation": "l' U2 L U L' U' L U L' U l",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-54",
+      "name": "OLL 54",
+      "category": "OLL",
+      "group": "Small L",
+      "recognition": "Chữ L nhỏ (đối xứng).",
+      "notation": "r U2 R' U' R U R' U' R U' r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-55",
+      "name": "OLL 55",
+      "category": "OLL",
+      "group": "Line",
+      "recognition": "Đường thẳng, không góc nào hướng lên.",
+      "notation": "R' F R U R U' R2 F' R2 U' R' U R U R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-56",
+      "name": "OLL 56",
+      "category": "OLL",
+      "group": "Line",
+      "recognition": "Đường thẳng, không góc nào hướng lên (dạng khác).",
+      "notation": "r' U' r U' R' U R U' R' U R r' U r",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "oll-57",
+      "name": "OLL 57",
+      "category": "OLL",
+      "group": "Corners Oriented",
+      "recognition": "Bốn góc đã đúng, hai cạnh đối diện chưa hướng lên (chữ H).",
+      "notation": "R U R' U' M' U R U' r'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
+      "tags": [
+        "oll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-aa",
+      "name": "PLL Aa",
+      "category": "PLL",
+      "group": "Corners",
+      "recognition": "Ba góc xoay vòng (theo chiều kim đồng hồ), các cạnh đúng. Có đèn pha ở mặt trái.",
+      "notation": "x R' U R' D2 R U' R' D2 R2 x'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ab",
+      "name": "PLL Ab",
+      "category": "PLL",
+      "group": "Corners",
+      "recognition": "Ba góc xoay vòng (ngược chiều kim đồng hồ), các cạnh đúng. Đèn pha ở mặt sau.",
+      "notation": "x R2 D2 R U R' D2 R U' R x'",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-e",
+      "name": "PLL E",
+      "category": "PLL",
+      "group": "Corners",
+      "recognition": "Hoán đổi hai cặp góc theo đường chéo; không mặt bên nào có đèn pha.",
+      "notation": "x' R U' R' D R U R' D' R U R' D R U' R' D' x",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-h",
+      "name": "PLL H",
+      "category": "PLL",
+      "group": "Edges",
+      "recognition": "Hai cặp cạnh đối diện đổi chỗ; các góc đúng.",
+      "notation": "M2 U M2 U2 M2 U M2",
+      "alternatives": [],
+      "difficulty": "EASY",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ua",
+      "name": "PLL Ua",
+      "category": "PLL",
+      "group": "Edges",
+      "recognition": "Ba cạnh xoay vòng (ngược kim), có một mặt bên hoàn chỉnh ở phía sau.",
+      "notation": "R U' R U R U R U' R' U' R2",
+      "alternatives": [
+        "M2 U M U2 M' U M2"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ub",
+      "name": "PLL Ub",
+      "category": "PLL",
+      "group": "Edges",
+      "recognition": "Ba cạnh xoay vòng (theo kim), có một mặt bên hoàn chỉnh ở phía sau.",
+      "notation": "R2 U R U R' U' R' U' R' U R'",
+      "alternatives": [
+        "M2 U' M U2 M' U' M2"
+      ],
+      "difficulty": "MEDIUM",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-z",
+      "name": "PLL Z",
+      "category": "PLL",
+      "group": "Edges",
+      "recognition": "Hai cặp cạnh kề nhau đổi chỗ; các góc đúng.",
+      "notation": "M' U M2 U M2 U M' U2 M2",
+      "alternatives": [],
+      "difficulty": "MEDIUM",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-f",
+      "name": "PLL F",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Một mặt bên có đèn pha và cạnh giữa khác màu; mặt đối diện có 3 ô liền màu.",
+      "notation": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ja",
+      "name": "PLL Ja",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Có một khối 1x3 ở mặt trái; đổi góc và cạnh kề.",
+      "notation": "L' U' L F L' U' L U L F' L2 U L",
+      "alternatives": [
+        "R' U L' U2 R U' R' U2 R L"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-jb",
+      "name": "PLL Jb",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Có một khối 1x3 ở mặt trái... đổi góc và cạnh kề ở mặt phải.",
+      "notation": "R U R' F' R U R' U' R' F R2 U' R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ra",
+      "name": "PLL Ra",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Đèn pha ở mặt trái, cạnh giữa của mặt đối diện khác màu.",
+      "notation": "R U' R' U' R U R D R' U' R D' R' U2 R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-rb",
+      "name": "PLL Rb",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Đèn pha ở mặt phải, cạnh giữa mặt đối diện khác màu.",
+      "notation": "R2 F R U R U' R' F' R U2 R' U2 R",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-t",
+      "name": "PLL T",
+      "category": "PLL",
+      "group": "Adjacent swap",
+      "recognition": "Đèn pha ở mặt trái và mặt phải; đổi hai góc bên phải và hai cạnh trái-phải.",
+      "notation": "R U R' U' R' F R2 U' R' U' R U R' F'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-ga",
+      "name": "PLL Ga",
+      "category": "PLL",
+      "group": "G perms",
+      "recognition": "Nhóm G: có đèn pha và một khối 1x2.",
+      "notation": "R2 U R' U R' U' R U' R2 U' D R' U R D'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-gb",
+      "name": "PLL Gb",
+      "category": "PLL",
+      "group": "G perms",
+      "recognition": "Nhóm G: có đèn pha và một khối 1x2.",
+      "notation": "R' U' R U D' R2 U R' U R U' R U' R2 D",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-gc",
+      "name": "PLL Gc",
+      "category": "PLL",
+      "group": "G perms",
+      "recognition": "Nhóm G: có đèn pha và một khối 1x2.",
+      "notation": "R2 U' R U' R U R' U R2 U D' R U' R' D",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-gd",
+      "name": "PLL Gd",
+      "category": "PLL",
+      "group": "G perms",
+      "recognition": "Nhóm G: có đèn pha và một khối 1x2.",
+      "notation": "R U R' U' D R2 U' R U' R' U R' U R2 D'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-na",
+      "name": "PLL Na",
+      "category": "PLL",
+      "group": "Diagonal swap",
+      "recognition": "Hai mặt bên trái/phải đều có dạng 'bậc thang' giống nhau; đổi chéo góc.",
+      "notation": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-nb",
+      "name": "PLL Nb",
+      "category": "PLL",
+      "group": "Diagonal swap",
+      "recognition": "Giống Na nhưng đối xứng gương.",
+      "notation": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-v",
+      "name": "PLL V",
+      "category": "PLL",
+      "group": "Diagonal swap",
+      "recognition": "Một góc đúng, đổi chéo hai góc và hai cạnh kề.",
+      "notation": "R' U R' U' B' R' B2 U' B' U B' R B R",
+      "alternatives": [
+        "R' U R' U' y R' F' R2 U' R' U R' F R F"
+      ],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    },
+    {
+      "id": "pll-y",
+      "name": "PLL Y",
+      "category": "PLL",
+      "group": "Diagonal swap",
+      "recognition": "Đổi chéo hai góc và hai cạnh; nhìn thấy hai khối 1x2 ở các mặt bên.",
+      "notation": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+      "alternatives": [],
+      "difficulty": "HARD",
+      "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
+      "tags": [
+        "pll",
+        "cfop"
+      ]
+    }
+  ]
+}

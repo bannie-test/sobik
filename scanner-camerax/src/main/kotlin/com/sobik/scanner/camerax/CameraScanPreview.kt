@@ -61,7 +61,9 @@ fun CameraScanPreview(
         val executor = Executors.newSingleThreadExecutor()
         val providerFuture = ProcessCameraProvider.getInstance(context)
         var provider: ProcessCameraProvider? = null
+        var disposed = false
         providerFuture.addListener({
+            if (disposed) return@addListener
             val p = providerFuture.get()
             provider = p
             val aspect = AspectRatioStrategy.RATIO_4_3_FALLBACK_AUTO_STRATEGY
@@ -83,6 +85,7 @@ fun CameraScanPreview(
             camera = p.bindToLifecycle(lifecycleOwner, CameraSelector.DEFAULT_BACK_CAMERA, preview, analysis)
         }, ContextCompat.getMainExecutor(context))
         onDispose {
+            disposed = true
             provider?.unbindAll()
             camera = null
             executor.shutdown()

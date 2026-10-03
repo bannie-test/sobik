@@ -91,6 +91,7 @@ class AutoCaptureStrategy(
 
     override fun reset(nowMs: Long) {
         previous = null
+        lastCaptured = null
         stableSince = -1
     }
 }

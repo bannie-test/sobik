@@ -141,3 +141,19 @@ class ScannerTest {
         assertEquals(0.525f, g.size, 0.001f)
     }
 }
+
+class AutoCaptureResetTest {
+    @Test
+    fun `retaking the face just captured is possible after reset`() {
+        val cell = CellSample(Lab(50f, 40f, 30f), 1f)
+        val face = FaceSamples(3, List(9) { cell }, FrameQuality(50f, 1f, 20f, 0f))
+        val auto = AutoCaptureStrategy(stableMs = 100)
+        auto.onFrame(face, 0); auto.onFrame(face, 10)
+        assertIs<CaptureSignal.Capture>(auto.onFrame(face, 200))
+        auto.onCaptured(face, 200)
+        assertIs<CaptureSignal.Waiting>(auto.onFrame(face, 300))
+        auto.reset(300)
+        auto.onFrame(face, 310); auto.onFrame(face, 320)
+        assertIs<CaptureSignal.Capture>(auto.onFrame(face, 500))
+    }
+}

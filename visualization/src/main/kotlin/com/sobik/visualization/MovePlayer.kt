@@ -40,7 +40,10 @@ import com.sobik.engine.applyMoves
 import com.sobik.model.CubeState
 import com.sobik.model.Move
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 /**
  * Playback state for a move sequence on a cube: index = number of moves already applied.
@@ -63,7 +66,9 @@ class MovePlayerState(val start: CubeState, val moves: List<Move>, private val s
         private set
     var speed by mutableFloatStateOf(1f)
     val progress = Animatable(0f)
-    private var busy = false
+    /** Serializes animations: a step waits for the move in flight instead of being dropped. */
+    private val animation = Mutex()
+    private var playJob: Job? = null
 
     /** State to draw (the animating move, if any, is applied on top by the renderer). */
     val baseState: CubeState get() = states[index]
@@ -72,35 +77,36 @@ class MovePlayerState(val start: CubeState, val moves: List<Move>, private val s
 
     private fun durationFor(m: Move): Int = ((if (m.turns == 2) 520 else 380) / speed).toInt()
 
-    suspend fun next() {
-        if (busy || atEnd) return
-        busy = true
+    suspend fun next() = animation.withLock {
+        if (atEnd) return@withLock
+        val m = moves[index]
         try {
-            val m = moves[index]
             animatingMove = m
             progress.snapTo(0f)
             progress.animateTo(1f, tween(durationFor(m), easing = FastOutSlowInEasing))
             index++
+        } finally {
             animatingMove = null
             progress.snapTo(0f)
-        } finally { busy = false }
+        }
     }
 
-    suspend fun previous() {
-        if (busy || index == 0) return
-        busy = true
+    suspend fun previous() = animation.withLock {
+        if (index == 0) return@withLock
+        index--
+        val m = moves[index]
         try {
-            index--
-            val m = moves[index]
             animatingMove = m
             progress.snapTo(1f)
             progress.animateTo(0f, tween(durationFor(m), easing = FastOutSlowInEasing))
+        } finally {
             animatingMove = null
-        } finally { busy = false }
+            progress.snapTo(0f)
+        }
     }
 
     fun jumpTo(i: Int) {
-        if (busy) return
+        if (animation.isLocked) return
         isPlaying = false
         index = i.coerceIn(0, moves.size)
     }
@@ -109,7 +115,9 @@ class MovePlayerState(val start: CubeState, val moves: List<Move>, private val s
         if (isPlaying) { isPlaying = false; return }
         if (atEnd) index = 0
         isPlaying = true
-        scope.launch {
+        // A loop paused mid-move is still finishing that move: let it continue instead of starting a second one.
+        if (playJob?.isActive == true) return
+        playJob = scope.launch {
             while (isPlaying && !atEnd) next()
             isPlaying = false
         }

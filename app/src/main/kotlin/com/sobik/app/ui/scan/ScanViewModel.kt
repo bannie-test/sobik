@@ -49,6 +49,8 @@ class ScanViewModel(
     private val session = ScanSession(type)
     private val strategy = mode.createStrategy(intervalMs)
     private var latest: FaceSamples? = null
+    /** Frame used by the last capture; a double tap must not store the same frame as the next face. */
+    private var lastCaptured: FaceSamples? = null
 
     private val _ui = MutableStateFlow(ScanUiState(session.currentStep, 0, session.steps.size))
     val ui: StateFlow<ScanUiState> = _ui.asStateFlow()
@@ -72,12 +74,14 @@ class ScanViewModel(
     }
 
     fun captureNow() = synchronized(lock) {
-        latest?.let { capture(it, System.currentTimeMillis()) }
-        Unit
+        val frame = latest
+        if (session.isComplete || frame == null || frame === lastCaptured) return@synchronized
+        capture(frame, System.currentTimeMillis())
     }
 
     private fun capture(samples: FaceSamples, now: Long) {
         val cap = session.capture(samples)
+        lastCaptured = samples
         strategy.onCaptured(samples, now)
         publish(lastCapture = cap)
     }

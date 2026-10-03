@@ -24,6 +24,10 @@ android {
             storePassword = "android"
             keyAlias = "androiddebugkey"
             keyPassword = "android"
+            // All signature schemes, for the widest installer compatibility (some OEM installers are picky).
+            enableV1Signing = true
+            enableV2Signing = true
+            enableV3Signing = true
         }
     }
 
@@ -32,6 +36,15 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        // Non-debuggable test build signed with the shared repo key. Some OEM installers (e.g. Xiaomi
+        // HyperOS) refuse debuggable APKs from file managers; this variant installs like a normal app.
+        create("preview") {
+            initWith(getByName("release"))
+            isMinifyEnabled = false
+            isShrinkResources = false
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += "release"
         }
     }
     compileOptions {

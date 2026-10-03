@@ -22,8 +22,8 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - name: Unit tests (engine, solvers, scanner, content, data)
         run: ./gradlew -PjvmOnly=true test
-      - name: Build debug APK
-        run: ./gradlew :app:assembleDebug
+      - name: Build debug and preview APKs
+        run: ./gradlew :app:assembleDebug :app:assemblePreview
       - name: Verify APK (signature, package, SDK levels)
         run: |
           BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
@@ -31,7 +31,14 @@ jobs:
           ls -l "$APK"
           "$BT/apksigner" verify --verbose --print-certs "$APK"
           "$BT/aapt2" dump badging "$APK" | grep -E "^(package|sdkVersion|targetSdkVersion|native-code|application-debuggable|testOnly)" || true
+          PREVIEW=app/build/outputs/apk/preview/app-preview.apk
+          "$BT/apksigner" verify --verbose "$PREVIEW" | head -6
+          "$BT/aapt2" dump badging "$PREVIEW" | grep -E "^(package|application-debuggable)" || true
       - uses: actions/upload-artifact@v4
         with:
           name: sobik-debug-apk
           path: app/build/outputs/apk/debug/*.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sobik-preview-apk
+          path: app/build/outputs/apk/preview/*.apk

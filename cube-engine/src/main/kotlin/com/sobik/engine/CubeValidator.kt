@@ -225,7 +225,7 @@ object CubeValidator {
         }
         return ValidationError(
             ValidationErrorCode.INVALID_COLOR_COUNT,
-            "Số lượng màu không đúng — mỗi màu phải có đúng $expected ô. $parts.",
+            "Số lượng màu không đúng (mỗi màu phải có đúng $expected ô): $parts.",
         )
     }
 

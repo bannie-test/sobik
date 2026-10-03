@@ -37,5 +37,21 @@ data class ColorScheme(val faceColors: Map<Face, StickerColor>) {
                 Face.B to StickerColor.BLUE,
             ),
         )
+
+        /**
+         * The standard scheme turned upside down (z2): yellow top, white bottom, green front.
+         * This is how the cube is held for the beginner method and CFOP (white cross on the
+         * bottom), so learning demos use it.
+         */
+        val YELLOW_TOP = ColorScheme(
+            mapOf(
+                Face.U to StickerColor.YELLOW,
+                Face.R to StickerColor.ORANGE,
+                Face.F to StickerColor.GREEN,
+                Face.D to StickerColor.WHITE,
+                Face.L to StickerColor.RED,
+                Face.B to StickerColor.BLUE,
+            ),
+        )
     }
 }

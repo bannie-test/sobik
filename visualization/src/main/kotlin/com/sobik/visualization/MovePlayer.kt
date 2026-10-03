@@ -202,7 +202,7 @@ fun MovePlayerControls(
             TextButton(onClick = { state.jumpTo(0) }, Modifier.weight(1f), contentPadding = compact) { Text("|◀") }
             FilledTonalButton(onClick = { state.stepBack() }, Modifier.weight(1.3f), enabled = state.index > 0, contentPadding = compact) { Text("◀") }
             FilledTonalButton(onClick = { state.togglePlay() }, Modifier.weight(1.6f), enabled = state.moves.isNotEmpty(), contentPadding = compact) {
-                Text(if (state.isPlaying) "❚❚ Dừng" else "▶ Chạy")
+                Text(if (state.isPlaying) "❚❚" else "▶", maxLines = 1)
             }
             FilledTonalButton(onClick = { state.stepForward() }, Modifier.weight(1.3f), enabled = !state.atEnd, contentPadding = compact) { Text("▶") }
             TextButton(onClick = { state.jumpTo(state.moves.size) }, Modifier.weight(1f), contentPadding = compact) { Text("▶|") }

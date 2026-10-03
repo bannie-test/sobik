@@ -79,7 +79,7 @@ Cần JDK 17 và Android SDK (compileSdk 35), cách đơn giản nhất là cài
 | `scanner` | Kotlin/JVM | Lấy mẫu lưới trong khung hướng dẫn từ YUV, LAB, hiệu chuẩn theo tâm, gán màu cân bằng (Hungarian) + confidence, `ScanSession`, chiến lược chụp Manual/Timed/Auto |
 | `scanner-camerax` | Android | Analyzer CameraX (chỉ đọc điểm mẫu, không tạo Bitmap), preview, xin quyền camera |
 | `visualization` | Android/Compose | Renderer 3D phần mềm trên Canvas (2x2–7x7, animation từng layer), sơ đồ 2D chạm để sửa, trình phát lời giải |
-| `content` | Kotlin/JVM | JSON: `algorithms_3x3.json` (9 beginner, 41 F2L, 57 OLL, 21 PLL), `beginner_3x3.json` (8 bài), `big_cubes.json` (4x4–7x7) |
+| `content` | Kotlin/JVM | JSON: `algorithms_3x3.json` (9 beginner, 41 F2L, 57 OLL, 21 PLL, kèm nhiều cách giải thay thế đã kiểm chứng), `beginner_3x3.json` (8 bài, có ảnh mục tiêu và mũi tên ký hiệu), `big_cubes.json` (4x4–7x7), `puzzles.json` (các loại Rubik và hãng sản xuất) |
 | `data` | Kotlin/JVM | Lưu CubeState đã hợp lệ (file văn bản, ~70 byte/cube) |
 | `app` | Android | UI Compose, ViewModel, điều hướng, DI thủ công |
 

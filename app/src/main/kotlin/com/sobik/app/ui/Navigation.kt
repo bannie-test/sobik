@@ -19,6 +19,7 @@ sealed interface Screen {
     data object OtherCubes : Screen
     data class BigCubeGuide(val size: Int) : Screen
     data object ManualInput : Screen
+    data object Puzzles : Screen
 }
 
 class Navigator {

@@ -180,7 +180,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "U' F' U F",
       "alternatives": [
-        "U F R' F' R"
+        "U F R' F' R",
+        "F R' F' R"
       ],
       "difficulty": "EASY",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -212,7 +213,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
       "notation": "F U R U' R' F' R U' R'",
       "alternatives": [
-        "U' F' U F U F' U F U' F' U F"
+        "U' F' U F U F' U F U' F' U F",
+        "U2 F2 U2 F U F' U F2"
       ],
       "difficulty": "HARD",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -229,7 +231,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
       "notation": "R U R' U2 R U R' U' R U R'",
       "alternatives": [
-        "U R U' R' U' R U' R' U R U' R'"
+        "U R U' R' U' R U' R' U R U' R'",
+        "U2 R2 U2 R' U' R U' R2"
       ],
       "difficulty": "HARD",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -260,7 +263,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
       "notation": "U2 R U R' U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U' R' U2 R U R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -276,7 +281,8 @@
       "recognition": "Góc ở tầng trên, vị trí sau-phải (UBR), màu trắng hướng lên trên; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "F' U2 F U' F' U F",
       "alternatives": [
-        "U' F' U2 F U' F' U F"
+        "U' F' U2 F U' F' U F",
+        "F' U2 F2 R' F' R"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -293,7 +299,8 @@
       "recognition": "Góc ở tầng trên, vị trí trước-trái (UFL), màu trắng hướng lên trên; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
       "notation": "R U2 R' U R U' R'",
       "alternatives": [
-        "U R U2 R' U R U' R'"
+        "U R U2 R' U R U' R'",
+        "R U2 R2 F R F'"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -309,7 +316,10 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh ở UB (trên-sau), màu tâm phải (R) hướng lên trên.",
       "notation": "U2 F' U' F U' F' U F",
-      "alternatives": [],
+      "alternatives": [
+        "U2 R U R' F' U' F",
+        "F' L' U2 L F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -324,7 +334,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
       "notation": "U' R U' R' U R U R'",
-      "alternatives": [],
+      "alternatives": [
+        "U2 R2 U R' U R U2 R2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -355,7 +367,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
       "notation": "U F' U2 F U' R U R'",
       "alternatives": [
-        "R U' R' U R U' R' U2 R U' R'"
+        "R U' R' U R U' R' U2 R U' R'",
+        "R' U2 R2 U R2 U R"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -372,7 +385,9 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
       "notation": "U' R U R' U R U R'",
       "alternatives": [
-        "U2 R U' R' U' R U R'"
+        "U2 R U' R' U' R U R'",
+        "U F' U F U' R U R'",
+        "F2 U' L' U L F2"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -388,7 +403,10 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UL (trên-trái), màu tâm phải (R) hướng lên trên.",
       "notation": "U F' U' F U2 F' U F",
-      "alternatives": [],
+      "alternatives": [
+        "R' U' R F R' F' U R",
+        "U2 F' L' U' L U2 F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -403,7 +421,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh ở UB (trên-sau), màu tâm phải (R) hướng lên trên.",
       "notation": "U F' U2 F U2 F' U F",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U2 F R2 F' U2 R2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -418,7 +438,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UR (trên-phải), màu tâm phải (R) hướng lên trên.",
       "notation": "U' R U2 R' U F' U' F",
-      "alternatives": [],
+      "alternatives": [
+        "F U2 F2 U' F2 U' F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -434,7 +456,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm trước (F) hướng lên trên.",
       "notation": "F' U F U2 R U R'",
       "alternatives": [
-        "R U R' U2 R U' R' U R U' R'"
+        "R U R' U2 R U' R' U R U' R'",
+        "R U' R U2 R2 U' R2 U' R2"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -450,7 +473,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "U F' U F U' F' U' F",
-      "alternatives": [],
+      "alternatives": [
+        "R U R2 F R F2 U' F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -465,7 +490,9 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UL (trên-trái), màu tâm trước (F) hướng lên trên.",
       "notation": "U' R U2 R' U2 R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "F2 U2 R' F2 R U2 F2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -480,7 +507,10 @@
       "group": "Góc và cạnh ở tầng trên",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh ở UB (trên-sau), màu tâm trước (F) hướng lên trên.",
       "notation": "U' R U R' U2 R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "U R2 U2 F R' F' U2 R2",
+        "F2 L' U' L U F2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Ghép góc và cạnh thành một cặp ở tầng trên (hoặc tách chúng ra để ghép), rồi chèn cả cặp vào slot trước-phải bằng R U R' hoặc F' U' F. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -512,7 +542,9 @@
       "group": "Góc ở tầng trên, cạnh trong slot",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng lên trên; cạnh nằm trong slot, đúng chiều.",
       "notation": "R U R' U' R U R' U' R U R'",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U R2 U R2 U2 R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -543,7 +575,8 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng sang phải; cạnh nằm trong slot, đúng chiều.",
       "notation": "U R U R' U2 R U R'",
       "alternatives": [
-        "U F' U F U F' U2 F"
+        "U F' U F U F' U2 F",
+        "U2 F' L' U2 L U2 F"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -575,7 +608,10 @@
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh nằm trong slot, đúng chiều.",
       "notation": "U' R U' R' U2 R U' R'",
       "alternatives": [
-        "U' R U' R' U' R U2 R'"
+        "U' R U' R' U' R U2 R'",
+        "U F' U2 F U' F' U' F",
+        "U L U' R U L' U' R'",
+        "U' F' U2 L' U2 L F"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -591,7 +627,9 @@
       "group": "Góc ở tầng trên, cạnh trong slot",
       "recognition": "Góc ở tầng trên, ngay trên slot (URF), màu trắng hướng ra trước; cạnh nằm trong slot nhưng bị lật.",
       "notation": "U' R U R' U F' U' F",
-      "alternatives": [],
+      "alternatives": [
+        "U2 R U R' F R' F' R"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Cạnh đã ở trong slot: dùng các động tác ra/vào slot để đưa góc xuống đúng vị trí và giữ cạnh đúng chiều. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -621,7 +659,9 @@
       "group": "Góc trong slot, cạnh ở tầng trên",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "F' U F U' F' U F",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R' F' U2 F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -637,7 +677,10 @@
       "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
       "notation": "U' R' F R F' R U R'",
       "alternatives": [
-        "U' F' U F U R U' R'"
+        "U' F' U F U R U' R'",
+        "R2 U R2 U R U' R U' R2",
+        "R F R' U R U' F' R'",
+        "F U2 L F' L' U2 F'"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -654,7 +697,9 @@
       "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "U R U' R' U' F' U F",
       "alternatives": [
-        "R U' R' F R' F' R"
+        "R U' R' F R' F' R",
+        "R' U' R F' R' U R F",
+        "F U2 L F L' U2 F'"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -670,7 +715,9 @@
       "group": "Góc trong slot, cạnh ở tầng trên",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh ở UR (trên-phải), màu tâm trước (F) hướng lên trên.",
       "notation": "R U' R' U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U' R2 F R F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -685,7 +732,9 @@
       "group": "Góc trong slot, cạnh ở tầng trên",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh ở UF (trên-trước), màu tâm phải (R) hướng lên trên.",
       "notation": "R' F R F' U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "U R' F R F2 U' F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Góc đã ở trong slot: kéo góc lên cùng cạnh để tạo cặp, rồi chèn lại. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -701,7 +750,8 @@
       "recognition": "Góc nằm trong slot (DFR), đúng hướng (màu trắng ở dưới); cạnh nằm trong slot nhưng bị lật.",
       "notation": "R U' R' U F' U2 F U F' U2 F",
       "alternatives": [
-        "R2 U2 F R2 F' U2 R' U R'"
+        "R2 U2 F R2 F' U2 R' U R'",
+        "R U' R U2 F R2 F' U2 R2"
       ],
       "difficulty": "HARD",
       "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
@@ -717,7 +767,10 @@
       "group": "Góc và cạnh trong slot",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh nằm trong slot, đúng chiều.",
       "notation": "R U' R' U' R U R' U2 R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U2 R' U' R U' R' U2 R'",
+        "R U2 R U2 F R F' U2 R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -732,7 +785,10 @@
       "group": "Góc và cạnh trong slot",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng ra trước; cạnh nằm trong slot nhưng bị lật.",
       "notation": "F' L' U2 L F R U R'",
-      "alternatives": [],
+      "alternatives": [
+        "R F U R U' R' F' U' R'",
+        "F2 L F L2 U L U2 F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -747,7 +803,9 @@
       "group": "Góc và cạnh trong slot",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh nằm trong slot, đúng chiều.",
       "notation": "R U' R' U R U2 R' U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R U R' U R U2 R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -762,7 +820,9 @@
       "group": "Góc và cạnh trong slot",
       "recognition": "Góc nằm trong slot (DFR), màu trắng hướng sang phải; cạnh nằm trong slot nhưng bị lật.",
       "notation": "R U' R' F' L' U2 L F",
-      "alternatives": [],
+      "alternatives": [
+        "R U F R U R' U' F' R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Cả hai đã ở trong slot nhưng sai hướng: đưa cặp lên tầng trên, ghép lại đúng rồi chèn xuống. Hãy giữ Cross ở mặt dưới và đưa slot cần giải về phía trước-phải.",
       "tags": [
@@ -843,7 +903,10 @@
       "group": "Square",
       "recognition": "Hình vuông 2x2 vàng ở góc sau-trái.",
       "notation": "r' U2 R U R' U r",
-      "alternatives": [],
+      "alternatives": [
+        "l' U2 L U L' U l",
+        "R' F2 r U r' F R"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -873,7 +936,9 @@
       "group": "Small Lightning",
       "recognition": "Tia chớp nhỏ.",
       "notation": "r U R' U R U2 r'",
-      "alternatives": [],
+      "alternatives": [
+        "L' U2 L U2 L F' L' F"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -888,7 +953,10 @@
       "group": "Small Lightning",
       "recognition": "Tia chớp nhỏ (đối xứng).",
       "notation": "l' U' L U' L' U2 l",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R' U2 R' F R F'",
+        "r' U' R U' R' U2 r"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -903,7 +971,9 @@
       "group": "Fish",
       "recognition": "Hình cá, hai cạnh vàng hướng lên.",
       "notation": "R U R' U' R' F R2 U R' U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "R' U' R U' R' U R' F R F' U R"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -918,7 +988,9 @@
       "group": "Fish",
       "recognition": "Hình cá (đối xứng).",
       "notation": "R U R' U R' F R F' R U2 R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U R' y R' F R U' R' F' R y'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -933,7 +1005,10 @@
       "group": "Small Lightning",
       "recognition": "Tia chớp nhỏ có thêm góc.",
       "notation": "r U R' U R' F R F' R U2 r'",
-      "alternatives": [],
+      "alternatives": [
+        "M R U R' U R U2 R' U M'",
+        "r' R2 U R' U R U2 R' U M'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -948,7 +1023,9 @@
       "group": "Small Lightning",
       "recognition": "Tia chớp nhỏ có thêm góc (đối xứng).",
       "notation": "M' R' U' R U' R' U2 R U' R r'",
-      "alternatives": [],
+      "alternatives": [
+        "F R U R' U' F' U F R U R' U' F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -963,7 +1040,10 @@
       "group": "Knight Move",
       "recognition": "Hình quân mã.",
       "notation": "F U R U' R2 F' R U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "r U' r' U' r U r' F' U F",
+        "F U R U2 R' U' R U R' F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -978,7 +1058,9 @@
       "group": "Knight Move",
       "recognition": "Hình quân mã (đối xứng).",
       "notation": "R' F R U R' F' R F U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "F' U' L' U2 L U L' U' L F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -993,7 +1075,9 @@
       "group": "Knight Move",
       "recognition": "Hình quân mã.",
       "notation": "r' U' r R' U' R U r' U r",
-      "alternatives": [],
+      "alternatives": [
+        "l' U' l L' U' L U l' U l"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1008,7 +1092,9 @@
       "group": "Knight Move",
       "recognition": "Hình quân mã (đối xứng).",
       "notation": "r U r' R U R' U' r U' r'",
-      "alternatives": [],
+      "alternatives": [
+        "R' F R U R' U' F' R U' R' U2 R"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1040,7 +1126,10 @@
       "group": "Dot",
       "recognition": "Nhóm Dot, hai góc vàng hướng lên ở phía trước.",
       "notation": "r U R' U R U2 r2 U' R U' R' U2 r",
-      "alternatives": [],
+      "alternatives": [
+        "F R U R' U F' U2 F' L F L'",
+        "R U2 R2 F R F' U2 M' U R U' r'"
+      ],
       "difficulty": "HARD",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1055,7 +1144,10 @@
       "group": "Dot",
       "recognition": "Nhóm Dot, hai góc vàng hướng lên ở phía sau.",
       "notation": "r' R U R U R' U' M' R' F R F'",
-      "alternatives": [],
+      "alternatives": [
+        "M U R U R' U' M' R' F R F'",
+        "R' U2 F R U R' U' F2 U2 F R"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1070,7 +1162,10 @@
       "group": "Dot",
       "recognition": "Chỉ có tâm vàng; cả 4 góc vàng đều hướng lên (dạng X).",
       "notation": "r U R' U' M2 U R U' R' U' M'",
-      "alternatives": [],
+      "alternatives": [
+        "M' U2 M U2 M' U M U2 M' U2 M",
+        "r' R U R U R' U' M2 U R U' r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1085,7 +1180,10 @@
       "group": "Cross",
       "recognition": "Có dấu cộng vàng; hai cặp góc vàng nhìn ra hai mặt bên đối diện (chữ H).",
       "notation": "R U2 R' U' R U R' U' R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "F R U R' U' R U R' U' R U R' U' F'",
+        "R U R' U R U' R' U R U2 R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1100,7 +1198,10 @@
       "group": "Cross",
       "recognition": "Có dấu cộng vàng; Pi — hai góc nhìn sang trái, hai góc ở mặt bên.",
       "notation": "R U2 R2 U' R2 U' R2 U2 R",
-      "alternatives": [],
+      "alternatives": [
+        "f R U R' U' f' F R U R' U' F'",
+        "R' U2 R2 U R2 U R2 U2 R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1115,7 +1216,9 @@
       "group": "Cross",
       "recognition": "Có dấu cộng vàng; hai góc vàng hướng lên ở phía sau, hai góc trước nhìn ra trước (đèn pha).",
       "notation": "R2 D' R U2 R' D R U2 R",
-      "alternatives": [],
+      "alternatives": [
+        "R2 D R' U2 R D' R' U2 R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1130,7 +1233,10 @@
       "group": "Cross",
       "recognition": "Có dấu cộng vàng; hai góc hướng lên ở bên trái, hai góc phải nhìn ra trước/sau (chữ T).",
       "notation": "r U R' U' r' F R F'",
-      "alternatives": [],
+      "alternatives": [
+        "L F R' F' L' F R F'",
+        "R U R D R' U' R D' R2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1145,7 +1251,10 @@
       "group": "Cross",
       "recognition": "Có dấu cộng vàng; hai góc vàng hướng lên theo đường chéo (nơ).",
       "notation": "F' r U R' U' r' F R",
-      "alternatives": [],
+      "alternatives": [
+        "R' F R B' R' F' R B",
+        "F R' F' r U R U' r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1160,7 +1269,10 @@
       "group": "Cross",
       "recognition": "Anti-Sune: một góc vàng hướng lên ở trước-phải, các góc khác nhìn sang phải-trước.",
       "notation": "R U2 R' U' R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "L' U' L U' L' U2 L",
+        "R' U' R U' R' U2 R"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1175,7 +1287,10 @@
       "group": "Cross",
       "recognition": "Sune: một góc vàng hướng lên ở trước-trái, ba góc còn lại nhìn ra trước.",
       "notation": "R U R' U R U2 R'",
-      "alternatives": [],
+      "alternatives": [
+        "L' U2 L U L' U L",
+        "R' U2 R U R' U R"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1190,7 +1305,10 @@
       "group": "Corners Oriented",
       "recognition": "Bốn góc đã đúng, hai cạnh vàng chưa hướng lên (trước và trái).",
       "notation": "r U R' U' r' R U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "M' U M U2 M' U M",
+        "M U M' U2 M U M'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1205,7 +1323,10 @@
       "group": "Awkward",
       "recognition": "Nhóm Awkward.",
       "notation": "R U R' U' R U' R' F' U' F R U R'",
-      "alternatives": [],
+      "alternatives": [
+        "r2 D' r U r' D r2 U' r' U' r",
+        "M U R U R' U' R' F R F' M'"
+      ],
       "difficulty": "HARD",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1220,7 +1341,10 @@
       "group": "Awkward",
       "recognition": "Nhóm Awkward (đối xứng).",
       "notation": "F R' F R2 U' R' U' R U R' F2",
-      "alternatives": [],
+      "alternatives": [
+        "F U R U2 R' U' R U2 R' U' F'",
+        "r' D' r U' r' D r2 U' r' U r U r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1235,7 +1359,9 @@
       "group": "P Shape",
       "recognition": "Hình chữ P.",
       "notation": "R' U' F U R U' R' F' R",
-      "alternatives": [],
+      "alternatives": [
+        "S' L' U' L U L F' L' f"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1250,7 +1376,10 @@
       "group": "P Shape",
       "recognition": "Hình chữ P (đối xứng).",
       "notation": "L U F' U' L' U L F L'",
-      "alternatives": [],
+      "alternatives": [
+        "R U B' U' R' U R B R'",
+        "S R U R' U' R' F R f'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1265,7 +1394,9 @@
       "group": "T Shape",
       "recognition": "Hình chữ T.",
       "notation": "R U R' U' R' F R F'",
-      "alternatives": [],
+      "alternatives": [
+        "L' U' L U L F' L' F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1280,7 +1411,10 @@
       "group": "C Shape",
       "recognition": "Hình chữ C.",
       "notation": "R U R2 U' R' F R U R U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "R U R' U' B' R' F R F' B",
+        "F R U R' U' R' F' r U R U' r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1295,7 +1429,10 @@
       "group": "Fish",
       "recognition": "Hình cá.",
       "notation": "R U2 R2 F R F' R U2 R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R' R' F R F' R U2 R'",
+        "f R U R' U' f' R U R' U R U2 R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1325,7 +1462,10 @@
       "group": "Fish",
       "recognition": "Hình cá.",
       "notation": "F R' F' R U R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "F R U' R' U' R U R' F'",
+        "R' F R F' U' F' U F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1355,7 +1495,9 @@
       "group": "Big Lightning",
       "recognition": "Tia chớp lớn.",
       "notation": "L F' L' U' L U F U' L'",
-      "alternatives": [],
+      "alternatives": [
+        "R U R' F' U' F U R U2 R'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1385,7 +1527,9 @@
       "group": "Awkward",
       "recognition": "Nhóm Awkward.",
       "notation": "R U R' U R U2 R' F R U R' U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "R U' R' U2 R U y R U' R' U' F' y'"
+      ],
       "difficulty": "HARD",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1415,7 +1559,10 @@
       "group": "P Shape",
       "recognition": "Hình chữ P.",
       "notation": "F' U' L' U L F",
-      "alternatives": [],
+      "alternatives": [
+        "f' L' U' L U f",
+        "R' U' F' U F R"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1430,7 +1577,10 @@
       "group": "P Shape",
       "recognition": "Hình chữ P (đối xứng).",
       "notation": "F U R U' R' F'",
-      "alternatives": [],
+      "alternatives": [
+        "f R U R' U' f'",
+        "L U F U' F' L'"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1445,7 +1595,9 @@
       "group": "T Shape",
       "recognition": "Hình chữ T.",
       "notation": "F R U R' U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "f U R U' R' f'"
+      ],
       "difficulty": "EASY",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1475,7 +1627,9 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ.",
       "notation": "R' U' R' F R F' R' F R F' U R",
-      "alternatives": [],
+      "alternatives": [
+        "F' L' U' L U L' U' L U F"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1490,7 +1644,9 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ (đối xứng).",
       "notation": "F R U R' U' R U R' U' F'",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R' U' R U R' U2 R' F R F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1505,7 +1661,10 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ.",
       "notation": "r U' r2 U r2 U r2 U' r",
-      "alternatives": [],
+      "alternatives": [
+        "R B' R2 F R2 B R2 F' R",
+        "l U' l2 U l2 U l2 U' l"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1520,7 +1679,10 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ (đối xứng).",
       "notation": "r' U r2 U' r2 U' r2 U r'",
-      "alternatives": [],
+      "alternatives": [
+        "R' F R2 B' R2 F' R2 B R'",
+        "l' U l2 U' l2 U' l2 U l'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1535,7 +1697,9 @@
       "group": "Line",
       "recognition": "Đường thẳng ngang.",
       "notation": "F U R U' R' U R U' R' F'",
-      "alternatives": [],
+      "alternatives": [
+        "f R U R' U' R U R' U' f'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1550,7 +1714,10 @@
       "group": "Line",
       "recognition": "Đường thẳng dọc.",
       "notation": "R U R' U R U' B U' B' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R' F' U' F U' R U R' U R",
+        "R U R' U R d' R U' R' F'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1565,7 +1732,9 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ.",
       "notation": "l' U2 L U L' U' L U L' U l",
-      "alternatives": [],
+      "alternatives": [
+        "r' U' R U' R' U R U' R' U2 r"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1580,7 +1749,9 @@
       "group": "Small L",
       "recognition": "Chữ L nhỏ (đối xứng).",
       "notation": "r U2 R' U' R U R' U' R U' r'",
-      "alternatives": [],
+      "alternatives": [
+        "r U R' U R U' R' U R U2 r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1595,7 +1766,10 @@
       "group": "Line",
       "recognition": "Đường thẳng, không góc nào hướng lên.",
       "notation": "R' F R U R U' R2 F' R2 U' R' U R U R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R2 U' R U' R' U2 F R F'",
+        "r U2 R2 F R F' U2 r' F R F'"
+      ],
       "difficulty": "HARD",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1610,7 +1784,10 @@
       "group": "Line",
       "recognition": "Đường thẳng, không góc nào hướng lên (dạng khác).",
       "notation": "r' U' r U' R' U R U' R' U R r' U r",
-      "alternatives": [],
+      "alternatives": [
+        "F R U R' U' R F' r U R' U' r'",
+        "r U r' U R U' R' U R U' R' r U' r'"
+      ],
       "difficulty": "HARD",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1625,7 +1802,9 @@
       "group": "Corners Oriented",
       "recognition": "Bốn góc đã đúng, hai cạnh đối diện chưa hướng lên (chữ H).",
       "notation": "R U R' U' M' U R U' r'",
-      "alternatives": [],
+      "alternatives": [
+        "R U R' U' r R' U R U' r'"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Định hướng toàn bộ tầng trên để mặt trên cùng một màu, giữ nguyên hai tầng dưới (F2L). Xoay U trước khi làm để khớp với hình nhận diện.",
       "tags": [
@@ -1640,7 +1819,10 @@
       "group": "Corners",
       "recognition": "Ba góc xoay vòng (theo chiều kim đồng hồ), các cạnh đúng. Có đèn pha ở mặt trái.",
       "notation": "x R' U R' D2 R U' R' D2 R2 x'",
-      "alternatives": [],
+      "alternatives": [
+        "x L2 D2 L' U' L D2 L' U L' x'",
+        "R' F R' B2 R F' R' B2 R2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1655,7 +1837,10 @@
       "group": "Corners",
       "recognition": "Ba góc xoay vòng (ngược chiều kim đồng hồ), các cạnh đúng. Đèn pha ở mặt sau.",
       "notation": "x R2 D2 R U R' D2 R U' R x'",
-      "alternatives": [],
+      "alternatives": [
+        "x' L2 D2 L U L' D2 L U' L x",
+        "R B' R F2 R' B R F2 R2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1670,7 +1855,9 @@
       "group": "Corners",
       "recognition": "Hoán đổi hai cặp góc theo đường chéo; không mặt bên nào có đèn pha.",
       "notation": "x' R U' R' D R U R' D' R U R' D R U' R' D' x",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U R' U' y R U R' U' R U R' U' R U R' y' R U' R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1685,7 +1872,10 @@
       "group": "Edges",
       "recognition": "Hai cặp cạnh đối diện đổi chỗ; các góc đúng.",
       "notation": "M2 U M2 U2 M2 U M2",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U2 R U2 R2 U2 R2 U2 R U2 R2",
+        "M2 U' M2 U2 M2 U' M2"
+      ],
       "difficulty": "EASY",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1701,7 +1891,9 @@
       "recognition": "Ba cạnh xoay vòng (ngược kim), có một mặt bên hoàn chỉnh ở phía sau.",
       "notation": "R U' R U R U R U' R' U' R2",
       "alternatives": [
-        "M2 U M U2 M' U M2"
+        "M2 U M U2 M' U M2",
+        "R2 U' R' U' R U R U R U' R",
+        "R U R' U R' U' R2 U' R' U R' U R"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
@@ -1718,7 +1910,8 @@
       "recognition": "Ba cạnh xoay vòng (theo kim), có một mặt bên hoàn chỉnh ở phía sau.",
       "notation": "R2 U R U R' U' R' U' R' U R'",
       "alternatives": [
-        "M2 U' M U2 M' U' M2"
+        "M2 U' M U2 M' U' M2",
+        "R' U R' U' R' U' R' U R U R2"
       ],
       "difficulty": "MEDIUM",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
@@ -1734,7 +1927,11 @@
       "group": "Edges",
       "recognition": "Hai cặp cạnh kề nhau đổi chỗ; các góc đúng.",
       "notation": "M' U M2 U M2 U M' U2 M2",
-      "alternatives": [],
+      "alternatives": [
+        "M2 U2 M U' M2 U' M2 U' M",
+        "R' U' R U' R U R U' R' U R U R2 U' R'",
+        "M' U' M2 U' M2 U' M' U2 M2"
+      ],
       "difficulty": "MEDIUM",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1749,7 +1946,10 @@
       "group": "Adjacent swap",
       "recognition": "Một mặt bên có đèn pha và cạnh giữa khác màu; mặt đối diện có 3 ô liền màu.",
       "notation": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
-      "alternatives": [],
+      "alternatives": [
+        "R' U R U' R2 F' U' F U R F R' F' R2",
+        "M' U2 L F' R U2 r' U r' R2 U2 R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1765,7 +1965,8 @@
       "recognition": "Có một khối 1x3 ở mặt trái; đổi góc và cạnh kề.",
       "notation": "L' U' L F L' U' L U L F' L2 U L",
       "alternatives": [
-        "R' U L' U2 R U' R' U2 R L"
+        "R' U L' U2 R U' R' U2 R L",
+        "x R2 F R F' R U2 r' U r U2 x'"
       ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
@@ -1781,7 +1982,10 @@
       "group": "Adjacent swap",
       "recognition": "Có một khối 1x3 ở mặt trái... đổi góc và cạnh kề ở mặt phải.",
       "notation": "R U R' F' R U R' U' R' F R2 U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U2 R' U' R U2 L' U R' U' L",
+        "R U R' F' R U R' U' R' F R2 U' R' U'"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1796,7 +2000,10 @@
       "group": "Adjacent swap",
       "recognition": "Đèn pha ở mặt trái, cạnh giữa của mặt đối diện khác màu.",
       "notation": "R U' R' U' R U R D R' U' R D' R' U2 R'",
-      "alternatives": [],
+      "alternatives": [
+        "R U R' F' R U2 R' U2 R' F R U R U2 R'",
+        "L U2 L' U2 L F' L' U' L U L F L2"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1811,7 +2018,9 @@
       "group": "Adjacent swap",
       "recognition": "Đèn pha ở mặt phải, cạnh giữa mặt đối diện khác màu.",
       "notation": "R2 F R U R U' R' F' R U2 R' U2 R",
-      "alternatives": [],
+      "alternatives": [
+        "R' U2 R U2 R' F R U R' U' R' F' R2"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1826,7 +2035,10 @@
       "group": "Adjacent swap",
       "recognition": "Đèn pha ở mặt trái và mặt phải; đổi hai góc bên phải và hai cạnh trái-phải.",
       "notation": "R U R' U' R' F R2 U' R' U' R U R' F'",
-      "alternatives": [],
+      "alternatives": [
+        "R2 U R2 U' R2 U' D R2 U' R2 U R2 D'",
+        "R U R' U' R' F R2 U' R' U F' L' U L"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1901,7 +2113,10 @@
       "group": "Diagonal swap",
       "recognition": "Hai mặt bên trái/phải đều có dạng 'bậc thang' giống nhau; đổi chéo góc.",
       "notation": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
-      "alternatives": [],
+      "alternatives": [
+        "z D R' U R2 D' R D U' R' U R2 D' R U' R z'",
+        "L U' R U2 L' U R' L U' R U2 L' U R'"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1916,7 +2131,10 @@
       "group": "Diagonal swap",
       "recognition": "Giống Na nhưng đối xứng gương.",
       "notation": "R' U R U' R' F' U' F R U R' F R' F' R U' R",
-      "alternatives": [],
+      "alternatives": [
+        "r' D' F r U' r' F' D r2 U r' U' r' F r F'",
+        "R' U L' U2 R U' L R' U L' U2 R U' L"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [
@@ -1932,7 +2150,8 @@
       "recognition": "Một góc đúng, đổi chéo hai góc và hai cạnh kề.",
       "notation": "R' U R' U' B' R' B2 U' B' U B' R B R",
       "alternatives": [
-        "R' U R' U' y R' F' R2 U' R' U R' F R F"
+        "R' U R' U' y R' F' R2 U' R' U R' F R F",
+        "R U2 R' D R U' R U' R U R2 D R' U' R D2"
       ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
@@ -1948,7 +2167,9 @@
       "group": "Diagonal swap",
       "recognition": "Đổi chéo hai góc và hai cạnh; nhìn thấy hai khối 1x2 ở các mặt bên.",
       "notation": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
-      "alternatives": [],
+      "alternatives": [
+        "F R' F R2 U' R' U' R U R' F' R U R' U' F'"
+      ],
       "difficulty": "HARD",
       "explanation": "Hoán vị các mảnh tầng trên về đúng vị trí, giữ nguyên hướng (mặt trên vẫn cùng màu). Có thể cần xoay U trước và sau công thức.",
       "tags": [

@@ -18,47 +18,58 @@
       "notation": [
         {
           "symbol": "R",
-          "meaning": "Right — xoay mặt phải theo chiều kim đồng hồ (phần phía trước đi lên)."
+          "meaning": "Right — xoay mặt phải theo chiều kim đồng hồ (phần phía trước đi lên).",
+          "move": "R"
         },
         {
           "symbol": "L",
-          "meaning": "Left — xoay mặt trái theo chiều kim đồng hồ khi nhìn từ bên trái (phần phía trước đi xuống)."
+          "meaning": "Left — xoay mặt trái theo chiều kim đồng hồ khi nhìn từ bên trái (phần phía trước đi xuống).",
+          "move": "L"
         },
         {
           "symbol": "U",
-          "meaning": "Up — xoay mặt trên theo chiều kim đồng hồ (phần phía trước đi sang trái)."
+          "meaning": "Up — xoay mặt trên theo chiều kim đồng hồ (phần phía trước đi sang trái).",
+          "move": "U"
         },
         {
           "symbol": "D",
-          "meaning": "Down — xoay mặt dưới theo chiều kim đồng hồ khi nhìn từ dưới lên (phần phía trước đi sang phải)."
+          "meaning": "Down — xoay mặt dưới theo chiều kim đồng hồ khi nhìn từ dưới lên (phần phía trước đi sang phải).",
+          "move": "D"
         },
         {
           "symbol": "F",
-          "meaning": "Front — xoay mặt trước theo chiều kim đồng hồ."
+          "meaning": "Front — xoay mặt trước theo chiều kim đồng hồ.",
+          "move": "F"
         },
         {
           "symbol": "B",
-          "meaning": "Back — xoay mặt sau theo chiều kim đồng hồ khi nhìn từ phía sau."
+          "meaning": "Back — xoay mặt sau theo chiều kim đồng hồ khi nhìn từ phía sau.",
+          "move": "B"
         },
         {
           "symbol": "X'",
-          "meaning": "Dấu phẩy: xoay ngược chiều kim đồng hồ, ví dụ R' (đọc là “R phẩy”)."
+          "meaning": "Dấu phẩy: xoay ngược chiều kim đồng hồ, ví dụ R' (đọc là “R phẩy”).",
+          "move": "R'"
         },
         {
           "symbol": "X2",
-          "meaning": "Số 2: xoay 180°, ví dụ U2."
+          "meaning": "Số 2: xoay 180°, ví dụ U2.",
+          "move": "U2"
         },
         {
           "symbol": "x, y, z",
-          "meaning": "Xoay cả khối theo trục của R, U, F (không thay đổi trạng thái, chỉ đổi cách cầm)."
+          "meaning": "Xoay cả khối theo trục của R, U, F (không thay đổi trạng thái, chỉ đổi cách cầm).",
+          "move": "x"
         },
         {
           "symbol": "r / Rw",
-          "meaning": "Xoay 2 lớp phía phải cùng lúc (mặt R và lớp giữa)."
+          "meaning": "Xoay 2 lớp phía phải cùng lúc (mặt R và lớp giữa).",
+          "move": "r"
         },
         {
           "symbol": "M, E, S",
-          "meaning": "Lớp giữa: M theo chiều L, E theo chiều D, S theo chiều F."
+          "meaning": "Lớp giữa: M theo chiều L, E theo chiều D, S theo chiều F.",
+          "move": "M"
         }
       ],
       "cases": [
@@ -108,7 +119,9 @@
       "tips": [
         "Luôn cầm cube cố định khi làm một công thức — chỉ xoay các mặt, không xoay cả khối giữa chừng.",
         "Tập mỗi ký hiệu chậm trước, đúng quan trọng hơn nhanh."
-      ]
+      ],
+      "targetMask": "solved",
+      "targetView": "top"
     },
     {
       "id": "white-cross",
@@ -162,7 +175,9 @@
       "tips": [
         "Nhiều người làm 'bông hoa' (daisy): đưa 4 cạnh trắng lên quanh tâm vàng, rồi xoay từng cạnh khớp tâm và F2 xuống dưới — dễ nhưng chậm hơn.",
         "Cố gắng làm cross trong tối đa 8 bước — app có thể gợi ý cross tối ưu ở mục Solve → Cross."
-      ]
+      ],
+      "targetMask": "cross",
+      "targetView": "bottom"
     },
     {
       "id": "white-corners",
@@ -209,7 +224,9 @@
       "tips": [
         "Đừng xoay cả khối giữa các lần lặp R U R' U' — chỉ xoay U khi chuẩn bị góc tiếp theo.",
         "Kết thúc bước này, lật cube để mặt trắng ở dưới (nếu chưa)."
-      ]
+      ],
+      "targetMask": "firstLayer",
+      "targetView": "bottom"
     },
     {
       "id": "middle-layer",
@@ -247,7 +264,9 @@
       ],
       "tips": [
         "Học một công thức rồi suy ra cái còn lại bằng đối xứng gương: R ↔ L', F ↔ F' (đổi chiều)."
-      ]
+      ],
+      "targetMask": "f2l",
+      "targetView": "top"
     },
     {
       "id": "yellow-cross",
@@ -285,7 +304,9 @@
       ],
       "tips": [
         "Không cần quan tâm các góc ở bước này."
-      ]
+      ],
+      "targetMask": "yellowCross",
+      "targetView": "top"
     },
     {
       "id": "yellow-face",
@@ -324,7 +345,9 @@
       ],
       "tips": [
         "Sau bước này các mặt bên có thể lộn xộn — đó là bình thường."
-      ]
+      ],
+      "targetMask": "yellowFace",
+      "targetView": "top"
     },
     {
       "id": "yellow-corners",
@@ -356,7 +379,9 @@
       ],
       "tips": [
         "Sau khi các góc đúng, xoay U để chúng khớp màu với tâm."
-      ]
+      ],
+      "targetMask": "yellowCorners",
+      "targetView": "top"
     },
     {
       "id": "yellow-edges",
@@ -395,7 +420,9 @@
       ],
       "tips": [
         "Chúc mừng! Bước tiếp theo: học CFOP (F2L, OLL, PLL) trong Thư viện công thức để giải nhanh hơn."
-      ]
+      ],
+      "targetMask": "solved",
+      "targetView": "top"
     }
   ]
 }

@@ -28,10 +28,19 @@ data class BeginnerLesson(
     val tips: List<String> = emptyList(),
     /** Optional notation entries (only for the notation lesson). */
     val notation: List<NotationEntry> = emptyList(),
+    /** Which part of a solved cube to highlight in the target picture (see visualization CubeMasks). */
+    val targetMask: String? = null,
+    /** "top" or "bottom": which side of the cube the target picture looks at. */
+    val targetView: String = "top",
 )
 
 @Serializable
-data class NotationEntry(val symbol: String, val meaning: String)
+data class NotationEntry(
+    val symbol: String,
+    val meaning: String,
+    /** Move(s) to draw as an arrow picture, e.g. "R'" — null when the entry has no single picture. */
+    val move: String? = null,
+)
 
 @Serializable
 data class GuideSection(
@@ -50,3 +59,36 @@ data class CubeGuide(
 ) {
     val cubeType: CubeType get() = CubeType.ofSize(cubeSize)
 }
+
+/** Shape family of a puzzle, used to draw its picture. */
+@Serializable
+enum class PuzzleShape { CUBE, PYRAMINX, MEGAMINX, SKEWB, SQUARE1, CLOCK }
+
+/** A puzzle manufacturer in the catalog. */
+@Serializable
+data class PuzzleBrand(
+    val id: String,
+    val name: String,
+    val country: String,
+    val summary: String,
+    /** Short mark drawn on the white center of the picture (a plain monogram, not the official logo). */
+    val mark: String,
+    /** Accent color of the mark, ARGB hex like "FF1565C0". */
+    val color: String,
+)
+
+/** A puzzle model in the catalog. */
+@Serializable
+data class PuzzleProduct(
+    val id: String,
+    val name: String,
+    val brandId: String,
+    /** Category used for grouping, e.g. "3x3", "2x2", "Megaminx". */
+    val category: String,
+    val shape: PuzzleShape,
+    /** Grid size for cube-shaped puzzles. */
+    val size: Int = 3,
+    val features: List<String> = emptyList(),
+    val reviews: List<String> = emptyList(),
+    val audience: String = "",
+)

@@ -110,6 +110,58 @@ class CubeScene(val n: Int) {
         return out
     }
 
+    /** Screen position of a 3D point (cube coordinates, faces at +-n) for a static view. */
+    fun projectPoint(p: FloatArray, yaw: Float, pitch: Float, width: Float, height: Float): FloatArray {
+        val scale = minOf(width, height) / (2f * n) * 0.52f
+        val camDist = 7f * n
+        val cyw = cos(yaw); val syw = sin(yaw); val cp = cos(pitch); val sp = sin(pitch)
+        val x1 = p[0] * cyw + p[2] * syw
+        val z1 = -p[0] * syw + p[2] * cyw
+        val y2 = p[1] * cp - z1 * sp
+        val z2 = p[1] * sp + z1 * cp
+        val f = camDist / (camDist - z2)
+        return floatArrayOf(width / 2 + x1 * scale * f, height / 2 - y2 * scale * f, z2)
+    }
+
+    /**
+     * Arrow showing which way the layers of [move] turn, drawn along the turning band on the
+     * visible side face that is most turned towards the viewer. Returns screen points
+     * (start x, start y, end x, end y); the arrow head belongs at the end.
+     */
+    fun moveArrow(move: Move, yaw: Float, pitch: Float, width: Float, height: Float): FloatArray {
+        val g = geo.moveGeometry(move)
+        val a = g.axis
+        val c = g.layers.average().toFloat()
+        val sign = if (g.quarterTurns == 3) -1f else 1f
+        // Faces whose normal is perpendicular to the turning axis show the band; take the most visible one.
+        var best: Pair<Int, Int>? = null
+        var bestZ = -Float.MAX_VALUE
+        for (b in 0 until 3) {
+            if (b == a) continue
+            for (sb in intArrayOf(-1, 1)) {
+                val nrm = FloatArray(3).also { it[b] = sb * (n + 1f) }
+                val z = projectPoint(nrm, yaw, pitch, width, height)[2]
+                if (z > bestZ) { bestZ = z; best = b to sb }
+            }
+        }
+        val (b, sb) = best!!
+        val t = 3 - a - b
+        fun point(u: Float) = FloatArray(3).also { it[a] = c; it[b] = sb * (n + 0.25f); it[t] = u }
+        // Direction of motion: velocity of a point on the band under +90 degrees about the axis is e_a x p.
+        val mid = point(0f)
+        val velocity = FloatArray(3)
+        when (a) {
+            0 -> { velocity[1] = -mid[2]; velocity[2] = mid[1] }
+            1 -> { velocity[0] = mid[2]; velocity[2] = -mid[0] }
+            else -> { velocity[0] = -mid[1]; velocity[1] = mid[0] }
+        }
+        val forward = velocity[t] * sign > 0
+        val reach = n - 0.35f
+        val start = projectPoint(point(if (forward) -reach else reach), yaw, pitch, width, height)
+        val end = projectPoint(point(if (forward) reach else -reach), yaw, pitch, width, height)
+        return floatArrayOf(start[0], start[1], end[0], end[1])
+    }
+
     private fun rotateAxis(v: FloatArray, axis: Int, angle: Float) {
         val c = cos(angle); val s = sin(angle)
         val x = v[0]; val y = v[1]; val z = v[2]

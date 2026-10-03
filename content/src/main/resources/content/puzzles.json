@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "disclaimer": "Thông tin mang tính tham khảo, tổng hợp từ nhận xét phổ biến trong cộng đồng; trải nghiệm có thể khác theo phiên bản và cách chỉnh. Hình ảnh là minh hoạ do ứng dụng vẽ, ký hiệu hãng là chữ viết tắt, không phải logo chính thức.",
+  "brands": [
+    {
+      "id": "gan",
+      "name": "GAN",
+      "country": "Trung Quốc",
+      "summary": "Hãng cube cao cấp, nổi tiếng với các mẫu nam châm, hệ thống chỉnh lực và cube thông minh kết nối Bluetooth.",
+      "mark": "GAN",
+      "color": "FF1565C0"
+    },
+    {
+      "id": "moyu",
+      "name": "MoYu",
+      "country": "Trung Quốc",
+      "summary": "Hãng lớn với dải sản phẩm rộng: dòng RS giá rẻ cho người mới và dòng WeiLong cao cấp cho thi đấu.",
+      "mark": "MY",
+      "color": "FFD32F2F"
+    },
+    {
+      "id": "qiyi",
+      "name": "QiYi",
+      "country": "Trung Quốc",
+      "summary": "Nổi tiếng với cube giá rẻ mà chất lượng tốt; có thương hiệu con X-Man Design cho các mẫu thi đấu.",
+      "mark": "QY",
+      "color": "FFF57C00"
+    },
+    {
+      "id": "yj",
+      "name": "YJ (YongJun)",
+      "country": "Trung Quốc",
+      "summary": "Cube giá phải chăng, dòng MGC có nam châm sẵn, phổ biến với người mới và học sinh.",
+      "mark": "YJ",
+      "color": "FF2E7D32"
+    },
+    {
+      "id": "dayan",
+      "name": "DaYan",
+      "country": "Trung Quốc",
+      "summary": "Một trong những hãng speedcube lâu đời; nhiều thiết kế cơ chế xoay có ảnh hưởng tới các thế hệ sau.",
+      "mark": "DY",
+      "color": "FF6A1B9A"
+    },
+    {
+      "id": "shengshou",
+      "name": "ShengShou",
+      "country": "Trung Quốc",
+      "summary": "Mạnh về cube kích thước lớn và các loại puzzle lạ với giá dễ tiếp cận.",
+      "mark": "SS",
+      "color": "FF00838F"
+    },
+    {
+      "id": "rubiks",
+      "name": "Rubik's",
+      "country": "Hungary (thương hiệu gốc)",
+      "summary": "Thương hiệu gốc của khối Rubik do Ernő Rubik phát minh năm 1974; phổ biến rộng rãi, có cả mẫu dành cho tốc độ.",
+      "mark": "R",
+      "color": "FFC62828"
+    }
+  ],
+  "puzzles": [
+    {
+      "id": "gan-356-m",
+      "name": "GAN 356 M",
+      "brandId": "gan",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Chỉnh được lực nam châm và độ căng",
+        "Tầm trung của GAN"
+      ],
+      "reviews": [
+        "Xoay nhẹ, ổn định, dễ làm quen",
+        "Được nhiều người xem là lựa chọn đầu tiên khi lên đời cube nam châm"
+      ],
+      "audience": "Người mới đến trung cấp"
+    },
+    {
+      "id": "gan-12-maglev",
+      "name": "GAN 12 Maglev",
+      "brandId": "gan",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm + cơ chế maglev (đẩy bằng nam châm thay lò xo)",
+        "Nhiều tuỳ chỉnh",
+        "Dòng flagship"
+      ],
+      "reviews": [
+        "Rất nhanh và ổn định, cảm giác 'cao cấp'",
+        "Giá cao so với mặt bằng chung"
+      ],
+      "audience": "Người chơi thi đấu"
+    },
+    {
+      "id": "gan-356-i",
+      "name": "GAN 356 i (smart cube)",
+      "brandId": "gan",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Kết nối Bluetooth với ứng dụng",
+        "Theo dõi từng bước xoay, bấm giờ tự động"
+      ],
+      "reviews": [
+        "Rất hữu ích để luyện tập và học thuật toán",
+        "Cần sạc pin; nặng hơn cube thường"
+      ],
+      "audience": "Người muốn luyện tập có số liệu"
+    },
+    {
+      "id": "gan-251-m",
+      "name": "GAN 251 M",
+      "brandId": "gan",
+      "category": "2x2",
+      "shape": "CUBE",
+      "size": 2,
+      "features": [
+        "2x2 nam châm",
+        "Kích thước nhỏ gọn"
+      ],
+      "reviews": [
+        "Xoay mượt, ít kẹt",
+        "Giá cao hơn 2x2 phổ thông"
+      ],
+      "audience": "Trung cấp trở lên"
+    },
+    {
+      "id": "gan-460-m",
+      "name": "GAN 460 M",
+      "brandId": "gan",
+      "category": "4x4",
+      "shape": "CUBE",
+      "size": 4,
+      "features": [
+        "4x4 nam châm"
+      ],
+      "reviews": [
+        "Ổn định khi ghép cạnh",
+        "Giá cao"
+      ],
+      "audience": "Người chơi 4x4 nghiêm túc"
+    },
+    {
+      "id": "moyu-rs3m",
+      "name": "MoYu RS3 M",
+      "brandId": "moyu",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Một trong những cube nam châm 'đáng tiền' nhất cho người mới",
+        "Cần bôi trơn/chỉnh lại để đạt cảm giác tốt nhất"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "moyu-weilong-wrm",
+      "name": "MoYu WeiLong WR M",
+      "brandId": "moyu",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Dòng thi đấu cao cấp của MoYu"
+      ],
+      "reviews": [
+        "Nhanh, cắt góc tốt",
+        "Nhiều phiên bản theo năm, cảm giác khác nhau"
+      ],
+      "audience": "Người chơi thi đấu"
+    },
+    {
+      "id": "moyu-rs2m",
+      "name": "MoYu RS2 M",
+      "brandId": "moyu",
+      "category": "2x2",
+      "shape": "CUBE",
+      "size": 2,
+      "features": [
+        "2x2 nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Rất phổ biến cho người mới chơi 2x2"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "moyu-aosu-wrm",
+      "name": "MoYu AoSu WR M",
+      "brandId": "moyu",
+      "category": "4x4",
+      "shape": "CUBE",
+      "size": 4,
+      "features": [
+        "4x4 nam châm"
+      ],
+      "reviews": [
+        "Được ưa chuộng trong thi đấu 4x4",
+        "Hơi nặng tay với người mới"
+      ],
+      "audience": "Trung cấp trở lên"
+    },
+    {
+      "id": "moyu-meilong-megaminx",
+      "name": "MoYu MeiLong Megaminx",
+      "brandId": "moyu",
+      "category": "Megaminx",
+      "shape": "MEGAMINX",
+      "size": 3,
+      "features": [
+        "12 mặt ngũ giác",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Lựa chọn khởi đầu tốt cho Megaminx"
+      ],
+      "audience": "Người mới chơi Megaminx"
+    },
+    {
+      "id": "moyu-pyraminx",
+      "name": "MoYu Pyraminx",
+      "brandId": "moyu",
+      "category": "Pyraminx",
+      "shape": "PYRAMINX",
+      "size": 3,
+      "features": [
+        "Kim tự tháp 4 mặt tam giác"
+      ],
+      "reviews": [
+        "Dễ học, giải nhanh — phù hợp làm puzzle thứ hai sau 3x3"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "qiyi-ms",
+      "name": "QiYi MS 3x3",
+      "brandId": "qiyi",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Hiệu năng tốt so với giá",
+        "Thường được khuyên cho người mới muốn có nam châm"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "qiyi-warrior-s",
+      "name": "QiYi Warrior S",
+      "brandId": "qiyi",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Không nam châm",
+        "Rất rẻ"
+      ],
+      "reviews": [
+        "Bền, đủ dùng để học cách giải",
+        "Kém ổn định hơn cube nam châm"
+      ],
+      "audience": "Người mới bắt đầu"
+    },
+    {
+      "id": "qiyi-ms-2x2",
+      "name": "QiYi MS 2x2",
+      "brandId": "qiyi",
+      "category": "2x2",
+      "shape": "CUBE",
+      "size": 2,
+      "features": [
+        "2x2 nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Mượt, phù hợp luyện tốc độ cơ bản"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "qiyi-clock",
+      "name": "QiYi Clock",
+      "brandId": "qiyi",
+      "category": "Clock",
+      "shape": "CLOCK",
+      "size": 3,
+      "features": [
+        "Puzzle đồng hồ 2 mặt, 9 kim mỗi mặt"
+      ],
+      "reviews": [
+        "Thú vị, cách giải khác hẳn cube"
+      ],
+      "audience": "Người thích puzzle lạ"
+    },
+    {
+      "id": "xman-tornado",
+      "name": "X-Man Tornado (QiYi)",
+      "brandId": "qiyi",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Dòng thi đấu của X-Man Design (thuộc QiYi)"
+      ],
+      "reviews": [
+        "Rất nhanh, được nhiều speedcuber dùng",
+        "Cần thời gian để quen độ nhạy"
+      ],
+      "audience": "Người chơi thi đấu"
+    },
+    {
+      "id": "xman-volt",
+      "name": "X-Man Volt Square-1 (QiYi)",
+      "brandId": "qiyi",
+      "category": "Square-1",
+      "shape": "SQUARE1",
+      "size": 3,
+      "features": [
+        "Square-1 nam châm"
+      ],
+      "reviews": [
+        "Một trong những Square-1 được đánh giá cao"
+      ],
+      "audience": "Trung cấp trở lên"
+    },
+    {
+      "id": "yj-mgc",
+      "name": "YJ MGC 3x3",
+      "brandId": "yj",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Ổn định, dễ chơi; một lựa chọn kinh tế"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "yj-mgc-2x2",
+      "name": "YJ MGC 2x2",
+      "brandId": "yj",
+      "category": "2x2",
+      "shape": "CUBE",
+      "size": 2,
+      "features": [
+        "2x2 nam châm"
+      ],
+      "reviews": [
+        "Nhẹ, xoay nhanh"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "yj-mgc-skewb",
+      "name": "YJ MGC Skewb",
+      "brandId": "yj",
+      "category": "Skewb",
+      "shape": "SKEWB",
+      "size": 3,
+      "features": [
+        "Skewb nam châm",
+        "Xoay theo trục góc"
+      ],
+      "reviews": [
+        "Dễ học, phù hợp người mới chơi Skewb"
+      ],
+      "audience": "Người mới"
+    },
+    {
+      "id": "dayan-tengyun",
+      "name": "DaYan TengYun",
+      "brandId": "dayan",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm"
+      ],
+      "reviews": [
+        "Cảm giác xoay mềm, êm"
+      ],
+      "audience": "Trung cấp"
+    },
+    {
+      "id": "dayan-zhanchi",
+      "name": "DaYan ZhanChi",
+      "brandId": "dayan",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Không nam châm",
+        "Mẫu kinh điển"
+      ],
+      "reviews": [
+        "Từng là cube thi đấu rất phổ biến; nay mang tính 'huyền thoại'"
+      ],
+      "audience": "Người sưu tầm"
+    },
+    {
+      "id": "shengshou-7x7",
+      "name": "ShengShou 7x7",
+      "brandId": "shengshou",
+      "category": "7x7",
+      "shape": "CUBE",
+      "size": 7,
+      "features": [
+        "Cube lớn giá rẻ"
+      ],
+      "reviews": [
+        "Lựa chọn tiết kiệm để thử cube lớn",
+        "Cần chỉnh/bôi trơn để xoay êm"
+      ],
+      "audience": "Người muốn thử cube lớn"
+    },
+    {
+      "id": "shengshou-mrm-5x5",
+      "name": "ShengShou Mr. M 5x5",
+      "brandId": "shengshou",
+      "category": "5x5",
+      "shape": "CUBE",
+      "size": 5,
+      "features": [
+        "5x5 nam châm",
+        "Giá rẻ"
+      ],
+      "reviews": [
+        "Giá tốt cho 5x5 có nam châm"
+      ],
+      "audience": "Người mới chơi 5x5"
+    },
+    {
+      "id": "rubiks-original",
+      "name": "Rubik's Cube 3x3 (bản gốc)",
+      "brandId": "rubiks",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Thiết kế gốc",
+        "Dễ mua ở cửa hàng đồ chơi"
+      ],
+      "reviews": [
+        "Bền, mang tính biểu tượng",
+        "Xoay nặng và chậm hơn speedcube"
+      ],
+      "audience": "Người chơi giải trí"
+    },
+    {
+      "id": "rubiks-speed",
+      "name": "Rubik's Speed Cube",
+      "brandId": "rubiks",
+      "category": "3x3",
+      "shape": "CUBE",
+      "size": 3,
+      "features": [
+        "Nam châm",
+        "Phiên bản tốc độ của thương hiệu gốc"
+      ],
+      "reviews": [
+        "Tốt hơn nhiều bản gốc khi giải nhanh"
+      ],
+      "audience": "Người mới đến trung cấp"
+    }
+  ]
+}

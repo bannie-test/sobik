@@ -119,3 +119,31 @@ class ContentTest {
         for (f in 0 until 6) for (r in 1..2) for (c in 1..2) assertEquals(s0.colorAt(f * 16 + r * 4 + c), s.colorAt(f * 16 + r * 4 + c))
     }
 }
+
+class PuzzleCatalogTest {
+    private val repo = ContentRepository()
+
+    @Test
+    fun `puzzle catalog is consistent`() {
+        assertTrue(repo.puzzleBrands.size >= 5)
+        assertTrue(repo.puzzles.size >= 15)
+        assertEquals(repo.puzzles.size, repo.puzzles.map { it.id }.toSet().size)
+        for (p in repo.puzzles) {
+            assertNotNull(repo.brand(p.brandId), p.id)
+            assertTrue(p.features.isNotEmpty() && p.reviews.isNotEmpty(), p.id)
+            assertTrue(p.size in 2..7, p.id)
+        }
+        for (b in repo.puzzleBrands) assertTrue(b.color.toLongOrNull(16) != null, b.id)
+        assertTrue(repo.puzzleDisclaimer.isNotBlank())
+    }
+
+    @Test
+    fun `lessons have target pictures and notation moves parse`() {
+        val masks = setOf("cross", "firstLayer", "f2l", "yellowCross", "yellowFace", "yellowCorners", "solved")
+        for (l in repo.beginnerLessons) {
+            assertTrue(l.targetMask in masks, l.id)
+            assertTrue(l.targetView in setOf("top", "bottom"), l.id)
+            l.notation.mapNotNull { it.move }.forEach { assertTrue(Notation.parse(it).isNotEmpty()) }
+        }
+    }
+}

@@ -16,6 +16,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
@@ -43,6 +44,9 @@ import com.sobik.model.AlgorithmCategory
 import com.sobik.model.ColorScheme
 import com.sobik.model.CubeState
 import com.sobik.model.Difficulty
+import com.sobik.model.Face
+import com.sobik.model.Move
+import com.sobik.model.Notation
 import com.sobik.visualization.Cube3DView
 import com.sobik.visualization.LastLayerView
 
@@ -119,16 +123,54 @@ fun AlgorithmDetailScreen(container: AppContainer, nav: Navigator, id: String) {
             if (alg.category == AlgorithmCategory.OLL || alg.category == AlgorithmCategory.PLL) {
                 CaseImage(alg, Modifier.size(160.dp).align(Alignment.CenterHorizontally))
             }
-            AlgorithmPlayer(alg.cubeType, alg.moves, alg.setup, cubeHeight = 260)
-            SectionCard("Công thức") {
-                NotationText(alg.notation)
-                if (alg.alternatives.isNotEmpty()) {
-                    Text("Công thức thay thế:", fontWeight = FontWeight.Medium)
-                    alg.alternatives.forEach { NotationText(it) }
+            var selected by rememberSaveable(id) { mutableStateOf(0) }
+            val versions = remember(id) { listOf(alg.notation) + alg.alternatives }
+            val case = remember(id) { CubeState.solved(alg.cubeType, ColorScheme.YELLOW_TOP).applyMoves(alg.setup) }
+            val shown = remember(id, selected) { alignToCase(case, Notation.parse(versions[selected]), alg.category) }
+            AlgorithmPlayer(alg.cubeType, shown, alg.setup, cubeHeight = 260)
+            SectionCard(if (versions.size > 1) "Các cách giải (${versions.size}) — chạm để xem" else "Công thức") {
+                versions.forEachIndexed { i, v ->
+                    Row(
+                        Modifier.fillMaxWidth().clickable { selected = i }.padding(vertical = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        RadioButton(selected = selected == i, onClick = { selected = i })
+                        Column {
+                            Text(if (i == 0) "Chính" else "Cách ${i + 1}", style = MaterialTheme.typography.labelSmall)
+                            NotationText(v)
+                        }
+                    }
+                }
+                if (shown != Notation.parse(versions[selected])) {
+                    Text("Mô phỏng: ${Notation.format(shown)} (đã thêm xoay U để khớp với trường hợp).", style = MaterialTheme.typography.bodySmall)
                 }
             }
             if (alg.recognition.isNotBlank()) SectionCard("Nhận diện") { Text(alg.recognition) }
             if (alg.explanation.isNotBlank()) SectionCard("Giải thích") { Text(alg.explanation) }
         }
+    }
+}
+
+/**
+ * An alternative algorithm may expect the case turned by a U move, or leave a final U turn.
+ * Returns the moves with the needed U turns added so it solves [case] for its category.
+ */
+fun alignToCase(case: CubeState, moves: List<Move>, category: AlgorithmCategory): List<Move> {
+    if (case.size != 3) return moves
+    val u = listOf(emptyList(), Notation.parse("U"), Notation.parse("U2"), Notation.parse("U'"))
+    for (a in u) for (b in u) {
+        val candidate = a + moves + b
+        if (reached(case.applyMoves(candidate), category)) return Notation.simplify(candidate)
+    }
+    return moves
+}
+
+private fun reached(s: CubeState, category: AlgorithmCategory): Boolean {
+    fun faceDone(f: Face, rows: IntRange) = rows.all { r -> (0 until 3).all { c -> s[f, r * 3 + c] == s.center(f) } }
+    val f2l = faceDone(Face.D, 0..2) && listOf(Face.F, Face.R, Face.B, Face.L).all { faceDone(it, 1..2) }
+    return when (category) {
+        AlgorithmCategory.F2L -> f2l
+        AlgorithmCategory.OLL -> f2l && faceDone(Face.U, 0..2)
+        else -> s.isSolved()
     }
 }

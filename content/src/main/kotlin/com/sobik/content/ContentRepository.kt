@@ -4,6 +4,8 @@ import com.sobik.model.Algorithm
 import com.sobik.model.AlgorithmCategory
 import com.sobik.model.BeginnerLesson
 import com.sobik.model.CubeGuide
+import com.sobik.model.PuzzleBrand
+import com.sobik.model.PuzzleProduct
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -12,6 +14,9 @@ internal data class AlgorithmFile(val version: Int, val algorithms: List<Algorit
 
 @Serializable
 internal data class LessonFile(val version: Int, val title: String, val lessons: List<BeginnerLesson>)
+
+@Serializable
+internal data class PuzzleFile(val version: Int, val disclaimer: String = "", val brands: List<PuzzleBrand>, val puzzles: List<PuzzleProduct>)
 
 @Serializable
 internal data class GuideFile(val version: Int, val guides: List<CubeGuide>, val algorithms: List<Algorithm> = emptyList())
@@ -35,6 +40,12 @@ class ContentRepository(private val source: ContentSource = ClasspathContentSour
     private val guideFile: GuideFile by lazy { json.decodeFromString(source.read("big_cubes.json")) }
     val bigCubeGuides: List<CubeGuide> get() = guideFile.guides
     val bigCubeAlgorithms: List<Algorithm> get() = guideFile.algorithms
+
+    private val puzzleFile: PuzzleFile by lazy { json.decodeFromString(source.read("puzzles.json")) }
+    val puzzleBrands: List<PuzzleBrand> get() = puzzleFile.brands
+    val puzzles: List<PuzzleProduct> get() = puzzleFile.puzzles
+    val puzzleDisclaimer: String get() = puzzleFile.disclaimer
+    fun brand(id: String): PuzzleBrand? = puzzleBrands.firstOrNull { it.id == id }
 
     val allAlgorithms: List<Algorithm> get() = algorithms3x3 + bigCubeAlgorithms
 

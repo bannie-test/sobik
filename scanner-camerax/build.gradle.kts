@@ -24,7 +24,7 @@ dependencies {
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
-    implementation(libs.camerax.core)
+    api(libs.camerax.core) // CubeFrameAnalyzer exposes ImageAnalysis.Analyzer in its public API
     implementation(libs.camerax.camera2)
     implementation(libs.camerax.lifecycle)
     implementation(libs.camerax.view)

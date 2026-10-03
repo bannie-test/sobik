@@ -57,6 +57,11 @@ Cần JDK 17 và Android SDK (compileSdk 35), cách đơn giản nhất là cài
 
 ### Gỡ cài đặt / cập nhật
 
+- Nếu gặp lỗi **"Ứng dụng chưa được cài đặt" (App not installed)**: gỡ mọi bản Sobik cũ trước rồi cài lại
+  (các bản build trước ngày 03/10/2026 dùng khóa ký khác, không cài đè được). Trên Xiaomi/Redmi/POCO tắt
+  *Tối ưu hóa MIUI* trong Tùy chọn nhà phát triển; trên Samsung tắt *Auto Blocker*. Cài qua
+  `adb install -r app-debug.apk` sẽ in ra mã lỗi chính xác (`INSTALL_FAILED_...`).
+
 - Cập nhật: cài đè file APK mới (cùng chữ ký debug của cùng một máy build). Nếu báo xung đột chữ ký, gỡ bản cũ trước.
 - Gỡ: giữ biểu tượng Sobik → **Gỡ cài đặt**, hoặc `adb uninstall com.sobik.app`.
 

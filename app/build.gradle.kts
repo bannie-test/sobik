@@ -16,6 +16,17 @@ android {
         versionName = "0.1.0"
     }
 
+    signingConfigs {
+        // Shared debug key committed to the repo (debug only, not secret): every CI build is signed
+        // with the same certificate, so a newer debug APK can be installed over an older one.
+        getByName("debug") {
+            storeFile = file("debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true

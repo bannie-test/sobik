@@ -1,487 +1,1501 @@
 {
-  "version": 1,
-  "disclaimer": "Thông tin mang tính tham khảo, tổng hợp từ nhận xét phổ biến trong cộng đồng; trải nghiệm có thể khác theo phiên bản và cách chỉnh. Hình ảnh là minh hoạ do ứng dụng vẽ, ký hiệu hãng là chữ viết tắt, không phải logo chính thức.",
-  "brands": [
-    {
-      "id": "gan",
-      "name": "GAN",
-      "country": "Trung Quốc",
-      "summary": "Hãng cube cao cấp, nổi tiếng với các mẫu nam châm, hệ thống chỉnh lực và cube thông minh kết nối Bluetooth.",
-      "mark": "GAN",
-      "color": "FF1565C0"
-    },
-    {
-      "id": "moyu",
-      "name": "MoYu",
-      "country": "Trung Quốc",
-      "summary": "Hãng lớn với dải sản phẩm rộng: dòng RS giá rẻ cho người mới và dòng WeiLong cao cấp cho thi đấu.",
-      "mark": "MY",
-      "color": "FFD32F2F"
-    },
-    {
-      "id": "qiyi",
-      "name": "QiYi",
-      "country": "Trung Quốc",
-      "summary": "Nổi tiếng với cube giá rẻ mà chất lượng tốt; có thương hiệu con X-Man Design cho các mẫu thi đấu.",
-      "mark": "QY",
-      "color": "FFF57C00"
-    },
-    {
-      "id": "yj",
-      "name": "YJ (YongJun)",
-      "country": "Trung Quốc",
-      "summary": "Cube giá phải chăng, dòng MGC có nam châm sẵn, phổ biến với người mới và học sinh.",
-      "mark": "YJ",
-      "color": "FF2E7D32"
-    },
-    {
-      "id": "dayan",
-      "name": "DaYan",
-      "country": "Trung Quốc",
-      "summary": "Một trong những hãng speedcube lâu đời; nhiều thiết kế cơ chế xoay có ảnh hưởng tới các thế hệ sau.",
-      "mark": "DY",
-      "color": "FF6A1B9A"
-    },
-    {
-      "id": "shengshou",
-      "name": "ShengShou",
-      "country": "Trung Quốc",
-      "summary": "Mạnh về cube kích thước lớn và các loại puzzle lạ với giá dễ tiếp cận.",
-      "mark": "SS",
-      "color": "FF00838F"
-    },
-    {
-      "id": "rubiks",
-      "name": "Rubik's",
-      "country": "Hungary (thương hiệu gốc)",
-      "summary": "Thương hiệu gốc của khối Rubik do Ernő Rubik phát minh năm 1974; phổ biến rộng rãi, có cả mẫu dành cho tốc độ.",
-      "mark": "R",
-      "color": "FFC62828"
-    }
-  ],
-  "puzzles": [
-    {
-      "id": "gan-356-m",
-      "name": "GAN 356 M",
-      "brandId": "gan",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Chỉnh được lực nam châm và độ căng",
-        "Tầm trung của GAN"
-      ],
-      "reviews": [
-        "Xoay nhẹ, ổn định, dễ làm quen",
-        "Được nhiều người xem là lựa chọn đầu tiên khi lên đời cube nam châm"
-      ],
-      "audience": "Người mới đến trung cấp"
-    },
-    {
-      "id": "gan-12-maglev",
-      "name": "GAN 12 Maglev",
-      "brandId": "gan",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm + cơ chế maglev (đẩy bằng nam châm thay lò xo)",
-        "Nhiều tuỳ chỉnh",
-        "Dòng flagship"
-      ],
-      "reviews": [
-        "Rất nhanh và ổn định, cảm giác 'cao cấp'",
-        "Giá cao so với mặt bằng chung"
-      ],
-      "audience": "Người chơi thi đấu"
-    },
-    {
-      "id": "gan-356-i",
-      "name": "GAN 356 i (smart cube)",
-      "brandId": "gan",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Kết nối Bluetooth với ứng dụng",
-        "Theo dõi từng bước xoay, bấm giờ tự động"
-      ],
-      "reviews": [
-        "Rất hữu ích để luyện tập và học thuật toán",
-        "Cần sạc pin; nặng hơn cube thường"
-      ],
-      "audience": "Người muốn luyện tập có số liệu"
-    },
-    {
-      "id": "gan-251-m",
-      "name": "GAN 251 M",
-      "brandId": "gan",
-      "category": "2x2",
-      "shape": "CUBE",
-      "size": 2,
-      "features": [
-        "2x2 nam châm",
-        "Kích thước nhỏ gọn"
-      ],
-      "reviews": [
-        "Xoay mượt, ít kẹt",
-        "Giá cao hơn 2x2 phổ thông"
-      ],
-      "audience": "Trung cấp trở lên"
-    },
-    {
-      "id": "gan-460-m",
-      "name": "GAN 460 M",
-      "brandId": "gan",
-      "category": "4x4",
-      "shape": "CUBE",
-      "size": 4,
-      "features": [
-        "4x4 nam châm"
-      ],
-      "reviews": [
-        "Ổn định khi ghép cạnh",
-        "Giá cao"
-      ],
-      "audience": "Người chơi 4x4 nghiêm túc"
-    },
-    {
-      "id": "moyu-rs3m",
-      "name": "MoYu RS3 M",
-      "brandId": "moyu",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Một trong những cube nam châm 'đáng tiền' nhất cho người mới",
-        "Cần bôi trơn/chỉnh lại để đạt cảm giác tốt nhất"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "moyu-weilong-wrm",
-      "name": "MoYu WeiLong WR M",
-      "brandId": "moyu",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Dòng thi đấu cao cấp của MoYu"
-      ],
-      "reviews": [
-        "Nhanh, cắt góc tốt",
-        "Nhiều phiên bản theo năm, cảm giác khác nhau"
-      ],
-      "audience": "Người chơi thi đấu"
-    },
-    {
-      "id": "moyu-rs2m",
-      "name": "MoYu RS2 M",
-      "brandId": "moyu",
-      "category": "2x2",
-      "shape": "CUBE",
-      "size": 2,
-      "features": [
-        "2x2 nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Rất phổ biến cho người mới chơi 2x2"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "moyu-aosu-wrm",
-      "name": "MoYu AoSu WR M",
-      "brandId": "moyu",
-      "category": "4x4",
-      "shape": "CUBE",
-      "size": 4,
-      "features": [
-        "4x4 nam châm"
-      ],
-      "reviews": [
-        "Được ưa chuộng trong thi đấu 4x4",
-        "Hơi nặng tay với người mới"
-      ],
-      "audience": "Trung cấp trở lên"
-    },
-    {
-      "id": "moyu-meilong-megaminx",
-      "name": "MoYu MeiLong Megaminx",
-      "brandId": "moyu",
-      "category": "Megaminx",
-      "shape": "MEGAMINX",
-      "size": 3,
-      "features": [
-        "12 mặt ngũ giác",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Lựa chọn khởi đầu tốt cho Megaminx"
-      ],
-      "audience": "Người mới chơi Megaminx"
-    },
-    {
-      "id": "moyu-pyraminx",
-      "name": "MoYu Pyraminx",
-      "brandId": "moyu",
-      "category": "Pyraminx",
-      "shape": "PYRAMINX",
-      "size": 3,
-      "features": [
-        "Kim tự tháp 4 mặt tam giác"
-      ],
-      "reviews": [
-        "Dễ học, giải nhanh — phù hợp làm puzzle thứ hai sau 3x3"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "qiyi-ms",
-      "name": "QiYi MS 3x3",
-      "brandId": "qiyi",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Hiệu năng tốt so với giá",
-        "Thường được khuyên cho người mới muốn có nam châm"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "qiyi-warrior-s",
-      "name": "QiYi Warrior S",
-      "brandId": "qiyi",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Không nam châm",
-        "Rất rẻ"
-      ],
-      "reviews": [
-        "Bền, đủ dùng để học cách giải",
-        "Kém ổn định hơn cube nam châm"
-      ],
-      "audience": "Người mới bắt đầu"
-    },
-    {
-      "id": "qiyi-ms-2x2",
-      "name": "QiYi MS 2x2",
-      "brandId": "qiyi",
-      "category": "2x2",
-      "shape": "CUBE",
-      "size": 2,
-      "features": [
-        "2x2 nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Mượt, phù hợp luyện tốc độ cơ bản"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "qiyi-clock",
-      "name": "QiYi Clock",
-      "brandId": "qiyi",
-      "category": "Clock",
-      "shape": "CLOCK",
-      "size": 3,
-      "features": [
-        "Puzzle đồng hồ 2 mặt, 9 kim mỗi mặt"
-      ],
-      "reviews": [
-        "Thú vị, cách giải khác hẳn cube"
-      ],
-      "audience": "Người thích puzzle lạ"
-    },
-    {
-      "id": "xman-tornado",
-      "name": "X-Man Tornado (QiYi)",
-      "brandId": "qiyi",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Dòng thi đấu của X-Man Design (thuộc QiYi)"
-      ],
-      "reviews": [
-        "Rất nhanh, được nhiều speedcuber dùng",
-        "Cần thời gian để quen độ nhạy"
-      ],
-      "audience": "Người chơi thi đấu"
-    },
-    {
-      "id": "xman-volt",
-      "name": "X-Man Volt Square-1 (QiYi)",
-      "brandId": "qiyi",
-      "category": "Square-1",
-      "shape": "SQUARE1",
-      "size": 3,
-      "features": [
-        "Square-1 nam châm"
-      ],
-      "reviews": [
-        "Một trong những Square-1 được đánh giá cao"
-      ],
-      "audience": "Trung cấp trở lên"
-    },
-    {
-      "id": "yj-mgc",
-      "name": "YJ MGC 3x3",
-      "brandId": "yj",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Ổn định, dễ chơi; một lựa chọn kinh tế"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "yj-mgc-2x2",
-      "name": "YJ MGC 2x2",
-      "brandId": "yj",
-      "category": "2x2",
-      "shape": "CUBE",
-      "size": 2,
-      "features": [
-        "2x2 nam châm"
-      ],
-      "reviews": [
-        "Nhẹ, xoay nhanh"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "yj-mgc-skewb",
-      "name": "YJ MGC Skewb",
-      "brandId": "yj",
-      "category": "Skewb",
-      "shape": "SKEWB",
-      "size": 3,
-      "features": [
-        "Skewb nam châm",
-        "Xoay theo trục góc"
-      ],
-      "reviews": [
-        "Dễ học, phù hợp người mới chơi Skewb"
-      ],
-      "audience": "Người mới"
-    },
-    {
-      "id": "dayan-tengyun",
-      "name": "DaYan TengYun",
-      "brandId": "dayan",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm"
-      ],
-      "reviews": [
-        "Cảm giác xoay mềm, êm"
-      ],
-      "audience": "Trung cấp"
-    },
-    {
-      "id": "dayan-zhanchi",
-      "name": "DaYan ZhanChi",
-      "brandId": "dayan",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Không nam châm",
-        "Mẫu kinh điển"
-      ],
-      "reviews": [
-        "Từng là cube thi đấu rất phổ biến; nay mang tính 'huyền thoại'"
-      ],
-      "audience": "Người sưu tầm"
-    },
-    {
-      "id": "shengshou-7x7",
-      "name": "ShengShou 7x7",
-      "brandId": "shengshou",
-      "category": "7x7",
-      "shape": "CUBE",
-      "size": 7,
-      "features": [
-        "Cube lớn giá rẻ"
-      ],
-      "reviews": [
-        "Lựa chọn tiết kiệm để thử cube lớn",
-        "Cần chỉnh/bôi trơn để xoay êm"
-      ],
-      "audience": "Người muốn thử cube lớn"
-    },
-    {
-      "id": "shengshou-mrm-5x5",
-      "name": "ShengShou Mr. M 5x5",
-      "brandId": "shengshou",
-      "category": "5x5",
-      "shape": "CUBE",
-      "size": 5,
-      "features": [
-        "5x5 nam châm",
-        "Giá rẻ"
-      ],
-      "reviews": [
-        "Giá tốt cho 5x5 có nam châm"
-      ],
-      "audience": "Người mới chơi 5x5"
-    },
-    {
-      "id": "rubiks-original",
-      "name": "Rubik's Cube 3x3 (bản gốc)",
-      "brandId": "rubiks",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Thiết kế gốc",
-        "Dễ mua ở cửa hàng đồ chơi"
-      ],
-      "reviews": [
-        "Bền, mang tính biểu tượng",
-        "Xoay nặng và chậm hơn speedcube"
-      ],
-      "audience": "Người chơi giải trí"
-    },
-    {
-      "id": "rubiks-speed",
-      "name": "Rubik's Speed Cube",
-      "brandId": "rubiks",
-      "category": "3x3",
-      "shape": "CUBE",
-      "size": 3,
-      "features": [
-        "Nam châm",
-        "Phiên bản tốc độ của thương hiệu gốc"
-      ],
-      "reviews": [
-        "Tốt hơn nhiều bản gốc khi giải nhanh"
-      ],
-      "audience": "Người mới đến trung cấp"
-    }
-  ]
+ "version": 2,
+ "disclaimer": "Kệ trưng bày tham khảo, không bán hàng và không có giá. Thông tin mẫu tổng hợp từ trang hãng, cửa hàng và nhận xét cộng đồng (xem Nguồn); trải nghiệm có thể khác theo phiên bản. Logo là chữ thương hiệu dạng vector (wordmark) dựng lại từ bộ dữ liệu bạn cung cấp, không phải tác phẩm logo chính thức của hãng.",
+ "sources": [
+  {
+   "name": "QiYi official",
+   "url": "https://www.qiyitoys.net/en/",
+   "supports": [
+    "qiyi",
+    "qy-cube",
+    "qy-toys",
+    "mofangge",
+    "x-man-design",
+    "the-valk"
+   ]
+  },
+  {
+   "name": "GAN official",
+   "url": "https://www.gancube.com/pages/about-us",
+   "supports": [
+    "gan",
+    "monster-go",
+    "swift-block"
+   ]
+  },
+  {
+   "name": "YJ official",
+   "url": "https://www.youngjoecube.com/",
+   "supports": [
+    "yj",
+    "mgc"
+   ]
+  },
+  {
+   "name": "The Cubicle popular brands",
+   "url": "https://www.thecubicle.com/pages/collections/top-brands",
+   "supports": [
+    "brand discovery"
+   ]
+  },
+  {
+   "name": "Atoutcubes manufacturers",
+   "url": "https://www.atoutcubes.com/en/manufacturers",
+   "supports": [
+    "brand discovery"
+   ]
+  },
+  {
+   "name": "MoYu WeiLong WRM V11 (speedcube.nl)",
+   "url": "https://www.speedcube.nl/en/speedcube-en/3x3-en/moyu-weilong-wrm-v11-3x3/"
+  },
+  {
+   "name": "MoYu WeiLong V11 (SpeedCubeShop)",
+   "url": "https://speedcubeshop.com/products/moyu-weilong-3x3-v11-magnetic-maglev-20-magnet-ball-core-uv-coated"
+  },
+  {
+   "name": "PBCube WR 3x3 (TheCubicle)",
+   "url": "https://www.thecubicle.com/collections/new-arrivals/products/pbcube-wr-3x3-20-magnet-ball-core-maglev-uv?f=carousel"
+  },
+  {
+   "name": "GAN official — Speed Cube collection",
+   "url": "https://www.gancube.com/collections/gan-speed-cube"
+  },
+  {
+   "name": "GAN15 Maglev (GAN official)",
+   "url": "https://www.gancube.com/products/gan15-maglev-3x3-advanced-speed-cube"
+  },
+  {
+   "name": "X-Man Tornado V4 Pioneer (SpeedCubeShop)",
+   "url": "https://speedcubeshop.com/products/x-man-tornado-3x3-v4-pioneer-magnetic-maglev-core-magnets-uv-coated"
+  },
+  {
+   "name": "QiYi — Speedsolving wiki",
+   "url": "https://www.speedsolving.com/wiki/index.php?title=QiYi"
+  },
+  {
+   "name": "Super RS3M V2 review (TheCubicle)",
+   "url": "https://www.thecubicle.com/blogs/thecubicle-blogs/super-rs3m-v2"
+  },
+  {
+   "name": "MoYu RS3M V5 (SpeedCubeShop)",
+   "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-magnetic-dual-adjustment"
+  },
+  {
+   "name": "YJ MGC Evo II (TheCubicle)",
+   "url": "https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3"
+  },
+  {
+   "name": "What 2x2 should you buy in 2025 (speedcubing.org)",
+   "url": "https://speedcubing.org/blogs/news/what-2x2-should-you-buy-in-2025"
+  },
+  {
+   "name": "Puzzle Recommendations thread (Speedsolving)",
+   "url": "https://speedsolving.com/threads/which-cube-should-i-get-up-to-date-recommendations.70960"
+  }
+ ],
+ "notes": [
+  "QiYi official site states four current sub-brands: QY Cube, QY Toys, MoFangGe and X-Man Design.",
+  "QiYi history states The Valk was created in partnership with Mats Valk in 2016; it is retained as a related brand rather than one of the four current sub-brands.",
+  "YJ official materials describe MGC as a flagship product series/brand of YongJun; the registry therefore models MGC as a child brand/product-brand node.",
+  "GAN official site lists Monster Go and Swift Block as sub-brands.",
+  "For brands where a formal parent relationship was not verified, parent_id is null even if retailers commonly group them."
+ ],
+ "aliases": {
+  "qiyi mofangge": "mofangge",
+  "qiyi x-man design": "x-man-design",
+  "qiyi xman": "x-man-design",
+  "x-man": "x-man-design",
+  "xman design": "x-man-design",
+  "the valk": "the-valk",
+  "valk": "the-valk",
+  "yongjun": "yj",
+  "yongjun toys": "yj",
+  "yj mgc": "mgc",
+  "yongjun mgc": "mgc",
+  "mgc series": "mgc",
+  "moyu cubing classroom": "cubing-classroom",
+  "cubingclassroom": "cubing-classroom",
+  "moyu guoguan": "guoguan",
+  "guo guan": "guoguan",
+  "mofang jiaoshi": "mofangge",
+  "yuxin toys": "yuxin",
+  "dian sheng": "diansheng",
+  "dian sheng toys": "diansheng",
+  "cycloneboys": "cyclone-boys",
+  "cyclone boys cube": "cyclone-boys",
+  "very puzzle": "verypuzzle",
+  "fanxin toys": "fanxin",
+  "lanlan toys": "lanlan",
+  "rubik": "rubiks",
+  "rubik's cube": "rubiks",
+  "kungfu": "kfcube",
+  "kung fu cube": "kfcube",
+  "z cube": "z-cube",
+  "cube 4 you": "cube4you",
+  "xman": "x-man-design",
+  "pb": "pbcube",
+  "huameng": "huameng",
+  "moyu huameng": "huameng"
+ },
+ "brands": [
+  {
+   "id": "rubiks",
+   "name": "Rubik's",
+   "parentId": null,
+   "country": "Hungary (thương hiệu gốc)",
+   "summary": "Thương hiệu gốc của khối Rubik do Ernő Rubik phát minh năm 1974.",
+   "mark": "RU",
+   "color": "FFC62828",
+   "logo": {
+    "path": "M547 725Q668 725 720 680Q773 635 773 532Q773 430 720 386Q668 342 547 342H385V725ZM385 991V1556H0V63H588Q883 63 1020 162Q1158 261 1158 475Q1158 623 1086 718Q1015 813 871 858Q950 876 1012 940Q1075 1003 1139 1132L1348 1556H938L756 1185Q701 1073 644 1032Q588 991 494 991ZM1488 1120V436H1848V548Q1848 639 1847 776Q1846 914 1846 960Q1846 1095 1853 1154Q1860 1214 1877 1241Q1899 1276 1934 1295Q1970 1314 2016 1314Q2128 1314 2192 1228Q2256 1142 2256 989V436H2614V1556H2256V1394Q2175 1492 2084 1538Q1994 1585 1885 1585Q1691 1585 1590 1466Q1488 1347 1488 1120ZM3350 1325Q3465 1325 3526 1241Q3586 1157 3586 997Q3586 837 3526 753Q3465 669 3350 669Q3235 669 3174 754Q3112 838 3112 997Q3112 1156 3174 1240Q3235 1325 3350 1325ZM3112 600Q3186 502 3276 456Q3366 409 3483 409Q3690 409 3823 574Q3956 738 3956 997Q3956 1256 3823 1420Q3690 1585 3483 1585Q3366 1585 3276 1538Q3186 1492 3112 1394V1556H2754V0H3112ZM4096 436H4454V1556H4096ZM4096 0H4454V292H4096ZM4594 0H4952V847L5364 436H5780L5233 950L5823 1556H5389L4952 1089V1556H4594ZM6200 63V618H5963V63ZM7281 471V743Q7166 695 7059 671Q6952 647 6857 647Q6755 647 6706 672Q6656 698 6656 751Q6656 794 6694 817Q6731 840 6828 851L6891 860Q7166 895 7261 975Q7356 1055 7356 1226Q7356 1405 7224 1495Q7092 1585 6830 1585Q6719 1585 6600 1568Q6482 1550 6357 1515V1243Q6464 1295 6576 1321Q6689 1347 6805 1347Q6910 1347 6963 1318Q7016 1289 7016 1232Q7016 1184 6980 1160Q6943 1137 6834 1124L6771 1116Q6532 1086 6436 1005Q6340 924 6340 759Q6340 581 6462 495Q6584 409 6836 409Q6935 409 7044 424Q7153 439 7281 471Z",
+    "width": 7356,
+    "height": 1585
+   }
+  },
+  {
+   "id": "gan",
+   "name": "GAN",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Hãng cao cấp: dòng Maglev, cube thông minh Bluetooth; sở hữu các thương hiệu con Monster Go và Swift Block.",
+   "mark": "GA",
+   "color": "FF1565C0",
+   "logo": {
+    "path": "M1428 1409Q1284 1479 1129 1514Q974 1549 809 1549Q436 1549 218 1340Q0 1132 0 775Q0 414 222 207Q444 0 830 0Q979 0 1116 28Q1252 56 1373 111V420Q1248 349 1124 314Q1001 279 877 279Q647 279 522 408Q398 536 398 775Q398 1012 518 1141Q638 1270 859 1270Q919 1270 970 1262Q1022 1255 1063 1239V949H828V691H1428ZM2652 1248H2050L1955 1520H1568L2121 27H2580L3133 1520H2746ZM2146 971H2555L2351 377ZM3273 27H3703L4246 1051V27H4611V1520H4181L3638 496V1520H3273Z",
+    "width": 4611,
+    "height": 1549
+   }
+  },
+  {
+   "id": "moyu",
+   "name": "MoYu",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Hãng lớn: dòng WeiLong thi đấu và RS giá rẻ; có các thương hiệu con như PBCube, Cubing Classroom.",
+   "mark": "MO",
+   "color": "FF1E88E5",
+   "logo": {
+    "path": "M0 0H490L830 799L1172 0H1661V1493H1297V401L953 1206H709L365 401V1493H0ZM2418 602Q2299 602 2236 688Q2174 773 2174 934Q2174 1095 2236 1180Q2299 1266 2418 1266Q2535 1266 2597 1180Q2659 1095 2659 934Q2659 773 2597 688Q2535 602 2418 602ZM2418 346Q2707 346 2870 502Q3032 658 3032 934Q3032 1210 2870 1366Q2707 1522 2418 1522Q2128 1522 1964 1366Q1801 1210 1801 934Q1801 658 1964 502Q2128 346 2418 346ZM3172 0H3593L3933 532L4273 0H4695L4126 864V1493H3741V864ZM4835 1057V373H5195V485Q5195 576 5194 714Q5193 851 5193 897Q5193 1032 5200 1092Q5207 1151 5224 1178Q5246 1213 5282 1232Q5317 1251 5363 1251Q5475 1251 5539 1165Q5603 1079 5603 926V373H5961V1493H5603V1331Q5522 1429 5432 1476Q5341 1522 5232 1522Q5038 1522 4936 1403Q4835 1284 4835 1057Z",
+    "width": 5961,
+    "height": 1522
+   }
+  },
+  {
+   "id": "pbcube",
+   "name": "PBCube",
+   "parentId": "moyu",
+   "country": "Trung Quốc",
+   "summary": "Thương hiệu con chuyên biệt của MoYu, dòng flagship WR do nhà vô địch thế giới Yiheng Wang tham gia phát triển.",
+   "mark": "PB",
+   "color": "FF263238",
+   "logo": {
+    "path": "M0 0H639Q924 0 1076 126Q1229 253 1229 487Q1229 722 1076 848Q924 975 639 975H385V1493H0ZM385 279V696H598Q710 696 771 642Q832 587 832 487Q832 387 771 333Q710 279 598 279ZM1967 578Q2058 578 2105 538Q2152 498 2152 420Q2152 343 2105 302Q2058 262 1967 262H1754V578ZM1980 1231Q2096 1231 2154 1182Q2213 1133 2213 1034Q2213 937 2155 888Q2097 840 1980 840H1754V1231ZM2338 694Q2462 730 2530 827Q2598 924 2598 1065Q2598 1281 2452 1387Q2306 1493 2008 1493H1369V0H1947Q2258 0 2398 94Q2537 188 2537 395Q2537 504 2486 580Q2435 657 2338 694Z",
+    "width": 2598,
+    "height": 1493
+   }
+  },
+  {
+   "id": "cubing-classroom",
+   "name": "Cubing Classroom",
+   "parentId": "moyu",
+   "country": "",
+   "summary": "",
+   "mark": "CU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M1270 1474Q1164 1529 1049 1557Q934 1585 809 1585Q436 1585 218 1376Q0 1168 0 811Q0 453 218 244Q436 36 809 36Q934 36 1049 64Q1164 92 1270 147V456Q1163 383 1059 349Q955 315 840 315Q634 315 516 447Q398 579 398 811Q398 1042 516 1174Q634 1306 840 1306Q955 1306 1059 1272Q1163 1238 1270 1165ZM1410 1120V436H1770V548Q1770 639 1769 776Q1768 914 1768 960Q1768 1095 1775 1154Q1782 1214 1799 1241Q1821 1276 1856 1295Q1892 1314 1938 1314Q2050 1314 2114 1228Q2178 1142 2178 989V436H2536V1556H2178V1394Q2097 1492 2006 1538Q1916 1585 1807 1585Q1613 1585 1512 1466Q1410 1347 1410 1120ZM3272 1325Q3387 1325 3448 1241Q3508 1157 3508 997Q3508 837 3448 753Q3387 669 3272 669Q3157 669 3096 754Q3034 838 3034 997Q3034 1156 3096 1240Q3157 1325 3272 1325ZM3034 600Q3108 502 3198 456Q3288 409 3405 409Q3612 409 3745 574Q3878 738 3878 997Q3878 1256 3745 1420Q3612 1585 3405 1585Q3288 1585 3198 1538Q3108 1492 3034 1394V1556H2676V0H3034ZM4018 436H4376V1556H4018ZM4018 0H4376V292H4018ZM5642 874V1556H5282V1445V1034Q5282 889 5276 834Q5269 779 5253 753Q5232 718 5196 698Q5160 679 5114 679Q5002 679 4938 766Q4874 852 4874 1005V1556H4516V436H4874V600Q4955 502 5046 456Q5137 409 5247 409Q5441 409 5542 528Q5642 647 5642 874ZM6624 1366Q6550 1464 6461 1510Q6372 1556 6255 1556Q6050 1556 5916 1394Q5782 1233 5782 983Q5782 732 5916 572Q6050 411 6255 411Q6372 411 6461 457Q6550 503 6624 602V436H6984V1443Q6984 1713 6814 1856Q6643 1998 6319 1998Q6214 1998 6116 1982Q6018 1966 5919 1933V1654Q6013 1708 6103 1734Q6193 1761 6284 1761Q6460 1761 6542 1684Q6624 1607 6624 1443ZM6388 669Q6277 669 6215 751Q6153 833 6153 983Q6153 1137 6213 1216Q6273 1296 6388 1296Q6500 1296 6562 1214Q6624 1132 6624 983Q6624 833 6562 751Q6500 669 6388 669ZM8844 1474Q8738 1529 8623 1557Q8508 1585 8383 1585Q8010 1585 7792 1376Q7574 1168 7574 811Q7574 453 7792 244Q8010 36 8383 36Q8508 36 8623 64Q8738 92 8844 147V456Q8737 383 8633 349Q8529 315 8414 315Q8208 315 8090 447Q7972 579 7972 811Q7972 1042 8090 1174Q8208 1306 8414 1306Q8529 1306 8633 1272Q8737 1238 8844 1165ZM8984 0H9342V1556H8984ZM10068 1052Q9956 1052 9900 1090Q9843 1128 9843 1202Q9843 1270 9888 1308Q9934 1347 10015 1347Q10116 1347 10185 1274Q10254 1202 10254 1093V1052ZM10615 917V1556H10254V1390Q10182 1492 10092 1538Q10002 1585 9873 1585Q9699 1585 9590 1484Q9482 1382 9482 1220Q9482 1023 9618 931Q9753 839 10043 839H10254V811Q10254 726 10187 686Q10120 647 9978 647Q9863 647 9764 670Q9665 693 9580 739V466Q9695 438 9811 424Q9927 409 10043 409Q10346 409 10480 528Q10615 648 10615 917ZM11696 471V743Q11581 695 11474 671Q11367 647 11272 647Q11170 647 11120 672Q11071 698 11071 751Q11071 794 11108 817Q11146 840 11243 851L11306 860Q11581 895 11676 975Q11771 1055 11771 1226Q11771 1405 11639 1495Q11507 1585 11245 1585Q11134 1585 11016 1568Q10897 1550 10772 1515V1243Q10879 1295 10992 1321Q11104 1347 11220 1347Q11325 1347 11378 1318Q11431 1289 11431 1232Q11431 1184 11394 1160Q11358 1137 11249 1124L11186 1116Q10947 1086 10851 1005Q10755 924 10755 759Q10755 581 10877 495Q10999 409 11251 409Q11350 409 11459 424Q11568 439 11696 471ZM12852 471V743Q12737 695 12630 671Q12523 647 12428 647Q12326 647 12276 672Q12227 698 12227 751Q12227 794 12264 817Q12302 840 12399 851L12462 860Q12737 895 12832 975Q12927 1055 12927 1226Q12927 1405 12795 1495Q12663 1585 12401 1585Q12290 1585 12172 1568Q12053 1550 11928 1515V1243Q12035 1295 12148 1321Q12260 1347 12376 1347Q12481 1347 12534 1318Q12587 1289 12587 1232Q12587 1184 12550 1160Q12514 1137 12405 1124L12342 1116Q12103 1086 12007 1005Q11911 924 11911 759Q11911 581 12033 495Q12155 409 12407 409Q12506 409 12615 424Q12724 439 12852 471ZM13899 741Q13852 719 13806 708Q13759 698 13712 698Q13574 698 13500 786Q13425 875 13425 1040V1556H13067V436H13425V620Q13494 510 13584 460Q13673 409 13798 409Q13816 409 13837 410Q13858 412 13898 417ZM14656 665Q14537 665 14474 750Q14412 836 14412 997Q14412 1158 14474 1244Q14537 1329 14656 1329Q14773 1329 14835 1244Q14897 1158 14897 997Q14897 836 14835 750Q14773 665 14656 665ZM14656 409Q14945 409 15108 565Q15270 721 15270 997Q15270 1273 15108 1429Q14945 1585 14656 1585Q14366 1585 14202 1429Q14039 1273 14039 997Q14039 721 14202 565Q14366 409 14656 409ZM16027 665Q15908 665 15846 750Q15783 836 15783 997Q15783 1158 15846 1244Q15908 1329 16027 1329Q16144 1329 16206 1244Q16268 1158 16268 997Q16268 836 16206 750Q16144 665 16027 665ZM16027 409Q16316 409 16478 565Q16641 721 16641 997Q16641 1273 16478 1429Q16316 1585 16027 1585Q15737 1585 15574 1429Q15410 1273 15410 997Q15410 721 15574 565Q15737 409 16027 409ZM17821 622Q17889 518 17982 464Q18076 409 18188 409Q18381 409 18482 528Q18583 647 18583 874V1556H18223V972Q18224 959 18224 945Q18225 931 18225 905Q18225 786 18190 732Q18155 679 18077 679Q17975 679 17920 763Q17864 847 17862 1006V1556H17502V972Q17502 786 17470 732Q17438 679 17356 679Q17253 679 17197 764Q17141 848 17141 1005V1556H16781V436H17141V600Q17207 505 17292 457Q17378 409 17481 409Q17597 409 17686 465Q17775 521 17821 622Z",
+    "width": 18583,
+    "height": 1998
+   }
+  },
+  {
+   "id": "guoguan",
+   "name": "GuoGuan",
+   "parentId": "moyu",
+   "country": "",
+   "summary": "",
+   "mark": "GU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M1428 1409Q1284 1479 1129 1514Q974 1549 809 1549Q436 1549 218 1340Q0 1132 0 775Q0 414 222 207Q444 0 830 0Q979 0 1116 28Q1252 56 1373 111V420Q1248 349 1124 314Q1001 279 877 279Q647 279 522 408Q398 536 398 775Q398 1012 518 1141Q638 1270 859 1270Q919 1270 970 1262Q1022 1255 1063 1239V949H828V691H1428ZM1568 1084V400H1928V512Q1928 603 1927 740Q1926 878 1926 924Q1926 1059 1933 1118Q1940 1178 1957 1205Q1979 1240 2014 1259Q2050 1278 2096 1278Q2208 1278 2272 1192Q2336 1106 2336 953V400H2694V1520H2336V1358Q2255 1456 2164 1502Q2074 1549 1965 1549Q1771 1549 1670 1430Q1568 1311 1568 1084ZM3451 629Q3332 629 3270 714Q3207 800 3207 961Q3207 1122 3270 1208Q3332 1293 3451 1293Q3568 1293 3630 1208Q3692 1122 3692 961Q3692 800 3630 714Q3568 629 3451 629ZM3451 373Q3740 373 3902 529Q4065 685 4065 961Q4065 1237 3902 1393Q3740 1549 3451 1549Q3161 1549 2998 1393Q2834 1237 2834 961Q2834 685 2998 529Q3161 373 3451 373ZM5633 1409Q5489 1479 5334 1514Q5179 1549 5014 1549Q4641 1549 4423 1340Q4205 1132 4205 775Q4205 414 4427 207Q4649 0 5035 0Q5184 0 5320 28Q5457 56 5578 111V420Q5453 349 5330 314Q5206 279 5082 279Q4852 279 4728 408Q4603 536 4603 775Q4603 1012 4723 1141Q4843 1270 5064 1270Q5124 1270 5176 1262Q5227 1255 5268 1239V949H5033V691H5633ZM5773 1084V400H6133V512Q6133 603 6132 740Q6131 878 6131 924Q6131 1059 6138 1118Q6145 1178 6162 1205Q6184 1240 6220 1259Q6255 1278 6301 1278Q6413 1278 6477 1192Q6541 1106 6541 953V400H6899V1520H6541V1358Q6460 1456 6370 1502Q6279 1549 6170 1549Q5976 1549 5874 1430Q5773 1311 5773 1084ZM7625 1016Q7513 1016 7456 1054Q7400 1092 7400 1166Q7400 1234 7446 1272Q7491 1311 7572 1311Q7673 1311 7742 1238Q7811 1166 7811 1057V1016ZM8172 881V1520H7811V1354Q7739 1456 7649 1502Q7559 1549 7430 1549Q7256 1549 7148 1448Q7039 1346 7039 1184Q7039 987 7174 895Q7310 803 7600 803H7811V775Q7811 690 7744 650Q7677 611 7535 611Q7420 611 7321 634Q7222 657 7137 703V430Q7252 402 7368 388Q7484 373 7600 373Q7903 373 8038 492Q8172 612 8172 881ZM9438 838V1520H9078V1409V998Q9078 853 9072 798Q9065 743 9049 717Q9028 682 8992 662Q8956 643 8910 643Q8798 643 8734 730Q8670 816 8670 969V1520H8312V400H8670V564Q8751 466 8842 420Q8933 373 9043 373Q9237 373 9338 492Q9438 611 9438 838Z",
+    "width": 9438,
+    "height": 1549
+   }
+  },
+  {
+   "id": "qiyi",
+   "name": "QiYi",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Hãng lớn với 4 thương hiệu con: QY Cube, QY Toys, MoFangGe và X-Man Design.",
+   "mark": "QI",
+   "color": "FFF57C00",
+   "logo": {
+    "path": "M809 1583H779Q410 1583 205 1379Q0 1175 0 811Q0 448 204 242Q409 36 768 36Q1131 36 1334 240Q1536 444 1536 811Q1536 1063 1428 1245Q1321 1427 1119 1519L1420 1855H1053ZM768 315Q592 315 495 445Q398 575 398 811Q398 1051 493 1178Q588 1306 768 1306Q945 1306 1042 1176Q1139 1046 1139 811Q1139 575 1042 445Q945 315 768 315ZM1676 436H2034V1556H1676ZM1676 0H2034V292H1676ZM2174 63H2595L2935 595L3275 63H3697L3128 927V1556H2743V927ZM3837 436H4195V1556H3837ZM3837 0H4195V292H3837Z",
+    "width": 4195,
+    "height": 1855
+   }
+  },
+  {
+   "id": "qy-cube",
+   "name": "QY Cube",
+   "parentId": "qiyi",
+   "country": "",
+   "summary": "",
+   "mark": "QY",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M809 1583H779Q410 1583 205 1379Q0 1175 0 811Q0 448 204 242Q409 36 768 36Q1131 36 1334 240Q1536 444 1536 811Q1536 1063 1428 1245Q1321 1427 1119 1519L1420 1855H1053ZM768 315Q592 315 495 445Q398 575 398 811Q398 1051 493 1178Q588 1306 768 1306Q945 1306 1042 1176Q1139 1046 1139 811Q1139 575 1042 445Q945 315 768 315ZM1676 63H2097L2437 595L2777 63H3199L2630 927V1556H2245V927ZM5059 1474Q4953 1529 4838 1557Q4723 1585 4598 1585Q4225 1585 4007 1376Q3789 1168 3789 811Q3789 453 4007 244Q4225 36 4598 36Q4723 36 4838 64Q4953 92 5059 147V456Q4952 383 4848 349Q4744 315 4629 315Q4423 315 4305 447Q4187 579 4187 811Q4187 1042 4305 1174Q4423 1306 4629 1306Q4744 1306 4848 1272Q4952 1238 5059 1165ZM5199 1120V436H5559V548Q5559 639 5558 776Q5557 914 5557 960Q5557 1095 5564 1154Q5571 1214 5588 1241Q5610 1276 5646 1295Q5681 1314 5727 1314Q5839 1314 5903 1228Q5967 1142 5967 989V436H6325V1556H5967V1394Q5886 1492 5796 1538Q5705 1585 5596 1585Q5402 1585 5300 1466Q5199 1347 5199 1120ZM7061 1325Q7176 1325 7236 1241Q7297 1157 7297 997Q7297 837 7236 753Q7176 669 7061 669Q6946 669 6884 754Q6823 838 6823 997Q6823 1156 6884 1240Q6946 1325 7061 1325ZM6823 600Q6897 502 6987 456Q7077 409 7194 409Q7401 409 7534 574Q7667 738 7667 997Q7667 1256 7534 1420Q7401 1585 7194 1585Q7077 1585 6987 1538Q6897 1492 6823 1394V1556H6465V0H6823ZM9009 993V1095H8172Q8185 1221 8263 1284Q8341 1347 8481 1347Q8594 1347 8712 1314Q8831 1280 8956 1212V1488Q8829 1536 8702 1560Q8575 1585 8448 1585Q8144 1585 7976 1430Q7807 1276 7807 997Q7807 723 7972 566Q8138 409 8428 409Q8692 409 8850 568Q9009 727 9009 993ZM8641 874Q8641 772 8582 710Q8522 647 8426 647Q8322 647 8257 706Q8192 764 8176 874Z",
+    "width": 9009,
+    "height": 1855
+   }
+  },
+  {
+   "id": "qy-toys",
+   "name": "QY Toys",
+   "parentId": "qiyi",
+   "country": "",
+   "summary": "",
+   "mark": "QY",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M809 1547H779Q410 1547 205 1343Q0 1139 0 775Q0 412 204 206Q409 0 768 0Q1131 0 1334 204Q1536 408 1536 775Q1536 1027 1428 1209Q1321 1391 1119 1483L1420 1819H1053ZM768 279Q592 279 495 409Q398 539 398 775Q398 1015 493 1142Q588 1270 768 1270Q945 1270 1042 1140Q1139 1010 1139 775Q1139 539 1042 409Q945 279 768 279ZM1676 27H2097L2437 559L2777 27H3199L2630 891V1520H2245V891ZM3789 27H5165V318H4670V1520H4285V318H3789ZM5922 629Q5803 629 5740 714Q5678 800 5678 961Q5678 1122 5740 1208Q5803 1293 5922 1293Q6039 1293 6101 1208Q6163 1122 6163 961Q6163 800 6101 714Q6039 629 5922 629ZM5922 373Q6211 373 6374 529Q6536 685 6536 961Q6536 1237 6374 1393Q6211 1549 5922 1549Q5632 1549 5468 1393Q5305 1237 5305 961Q5305 685 5468 529Q5632 373 5922 373ZM6676 400H7034L7335 1160L7591 400H7949L7478 1626Q7407 1813 7312 1888Q7218 1962 7063 1962H6856V1727H6968Q7059 1727 7100 1698Q7142 1669 7165 1594L7175 1563ZM9030 435V707Q8915 659 8808 635Q8701 611 8606 611Q8504 611 8454 636Q8405 662 8405 715Q8405 758 8442 781Q8480 804 8577 815L8640 824Q8915 859 9010 939Q9105 1019 9105 1190Q9105 1369 8973 1459Q8841 1549 8579 1549Q8468 1549 8350 1532Q8231 1514 8106 1479V1207Q8213 1259 8326 1285Q8438 1311 8554 1311Q8659 1311 8712 1282Q8765 1253 8765 1196Q8765 1148 8728 1124Q8692 1101 8583 1088L8520 1080Q8281 1050 8185 969Q8089 888 8089 723Q8089 545 8211 459Q8333 373 8585 373Q8684 373 8793 388Q8902 403 9030 435Z",
+    "width": 9105,
+    "height": 1962
+   }
+  },
+  {
+   "id": "mofangge",
+   "name": "MoFangGe",
+   "parentId": "qiyi",
+   "country": "",
+   "summary": "",
+   "mark": "MO",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 27H490L830 826L1172 27H1661V1520H1297V428L953 1233H709L365 428V1520H0ZM2418 629Q2299 629 2236 714Q2174 800 2174 961Q2174 1122 2236 1208Q2299 1293 2418 1293Q2535 1293 2597 1208Q2659 1122 2659 961Q2659 800 2597 714Q2535 629 2418 629ZM2418 373Q2707 373 2870 529Q3032 685 3032 961Q3032 1237 2870 1393Q2707 1549 2418 1549Q2128 1549 1964 1393Q1801 1237 1801 961Q1801 685 1964 529Q2128 373 2418 373ZM3172 27H4211V318H3557V596H4172V887H3557V1520H3172ZM4937 1016Q4825 1016 4768 1054Q4712 1092 4712 1166Q4712 1234 4758 1272Q4803 1311 4884 1311Q4985 1311 5054 1238Q5123 1166 5123 1057V1016ZM5484 881V1520H5123V1354Q5051 1456 4961 1502Q4871 1549 4742 1549Q4568 1549 4460 1448Q4351 1346 4351 1184Q4351 987 4486 895Q4622 803 4912 803H5123V775Q5123 690 5056 650Q4989 611 4847 611Q4732 611 4633 634Q4534 657 4449 703V430Q4564 402 4680 388Q4796 373 4912 373Q5215 373 5350 492Q5484 612 5484 881ZM6750 838V1520H6390V1409V998Q6390 853 6384 798Q6377 743 6361 717Q6340 682 6304 662Q6268 643 6222 643Q6110 643 6046 730Q5982 816 5982 969V1520H5624V400H5982V564Q6063 466 6154 420Q6245 373 6355 373Q6549 373 6650 492Q6750 611 6750 838ZM7732 1330Q7658 1428 7569 1474Q7480 1520 7363 1520Q7158 1520 7024 1358Q6890 1197 6890 947Q6890 696 7024 536Q7158 375 7363 375Q7480 375 7569 421Q7658 467 7732 566V400H8092V1407Q8092 1677 7922 1820Q7751 1962 7427 1962Q7322 1962 7224 1946Q7126 1930 7027 1897V1618Q7121 1672 7211 1698Q7301 1725 7392 1725Q7568 1725 7650 1648Q7732 1571 7732 1407ZM7496 633Q7385 633 7323 715Q7261 797 7261 947Q7261 1101 7321 1180Q7381 1260 7496 1260Q7608 1260 7670 1178Q7732 1096 7732 947Q7732 797 7670 715Q7608 633 7496 633ZM9660 1409Q9516 1479 9361 1514Q9206 1549 9041 1549Q8668 1549 8450 1340Q8232 1132 8232 775Q8232 414 8454 207Q8676 0 9062 0Q9211 0 9348 28Q9484 56 9605 111V420Q9480 349 9356 314Q9233 279 9109 279Q8879 279 8754 408Q8630 536 8630 775Q8630 1012 8750 1141Q8870 1270 9091 1270Q9151 1270 9202 1262Q9254 1255 9295 1239V949H9060V691H9660ZM11002 957V1059H10165Q10178 1185 10256 1248Q10334 1311 10474 1311Q10587 1311 10706 1278Q10824 1244 10949 1176V1452Q10822 1500 10695 1524Q10568 1549 10441 1549Q10137 1549 9968 1394Q9800 1240 9800 961Q9800 687 9966 530Q10131 373 10421 373Q10685 373 10844 532Q11002 691 11002 957ZM10634 838Q10634 736 10574 674Q10515 611 10419 611Q10315 611 10250 670Q10185 728 10169 838Z",
+    "width": 11002,
+    "height": 1962
+   }
+  },
+  {
+   "id": "x-man-design",
+   "name": "X-Man Design",
+   "parentId": "qiyi",
+   "country": "Trung Quốc",
+   "summary": "Thương hiệu thi đấu của QiYi, nổi tiếng với dòng Tornado.",
+   "mark": "X-",
+   "color": "FF212121",
+   "logo": {
+    "path": "M981 794L1499 1556H1098L749 1046L403 1556H0L518 794L20 63H422L749 544L1075 63H1479ZM1639 821H2267V1112H1639ZM2407 63H2897L3237 862L3579 63H4068V1556H3704V464L3360 1269H3116L2772 464V1556H2407ZM4794 1052Q4682 1052 4626 1090Q4569 1128 4569 1202Q4569 1270 4614 1308Q4660 1347 4741 1347Q4842 1347 4911 1274Q4980 1202 4980 1093V1052ZM5341 917V1556H4980V1390Q4908 1492 4818 1538Q4728 1585 4599 1585Q4425 1585 4316 1484Q4208 1382 4208 1220Q4208 1023 4344 931Q4479 839 4769 839H4980V811Q4980 726 4913 686Q4846 647 4704 647Q4589 647 4490 670Q4391 693 4306 739V466Q4421 438 4537 424Q4653 409 4769 409Q5072 409 5206 528Q5341 648 5341 917ZM6607 874V1556H6247V1445V1034Q6247 889 6240 834Q6234 779 6218 753Q6197 718 6161 698Q6125 679 6079 679Q5967 679 5903 766Q5839 852 5839 1005V1556H5481V436H5839V600Q5920 502 6011 456Q6102 409 6212 409Q6406 409 6506 528Q6607 647 6607 874ZM7582 354V1265H7720Q7956 1265 8080 1148Q8205 1031 8205 808Q8205 586 8081 470Q7957 354 7720 354ZM7197 63H7603Q7943 63 8110 112Q8276 160 8395 276Q8500 377 8551 509Q8602 641 8602 808Q8602 977 8551 1110Q8500 1242 8395 1343Q8275 1459 8107 1508Q7939 1556 7603 1556H7197ZM9944 993V1095H9107Q9120 1221 9198 1284Q9276 1347 9416 1347Q9529 1347 9648 1314Q9766 1280 9891 1212V1488Q9764 1536 9637 1560Q9510 1585 9383 1585Q9079 1585 8910 1430Q8742 1276 8742 997Q8742 723 8908 566Q9073 409 9363 409Q9627 409 9786 568Q9944 727 9944 993ZM9576 874Q9576 772 9516 710Q9457 647 9361 647Q9257 647 9192 706Q9127 764 9111 874ZM11025 471V743Q10910 695 10803 671Q10696 647 10601 647Q10499 647 10450 672Q10400 698 10400 751Q10400 794 10438 817Q10475 840 10572 851L10635 860Q10910 895 11005 975Q11100 1055 11100 1226Q11100 1405 10968 1495Q10836 1585 10574 1585Q10463 1585 10344 1568Q10226 1550 10101 1515V1243Q10208 1295 10320 1321Q10433 1347 10549 1347Q10654 1347 10707 1318Q10760 1289 10760 1232Q10760 1184 10724 1160Q10687 1137 10578 1124L10515 1116Q10276 1086 10180 1005Q10084 924 10084 759Q10084 581 10206 495Q10328 409 10580 409Q10679 409 10788 424Q10897 439 11025 471ZM11240 436H11598V1556H11240ZM11240 0H11598V292H11240ZM12580 1366Q12506 1464 12417 1510Q12328 1556 12211 1556Q12006 1556 11872 1394Q11738 1233 11738 983Q11738 732 11872 572Q12006 411 12211 411Q12328 411 12417 457Q12506 503 12580 602V436H12940V1443Q12940 1713 12770 1856Q12599 1998 12275 1998Q12170 1998 12072 1982Q11974 1966 11875 1933V1654Q11969 1708 12059 1734Q12149 1761 12240 1761Q12416 1761 12498 1684Q12580 1607 12580 1443ZM12344 669Q12233 669 12171 751Q12109 833 12109 983Q12109 1137 12169 1216Q12229 1296 12344 1296Q12456 1296 12518 1214Q12580 1132 12580 983Q12580 833 12518 751Q12456 669 12344 669ZM14206 874V1556H13846V1445V1034Q13846 889 13840 834Q13833 779 13817 753Q13796 718 13760 698Q13724 679 13678 679Q13566 679 13502 766Q13438 852 13438 1005V1556H13080V436H13438V600Q13519 502 13610 456Q13701 409 13811 409Q14005 409 14106 528Q14206 647 14206 874Z",
+    "width": 14206,
+    "height": 1998
+   }
+  },
+  {
+   "id": "the-valk",
+   "name": "The Valk",
+   "parentId": "qiyi",
+   "country": "Trung Quốc",
+   "summary": "Dòng cube QiYi hợp tác với Mats Valk từ 2016.",
+   "mark": "TH",
+   "color": "FF0D47A1",
+   "logo": {
+    "path": "M0 63H1376V354H881V1556H496V354H0ZM2642 874V1556H2282V1445V1036Q2282 889 2276 834Q2269 779 2253 753Q2232 718 2196 698Q2160 679 2114 679Q2002 679 1938 766Q1874 852 1874 1005V1556H1516V0H1874V600Q1955 502 2046 456Q2137 409 2247 409Q2441 409 2542 528Q2642 647 2642 874ZM3984 993V1095H3147Q3160 1221 3238 1284Q3316 1347 3456 1347Q3569 1347 3688 1314Q3806 1280 3931 1212V1488Q3804 1536 3677 1560Q3550 1585 3423 1585Q3119 1585 2950 1430Q2782 1276 2782 997Q2782 723 2948 566Q3113 409 3403 409Q3667 409 3826 568Q3984 727 3984 993ZM3616 874Q3616 772 3556 710Q3497 647 3401 647Q3297 647 3232 706Q3167 764 3151 874ZM4574 63H4961L5357 1165L5752 63H6139L5586 1556H5127ZM6865 1052Q6753 1052 6696 1090Q6640 1128 6640 1202Q6640 1270 6686 1308Q6731 1347 6812 1347Q6913 1347 6982 1274Q7051 1202 7051 1093V1052ZM7412 917V1556H7051V1390Q6979 1492 6889 1538Q6799 1585 6670 1585Q6496 1585 6388 1484Q6279 1382 6279 1220Q6279 1023 6414 931Q6550 839 6840 839H7051V811Q7051 726 6984 686Q6917 647 6775 647Q6660 647 6561 670Q6462 693 6377 739V466Q6492 438 6608 424Q6724 409 6840 409Q7143 409 7278 528Q7412 648 7412 917ZM7552 0H7910V1556H7552ZM8050 0H8408V847L8820 436H9236L8689 950L9279 1556H8845L8408 1089V1556H8050Z",
+    "width": 9279,
+    "height": 1585
+   }
+  },
+  {
+   "id": "yj",
+   "name": "YJ",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "YongJun: cube giá phải chăng; MGC là dòng sản phẩm chủ lực.",
+   "mark": "YJ",
+   "color": "FF2E7D32",
+   "logo": {
+    "path": "M0 0H421L761 532L1101 0H1523L954 864V1493H569V864ZM1966 0H2351V1348Q2351 1627 2200 1765Q2048 1903 1741 1903H1663V1612H1723Q1843 1612 1904 1545Q1966 1478 1966 1348Z",
+    "width": 2351,
+    "height": 1903
+   }
+  },
+  {
+   "id": "mgc",
+   "name": "MGC",
+   "parentId": "yj",
+   "country": "Trung Quốc",
+   "summary": "Dòng/thương hiệu sản phẩm chủ lực của YJ.",
+   "mark": "MG",
+   "color": "FF388E3C",
+   "logo": {
+    "path": "M0 27H490L830 826L1172 27H1661V1520H1297V428L953 1233H709L365 428V1520H0ZM3229 1409Q3085 1479 2930 1514Q2775 1549 2610 1549Q2237 1549 2019 1340Q1801 1132 1801 775Q1801 414 2023 207Q2245 0 2631 0Q2780 0 2916 28Q3053 56 3174 111V420Q3049 349 2926 314Q2802 279 2678 279Q2448 279 2324 408Q2199 536 2199 775Q2199 1012 2319 1141Q2439 1270 2660 1270Q2720 1270 2772 1262Q2823 1255 2864 1239V949H2629V691H3229ZM4639 1438Q4533 1493 4418 1521Q4303 1549 4178 1549Q3805 1549 3587 1340Q3369 1132 3369 775Q3369 417 3587 208Q3805 0 4178 0Q4303 0 4418 28Q4533 56 4639 111V420Q4532 347 4428 313Q4324 279 4209 279Q4003 279 3885 411Q3767 543 3767 775Q3767 1006 3885 1138Q4003 1270 4209 1270Q4324 1270 4428 1236Q4532 1202 4639 1129Z",
+    "width": 4639,
+    "height": 1549
+   }
+  },
+  {
+   "id": "yuxin",
+   "name": "YuXin",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Nhiều puzzle WCA giá tốt, nổi bật với Pyraminx Little Magic.",
+   "mark": "YU",
+   "color": "FF00897B",
+   "logo": {
+    "path": "M0 63H421L761 595L1101 63H1523L954 927V1556H569V927ZM1663 1120V436H2023V548Q2023 639 2022 776Q2021 914 2021 960Q2021 1095 2028 1154Q2035 1214 2052 1241Q2074 1276 2110 1295Q2145 1314 2191 1314Q2303 1314 2367 1228Q2431 1142 2431 989V436H2789V1556H2431V1394Q2350 1492 2260 1538Q2169 1585 2060 1585Q1866 1585 1764 1466Q1663 1347 1663 1120ZM3910 794L4428 1556H4027L3678 1046L3332 1556H2929L3447 794L2949 63H3351L3678 544L4004 63H4408ZM4568 436H4926V1556H4568ZM4568 0H4926V292H4568ZM6192 874V1556H5832V1445V1034Q5832 889 5826 834Q5819 779 5803 753Q5782 718 5746 698Q5710 679 5664 679Q5552 679 5488 766Q5424 852 5424 1005V1556H5066V436H5424V600Q5505 502 5596 456Q5687 409 5797 409Q5991 409 6092 528Q6192 647 6192 874Z",
+    "width": 6192,
+    "height": 1585
+   }
+  },
+  {
+   "id": "shengshou",
+   "name": "ShengShou",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Mạnh về cube kích thước lớn và puzzle lạ, giá dễ tiếp cận.",
+   "mark": "SH",
+   "color": "FF00838F",
+   "logo": {
+    "path": "M1080 110V426Q957 371 840 343Q723 315 619 315Q481 315 415 353Q349 391 349 471Q349 531 394 564Q438 598 555 622L719 655Q968 705 1073 807Q1178 909 1178 1097Q1178 1344 1032 1464Q885 1585 584 1585Q442 1585 299 1558Q156 1531 13 1478V1153Q156 1229 290 1268Q423 1306 547 1306Q673 1306 740 1264Q807 1222 807 1144Q807 1074 762 1036Q716 998 580 968L431 935Q207 887 104 782Q0 677 0 499Q0 276 144 156Q288 36 558 36Q681 36 811 54Q941 73 1080 110ZM2444 874V1556H2084V1445V1036Q2084 889 2078 834Q2071 779 2055 753Q2034 718 1998 698Q1962 679 1916 679Q1804 679 1740 766Q1676 852 1676 1005V1556H1318V0H1676V600Q1757 502 1848 456Q1939 409 2049 409Q2243 409 2344 528Q2444 647 2444 874ZM3786 993V1095H2949Q2962 1221 3040 1284Q3118 1347 3258 1347Q3371 1347 3490 1314Q3608 1280 3733 1212V1488Q3606 1536 3479 1560Q3352 1585 3225 1585Q2921 1585 2752 1430Q2584 1276 2584 997Q2584 723 2750 566Q2915 409 3205 409Q3469 409 3628 568Q3786 727 3786 993ZM3418 874Q3418 772 3358 710Q3299 647 3203 647Q3099 647 3034 706Q2969 764 2953 874ZM5052 874V1556H4692V1445V1034Q4692 889 4686 834Q4679 779 4663 753Q4642 718 4606 698Q4570 679 4524 679Q4412 679 4348 766Q4284 852 4284 1005V1556H3926V436H4284V600Q4365 502 4456 456Q4547 409 4657 409Q4851 409 4952 528Q5052 647 5052 874ZM6034 1366Q5960 1464 5871 1510Q5782 1556 5665 1556Q5460 1556 5326 1394Q5192 1233 5192 983Q5192 732 5326 572Q5460 411 5665 411Q5782 411 5871 457Q5960 503 6034 602V436H6394V1443Q6394 1713 6224 1856Q6053 1998 5729 1998Q5624 1998 5526 1982Q5428 1966 5329 1933V1654Q5423 1708 5513 1734Q5603 1761 5694 1761Q5870 1761 5952 1684Q6034 1607 6034 1443ZM5798 669Q5687 669 5625 751Q5563 833 5563 983Q5563 1137 5623 1216Q5683 1296 5798 1296Q5910 1296 5972 1214Q6034 1132 6034 983Q6034 833 5972 751Q5910 669 5798 669ZM7614 110V426Q7491 371 7374 343Q7257 315 7153 315Q7015 315 6949 353Q6883 391 6883 471Q6883 531 6928 564Q6972 598 7089 622L7253 655Q7502 705 7607 807Q7712 909 7712 1097Q7712 1344 7566 1464Q7419 1585 7118 1585Q6976 1585 6833 1558Q6690 1531 6547 1478V1153Q6690 1229 6824 1268Q6957 1306 7081 1306Q7207 1306 7274 1264Q7341 1222 7341 1144Q7341 1074 7296 1036Q7250 998 7114 968L6965 935Q6741 887 6638 782Q6534 677 6534 499Q6534 276 6678 156Q6822 36 7092 36Q7215 36 7345 54Q7475 73 7614 110ZM8978 874V1556H8618V1445V1036Q8618 889 8612 834Q8605 779 8589 753Q8568 718 8532 698Q8496 679 8450 679Q8338 679 8274 766Q8210 852 8210 1005V1556H7852V0H8210V600Q8291 502 8382 456Q8473 409 8583 409Q8777 409 8878 528Q8978 647 8978 874ZM9735 665Q9616 665 9554 750Q9491 836 9491 997Q9491 1158 9554 1244Q9616 1329 9735 1329Q9852 1329 9914 1244Q9976 1158 9976 997Q9976 836 9914 750Q9852 665 9735 665ZM9735 409Q10024 409 10186 565Q10349 721 10349 997Q10349 1273 10186 1429Q10024 1585 9735 1585Q9445 1585 9282 1429Q9118 1273 9118 997Q9118 721 9282 565Q9445 409 9735 409ZM10489 1120V436H10849V548Q10849 639 10848 776Q10847 914 10847 960Q10847 1095 10854 1154Q10861 1214 10878 1241Q10900 1276 10936 1295Q10971 1314 11017 1314Q11129 1314 11193 1228Q11257 1142 11257 989V436H11615V1556H11257V1394Q11176 1492 11086 1538Q10995 1585 10886 1585Q10692 1585 10590 1466Q10489 1347 10489 1120Z",
+    "width": 11615,
+    "height": 1998
+   }
+  },
+  {
+   "id": "sengso",
+   "name": "SengSo",
+   "parentId": "shengshou",
+   "country": "",
+   "summary": "",
+   "mark": "SE",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M1080 74V390Q957 335 840 307Q723 279 619 279Q481 279 415 317Q349 355 349 435Q349 495 394 528Q438 562 555 586L719 619Q968 669 1073 771Q1178 873 1178 1061Q1178 1308 1032 1428Q885 1549 584 1549Q442 1549 299 1522Q156 1495 13 1442V1117Q156 1193 290 1232Q423 1270 547 1270Q673 1270 740 1228Q807 1186 807 1108Q807 1038 762 1000Q716 962 580 932L431 899Q207 851 104 746Q0 641 0 463Q0 240 144 120Q288 0 558 0Q681 0 811 18Q941 37 1080 74ZM2520 957V1059H1683Q1696 1185 1774 1248Q1852 1311 1992 1311Q2105 1311 2224 1278Q2342 1244 2467 1176V1452Q2340 1500 2213 1524Q2086 1549 1959 1549Q1655 1549 1486 1394Q1318 1240 1318 961Q1318 687 1484 530Q1649 373 1939 373Q2203 373 2362 532Q2520 691 2520 957ZM2152 838Q2152 736 2092 674Q2033 611 1937 611Q1833 611 1768 670Q1703 728 1687 838ZM3786 838V1520H3426V1409V998Q3426 853 3420 798Q3413 743 3397 717Q3376 682 3340 662Q3304 643 3258 643Q3146 643 3082 730Q3018 816 3018 969V1520H2660V400H3018V564Q3099 466 3190 420Q3281 373 3391 373Q3585 373 3686 492Q3786 611 3786 838ZM4768 1330Q4694 1428 4605 1474Q4516 1520 4399 1520Q4194 1520 4060 1358Q3926 1197 3926 947Q3926 696 4060 536Q4194 375 4399 375Q4516 375 4605 421Q4694 467 4768 566V400H5128V1407Q5128 1677 4958 1820Q4787 1962 4463 1962Q4358 1962 4260 1946Q4162 1930 4063 1897V1618Q4157 1672 4247 1698Q4337 1725 4428 1725Q4604 1725 4686 1648Q4768 1571 4768 1407ZM4532 633Q4421 633 4359 715Q4297 797 4297 947Q4297 1101 4357 1180Q4417 1260 4532 1260Q4644 1260 4706 1178Q4768 1096 4768 947Q4768 797 4706 715Q4644 633 4532 633ZM6348 74V390Q6225 335 6108 307Q5991 279 5887 279Q5749 279 5683 317Q5617 355 5617 435Q5617 495 5662 528Q5706 562 5823 586L5987 619Q6236 669 6341 771Q6446 873 6446 1061Q6446 1308 6300 1428Q6153 1549 5852 1549Q5710 1549 5567 1522Q5424 1495 5281 1442V1117Q5424 1193 5558 1232Q5691 1270 5815 1270Q5941 1270 6008 1228Q6075 1186 6075 1108Q6075 1038 6030 1000Q5984 962 5848 932L5699 899Q5475 851 5372 746Q5268 641 5268 463Q5268 240 5412 120Q5556 0 5826 0Q5949 0 6079 18Q6209 37 6348 74ZM7203 629Q7084 629 7022 714Q6959 800 6959 961Q6959 1122 7022 1208Q7084 1293 7203 1293Q7320 1293 7382 1208Q7444 1122 7444 961Q7444 800 7382 714Q7320 629 7203 629ZM7203 373Q7492 373 7654 529Q7817 685 7817 961Q7817 1237 7654 1393Q7492 1549 7203 1549Q6913 1549 6750 1393Q6586 1237 6586 961Q6586 685 6750 529Q6913 373 7203 373Z",
+    "width": 7817,
+    "height": 1962
+   }
+  },
+  {
+   "id": "dayan",
+   "name": "DaYan",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Hãng speedcube lâu đời, các thiết kế ZhanChi, TengYun có ảnh hưởng lớn.",
+   "mark": "DA",
+   "color": "FF6A1B9A",
+   "logo": {
+    "path": "M385 291V1202H523Q759 1202 884 1085Q1008 968 1008 745Q1008 523 884 407Q760 291 523 291ZM0 0H406Q746 0 912 48Q1079 97 1198 213Q1303 314 1354 446Q1405 578 1405 745Q1405 914 1354 1046Q1303 1179 1198 1280Q1078 1396 910 1444Q742 1493 406 1493H0ZM2131 989Q2019 989 1962 1027Q1906 1065 1906 1139Q1906 1207 1952 1246Q1997 1284 2078 1284Q2179 1284 2248 1212Q2317 1139 2317 1030V989ZM2678 854V1493H2317V1327Q2245 1429 2155 1476Q2065 1522 1936 1522Q1762 1522 1654 1420Q1545 1319 1545 1157Q1545 960 1680 868Q1816 776 2106 776H2317V748Q2317 663 2250 624Q2183 584 2041 584Q1926 584 1827 607Q1728 630 1643 676V403Q1758 375 1874 360Q1990 346 2106 346Q2409 346 2544 466Q2678 585 2678 854ZM2818 0H3239L3579 532L3919 0H4341L3772 864V1493H3387V864ZM5067 989Q4955 989 4898 1027Q4842 1065 4842 1139Q4842 1207 4888 1246Q4933 1284 5014 1284Q5115 1284 5184 1212Q5253 1139 5253 1030V989ZM5614 854V1493H5253V1327Q5181 1429 5091 1476Q5001 1522 4872 1522Q4698 1522 4590 1420Q4481 1319 4481 1157Q4481 960 4616 868Q4752 776 5042 776H5253V748Q5253 663 5186 624Q5119 584 4977 584Q4862 584 4763 607Q4664 630 4579 676V403Q4694 375 4810 360Q4926 346 5042 346Q5345 346 5480 466Q5614 585 5614 854ZM6880 811V1493H6520V1382V971Q6520 826 6514 771Q6507 716 6491 690Q6470 655 6434 636Q6398 616 6352 616Q6240 616 6176 702Q6112 789 6112 942V1493H5754V373H6112V537Q6193 439 6284 392Q6375 346 6485 346Q6679 346 6780 465Q6880 584 6880 811Z",
+    "width": 6880,
+    "height": 1522
+   }
+  },
+  {
+   "id": "diansheng",
+   "name": "DianSheng",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "DI",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M385 354V1265H523Q759 1265 884 1148Q1008 1031 1008 808Q1008 586 884 470Q760 354 523 354ZM0 63H406Q746 63 912 112Q1079 160 1198 276Q1303 377 1354 509Q1405 641 1405 808Q1405 977 1354 1110Q1303 1242 1198 1343Q1078 1459 910 1508Q742 1556 406 1556H0ZM1545 436H1903V1556H1545ZM1545 0H1903V292H1545ZM2629 1052Q2517 1052 2460 1090Q2404 1128 2404 1202Q2404 1270 2450 1308Q2495 1347 2576 1347Q2677 1347 2746 1274Q2815 1202 2815 1093V1052ZM3176 917V1556H2815V1390Q2743 1492 2653 1538Q2563 1585 2434 1585Q2260 1585 2152 1484Q2043 1382 2043 1220Q2043 1023 2178 931Q2314 839 2604 839H2815V811Q2815 726 2748 686Q2681 647 2539 647Q2424 647 2325 670Q2226 693 2141 739V466Q2256 438 2372 424Q2488 409 2604 409Q2907 409 3042 528Q3176 648 3176 917ZM4442 874V1556H4082V1445V1034Q4082 889 4076 834Q4069 779 4053 753Q4032 718 3996 698Q3960 679 3914 679Q3802 679 3738 766Q3674 852 3674 1005V1556H3316V436H3674V600Q3755 502 3846 456Q3937 409 4047 409Q4241 409 4342 528Q4442 647 4442 874ZM5662 110V426Q5539 371 5422 343Q5305 315 5201 315Q5063 315 4997 353Q4931 391 4931 471Q4931 531 4976 564Q5020 598 5137 622L5301 655Q5550 705 5655 807Q5760 909 5760 1097Q5760 1344 5614 1464Q5467 1585 5166 1585Q5024 1585 4881 1558Q4738 1531 4595 1478V1153Q4738 1229 4872 1268Q5005 1306 5129 1306Q5255 1306 5322 1264Q5389 1222 5389 1144Q5389 1074 5344 1036Q5298 998 5162 968L5013 935Q4789 887 4686 782Q4582 677 4582 499Q4582 276 4726 156Q4870 36 5140 36Q5263 36 5393 54Q5523 73 5662 110ZM7026 874V1556H6666V1445V1036Q6666 889 6660 834Q6653 779 6637 753Q6616 718 6580 698Q6544 679 6498 679Q6386 679 6322 766Q6258 852 6258 1005V1556H5900V0H6258V600Q6339 502 6430 456Q6521 409 6631 409Q6825 409 6926 528Q7026 647 7026 874ZM8368 993V1095H7531Q7544 1221 7622 1284Q7700 1347 7840 1347Q7953 1347 8072 1314Q8190 1280 8315 1212V1488Q8188 1536 8061 1560Q7934 1585 7807 1585Q7503 1585 7334 1430Q7166 1276 7166 997Q7166 723 7332 566Q7497 409 7787 409Q8051 409 8210 568Q8368 727 8368 993ZM8000 874Q8000 772 7940 710Q7881 647 7785 647Q7681 647 7616 706Q7551 764 7535 874ZM9634 874V1556H9274V1445V1034Q9274 889 9268 834Q9261 779 9245 753Q9224 718 9188 698Q9152 679 9106 679Q8994 679 8930 766Q8866 852 8866 1005V1556H8508V436H8866V600Q8947 502 9038 456Q9129 409 9239 409Q9433 409 9534 528Q9634 647 9634 874ZM10616 1366Q10542 1464 10453 1510Q10364 1556 10247 1556Q10042 1556 9908 1394Q9774 1233 9774 983Q9774 732 9908 572Q10042 411 10247 411Q10364 411 10453 457Q10542 503 10616 602V436H10976V1443Q10976 1713 10806 1856Q10635 1998 10311 1998Q10206 1998 10108 1982Q10010 1966 9911 1933V1654Q10005 1708 10095 1734Q10185 1761 10276 1761Q10452 1761 10534 1684Q10616 1607 10616 1443ZM10380 669Q10269 669 10207 751Q10145 833 10145 983Q10145 1137 10205 1216Q10265 1296 10380 1296Q10492 1296 10554 1214Q10616 1132 10616 983Q10616 833 10554 751Q10492 669 10380 669Z",
+    "width": 10976,
+    "height": 1998
+   }
+  },
+  {
+   "id": "mscube",
+   "name": "MsCube",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "MS",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H490L830 862L1172 63H1661V1556H1297V464L953 1269H709L365 464V1556H0ZM2742 471V743Q2627 695 2520 671Q2413 647 2318 647Q2216 647 2166 672Q2117 698 2117 751Q2117 794 2154 817Q2192 840 2289 851L2352 860Q2627 895 2722 975Q2817 1055 2817 1226Q2817 1405 2685 1495Q2553 1585 2291 1585Q2180 1585 2062 1568Q1943 1550 1818 1515V1243Q1925 1295 2038 1321Q2150 1347 2266 1347Q2371 1347 2424 1318Q2477 1289 2477 1232Q2477 1184 2440 1160Q2404 1137 2295 1124L2232 1116Q1993 1086 1897 1005Q1801 924 1801 759Q1801 581 1923 495Q2045 409 2297 409Q2396 409 2505 424Q2614 439 2742 471ZM4227 1474Q4121 1529 4006 1557Q3891 1585 3766 1585Q3393 1585 3175 1376Q2957 1168 2957 811Q2957 453 3175 244Q3393 36 3766 36Q3891 36 4006 64Q4121 92 4227 147V456Q4120 383 4016 349Q3912 315 3797 315Q3591 315 3473 447Q3355 579 3355 811Q3355 1042 3473 1174Q3591 1306 3797 1306Q3912 1306 4016 1272Q4120 1238 4227 1165ZM4367 1120V436H4727V548Q4727 639 4726 776Q4725 914 4725 960Q4725 1095 4732 1154Q4739 1214 4756 1241Q4778 1276 4814 1295Q4849 1314 4895 1314Q5007 1314 5071 1228Q5135 1142 5135 989V436H5493V1556H5135V1394Q5054 1492 4964 1538Q4873 1585 4764 1585Q4570 1585 4468 1466Q4367 1347 4367 1120ZM6229 1325Q6344 1325 6404 1241Q6465 1157 6465 997Q6465 837 6404 753Q6344 669 6229 669Q6114 669 6052 754Q5991 838 5991 997Q5991 1156 6052 1240Q6114 1325 6229 1325ZM5991 600Q6065 502 6155 456Q6245 409 6362 409Q6569 409 6702 574Q6835 738 6835 997Q6835 1256 6702 1420Q6569 1585 6362 1585Q6245 1585 6155 1538Q6065 1492 5991 1394V1556H5633V0H5991ZM8177 993V1095H7340Q7353 1221 7431 1284Q7509 1347 7649 1347Q7762 1347 7880 1314Q7999 1280 8124 1212V1488Q7997 1536 7870 1560Q7743 1585 7616 1585Q7312 1585 7144 1430Q6975 1276 6975 997Q6975 723 7140 566Q7306 409 7596 409Q7860 409 8018 568Q8177 727 8177 993ZM7809 874Q7809 772 7750 710Q7690 647 7594 647Q7490 647 7425 706Q7360 764 7344 874Z",
+    "width": 8177,
+    "height": 1585
+   }
+  },
+  {
+   "id": "fanxin",
+   "name": "FanXin",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "FA",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H1039V354H385V632H1000V923H385V1556H0ZM1765 1052Q1653 1052 1596 1090Q1540 1128 1540 1202Q1540 1270 1586 1308Q1631 1347 1712 1347Q1813 1347 1882 1274Q1951 1202 1951 1093V1052ZM2312 917V1556H1951V1390Q1879 1492 1789 1538Q1699 1585 1570 1585Q1396 1585 1288 1484Q1179 1382 1179 1220Q1179 1023 1314 931Q1450 839 1740 839H1951V811Q1951 726 1884 686Q1817 647 1675 647Q1560 647 1461 670Q1362 693 1277 739V466Q1392 438 1508 424Q1624 409 1740 409Q2043 409 2178 528Q2312 648 2312 917ZM3578 874V1556H3218V1445V1034Q3218 889 3212 834Q3205 779 3189 753Q3168 718 3132 698Q3096 679 3050 679Q2938 679 2874 766Q2810 852 2810 1005V1556H2452V436H2810V600Q2891 502 2982 456Q3073 409 3183 409Q3377 409 3478 528Q3578 647 3578 874ZM4699 794L5217 1556H4816L4467 1046L4121 1556H3718L4236 794L3738 63H4140L4467 544L4793 63H5197ZM5357 436H5715V1556H5357ZM5357 0H5715V292H5357ZM6981 874V1556H6621V1445V1034Q6621 889 6614 834Q6608 779 6592 753Q6571 718 6535 698Q6499 679 6453 679Q6341 679 6277 766Q6213 852 6213 1005V1556H5855V436H6213V600Q6294 502 6385 456Q6476 409 6586 409Q6780 409 6880 528Q6981 647 6981 874Z",
+    "width": 6981,
+    "height": 1585
+   }
+  },
+  {
+   "id": "cyclone-boys",
+   "name": "Cyclone Boys",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Cube giá rẻ, nhiều mẫu cho người mới.",
+   "mark": "CY",
+   "color": "FF5E35B1",
+   "logo": {
+    "path": "M1270 1474Q1164 1529 1049 1557Q934 1585 809 1585Q436 1585 218 1376Q0 1168 0 811Q0 453 218 244Q436 36 809 36Q934 36 1049 64Q1164 92 1270 147V456Q1163 383 1059 349Q955 315 840 315Q634 315 516 447Q398 579 398 811Q398 1042 516 1174Q634 1306 840 1306Q955 1306 1059 1272Q1163 1238 1270 1165ZM1410 436H1768L2069 1196L2325 436H2683L2212 1662Q2141 1849 2046 1924Q1952 1998 1797 1998H1590V1763H1702Q1793 1763 1834 1734Q1876 1705 1899 1630L1909 1599ZM3812 471V763Q3739 713 3666 689Q3592 665 3513 665Q3363 665 3280 752Q3196 840 3196 997Q3196 1154 3280 1242Q3363 1329 3513 1329Q3597 1329 3672 1304Q3748 1279 3812 1230V1523Q3728 1554 3642 1570Q3555 1585 3468 1585Q3165 1585 2994 1430Q2823 1274 2823 997Q2823 720 2994 564Q3165 409 3468 409Q3556 409 3642 424Q3727 440 3812 471ZM3952 0H4310V1556H3952ZM5067 665Q4948 665 4886 750Q4823 836 4823 997Q4823 1158 4886 1244Q4948 1329 5067 1329Q5184 1329 5246 1244Q5308 1158 5308 997Q5308 836 5246 750Q5184 665 5067 665ZM5067 409Q5356 409 5518 565Q5681 721 5681 997Q5681 1273 5518 1429Q5356 1585 5067 1585Q4777 1585 4614 1429Q4450 1273 4450 997Q4450 721 4614 565Q4777 409 5067 409ZM6947 874V1556H6587V1445V1034Q6587 889 6580 834Q6574 779 6558 753Q6537 718 6501 698Q6465 679 6419 679Q6307 679 6243 766Q6179 852 6179 1005V1556H5821V436H6179V600Q6260 502 6351 456Q6442 409 6552 409Q6746 409 6846 528Q6947 647 6947 874ZM8289 993V1095H7452Q7465 1221 7543 1284Q7621 1347 7761 1347Q7874 1347 7992 1314Q8111 1280 8236 1212V1488Q8109 1536 7982 1560Q7855 1585 7728 1585Q7424 1585 7256 1430Q7087 1276 7087 997Q7087 723 7252 566Q7418 409 7708 409Q7972 409 8130 568Q8289 727 8289 993ZM7921 874Q7921 772 7862 710Q7802 647 7706 647Q7602 647 7537 706Q7472 764 7456 874ZM9477 641Q9568 641 9615 601Q9662 561 9662 483Q9662 406 9615 366Q9568 325 9477 325H9264V641ZM9490 1294Q9606 1294 9664 1245Q9723 1196 9723 1097Q9723 1000 9665 952Q9607 903 9490 903H9264V1294ZM9848 757Q9972 793 10040 890Q10108 987 10108 1128Q10108 1344 9962 1450Q9816 1556 9518 1556H8879V63H9457Q9768 63 9908 157Q10047 251 10047 458Q10047 567 9996 644Q9945 720 9848 757ZM10865 665Q10746 665 10684 750Q10621 836 10621 997Q10621 1158 10684 1244Q10746 1329 10865 1329Q10982 1329 11044 1244Q11106 1158 11106 997Q11106 836 11044 750Q10982 665 10865 665ZM10865 409Q11154 409 11316 565Q11479 721 11479 997Q11479 1273 11316 1429Q11154 1585 10865 1585Q10575 1585 10412 1429Q10248 1273 10248 997Q10248 721 10412 565Q10575 409 10865 409ZM11619 436H11977L12278 1196L12534 436H12892L12421 1662Q12350 1849 12256 1924Q12161 1998 12006 1998H11799V1763H11911Q12002 1763 12044 1734Q12085 1705 12108 1630L12118 1599ZM13973 471V743Q13858 695 13751 671Q13644 647 13549 647Q13447 647 13398 672Q13348 698 13348 751Q13348 794 13386 817Q13423 840 13520 851L13583 860Q13858 895 13953 975Q14048 1055 14048 1226Q14048 1405 13916 1495Q13784 1585 13522 1585Q13411 1585 13292 1568Q13174 1550 13049 1515V1243Q13156 1295 13268 1321Q13381 1347 13497 1347Q13602 1347 13655 1318Q13708 1289 13708 1232Q13708 1184 13672 1160Q13635 1137 13526 1124L13463 1116Q13224 1086 13128 1005Q13032 924 13032 759Q13032 581 13154 495Q13276 409 13528 409Q13627 409 13736 424Q13845 439 13973 471Z",
+    "width": 14048,
+    "height": 1998
+   }
+  },
+  {
+   "id": "lanlan",
+   "name": "LanLan",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "LA",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 0H385V1202H1061V1493H0ZM1787 989Q1675 989 1618 1027Q1562 1065 1562 1139Q1562 1207 1608 1246Q1653 1284 1734 1284Q1835 1284 1904 1212Q1973 1139 1973 1030V989ZM2334 854V1493H1973V1327Q1901 1429 1811 1476Q1721 1522 1592 1522Q1418 1522 1310 1420Q1201 1319 1201 1157Q1201 960 1336 868Q1472 776 1762 776H1973V748Q1973 663 1906 624Q1839 584 1697 584Q1582 584 1483 607Q1384 630 1299 676V403Q1414 375 1530 360Q1646 346 1762 346Q2065 346 2200 466Q2334 585 2334 854ZM3600 811V1493H3240V1382V971Q3240 826 3234 771Q3227 716 3211 690Q3190 655 3154 636Q3118 616 3072 616Q2960 616 2896 702Q2832 789 2832 942V1493H2474V373H2832V537Q2913 439 3004 392Q3095 346 3205 346Q3399 346 3500 465Q3600 584 3600 811ZM3740 0H4125V1202H4801V1493H3740ZM5527 989Q5415 989 5358 1027Q5302 1065 5302 1139Q5302 1207 5348 1246Q5393 1284 5474 1284Q5575 1284 5644 1212Q5713 1139 5713 1030V989ZM6074 854V1493H5713V1327Q5641 1429 5551 1476Q5461 1522 5332 1522Q5158 1522 5050 1420Q4941 1319 4941 1157Q4941 960 5076 868Q5212 776 5502 776H5713V748Q5713 663 5646 624Q5579 584 5437 584Q5322 584 5223 607Q5124 630 5039 676V403Q5154 375 5270 360Q5386 346 5502 346Q5805 346 5940 466Q6074 585 6074 854ZM7340 811V1493H6980V1382V971Q6980 826 6974 771Q6967 716 6951 690Q6930 655 6894 636Q6858 616 6812 616Q6700 616 6636 702Q6572 789 6572 942V1493H6214V373H6572V537Q6653 439 6744 392Q6835 346 6945 346Q7139 346 7240 465Q7340 584 7340 811Z",
+    "width": 7340,
+    "height": 1522
+   }
+  },
+  {
+   "id": "mf8",
+   "name": "MF8",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "MF",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 27H490L830 826L1172 27H1661V1520H1297V428L953 1233H709L365 428V1520H0ZM1801 27H2840V318H2186V596H2801V887H2186V1520H1801ZM3568 852Q3460 852 3402 911Q3344 970 3344 1080Q3344 1190 3402 1248Q3460 1307 3568 1307Q3675 1307 3732 1248Q3789 1190 3789 1080Q3789 969 3732 910Q3675 852 3568 852ZM3287 725Q3151 684 3082 599Q3013 514 3013 387Q3013 198 3154 99Q3295 0 3568 0Q3839 0 3980 98Q4121 197 4121 387Q4121 514 4052 599Q3982 684 3846 725Q3998 767 4076 862Q4153 956 4153 1100Q4153 1322 4006 1436Q3858 1549 3568 1549Q3277 1549 3128 1436Q2980 1322 2980 1100Q2980 956 3058 862Q3135 767 3287 725ZM3377 426Q3377 515 3426 563Q3476 611 3568 611Q3658 611 3707 563Q3756 515 3756 426Q3756 337 3707 290Q3658 242 3568 242Q3476 242 3426 290Q3377 338 3377 426Z",
+    "width": 4153,
+    "height": 1549
+   }
+  },
+  {
+   "id": "verypuzzle",
+   "name": "VeryPuzzle",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "VE",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H387L783 1165L1178 63H1565L1012 1556H553ZM2907 993V1095H2070Q2083 1221 2161 1284Q2239 1347 2379 1347Q2492 1347 2610 1314Q2729 1280 2854 1212V1488Q2727 1536 2600 1560Q2473 1585 2346 1585Q2042 1585 1874 1430Q1705 1276 1705 997Q1705 723 1870 566Q2036 409 2326 409Q2590 409 2748 568Q2907 727 2907 993ZM2539 874Q2539 772 2480 710Q2420 647 2324 647Q2220 647 2155 706Q2090 764 2074 874ZM3879 741Q3832 719 3786 708Q3739 698 3692 698Q3554 698 3480 786Q3405 875 3405 1040V1556H3047V436H3405V620Q3474 510 3564 460Q3653 409 3778 409Q3796 409 3817 410Q3838 412 3878 417ZM4019 436H4377L4678 1196L4934 436H5292L4821 1662Q4750 1849 4656 1924Q4561 1998 4406 1998H4199V1763H4311Q4402 1763 4444 1734Q4485 1705 4508 1630L4518 1599ZM5432 63H6071Q6356 63 6508 190Q6661 316 6661 550Q6661 785 6508 912Q6356 1038 6071 1038H5817V1556H5432ZM5817 342V759H6030Q6142 759 6203 704Q6264 650 6264 550Q6264 450 6203 396Q6142 342 6030 342ZM6801 1120V436H7161V548Q7161 639 7160 776Q7159 914 7159 960Q7159 1095 7166 1154Q7173 1214 7190 1241Q7212 1276 7248 1295Q7283 1314 7329 1314Q7441 1314 7505 1228Q7569 1142 7569 989V436H7927V1556H7569V1394Q7488 1492 7398 1538Q7307 1585 7198 1585Q7004 1585 6902 1466Q6801 1347 6801 1120ZM8092 436H9069V686L8479 1300H9069V1556H8067V1306L8657 692H8092ZM9234 436H10211V686L9621 1300H10211V1556H9209V1306L9799 692H9234ZM10351 0H10709V1556H10351ZM12051 993V1095H11214Q11227 1221 11305 1284Q11383 1347 11523 1347Q11636 1347 11754 1314Q11873 1280 11998 1212V1488Q11871 1536 11744 1560Q11617 1585 11490 1585Q11186 1585 11018 1430Q10849 1276 10849 997Q10849 723 11014 566Q11180 409 11470 409Q11734 409 11892 568Q12051 727 12051 993ZM11683 874Q11683 772 11624 710Q11564 647 11468 647Q11364 647 11299 706Q11234 764 11218 874Z",
+    "width": 12051,
+    "height": 1998
+   }
+  },
+  {
+   "id": "fangshi",
+   "name": "FangShi",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "FA",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H1039V354H385V632H1000V923H385V1556H0ZM1765 1052Q1653 1052 1596 1090Q1540 1128 1540 1202Q1540 1270 1586 1308Q1631 1347 1712 1347Q1813 1347 1882 1274Q1951 1202 1951 1093V1052ZM2312 917V1556H1951V1390Q1879 1492 1789 1538Q1699 1585 1570 1585Q1396 1585 1288 1484Q1179 1382 1179 1220Q1179 1023 1314 931Q1450 839 1740 839H1951V811Q1951 726 1884 686Q1817 647 1675 647Q1560 647 1461 670Q1362 693 1277 739V466Q1392 438 1508 424Q1624 409 1740 409Q2043 409 2178 528Q2312 648 2312 917ZM3578 874V1556H3218V1445V1034Q3218 889 3212 834Q3205 779 3189 753Q3168 718 3132 698Q3096 679 3050 679Q2938 679 2874 766Q2810 852 2810 1005V1556H2452V436H2810V600Q2891 502 2982 456Q3073 409 3183 409Q3377 409 3478 528Q3578 647 3578 874ZM4560 1366Q4486 1464 4397 1510Q4308 1556 4191 1556Q3986 1556 3852 1394Q3718 1233 3718 983Q3718 732 3852 572Q3986 411 4191 411Q4308 411 4397 457Q4486 503 4560 602V436H4920V1443Q4920 1713 4750 1856Q4579 1998 4255 1998Q4150 1998 4052 1982Q3954 1966 3855 1933V1654Q3949 1708 4039 1734Q4129 1761 4220 1761Q4396 1761 4478 1684Q4560 1607 4560 1443ZM4324 669Q4213 669 4151 751Q4089 833 4089 983Q4089 1137 4149 1216Q4209 1296 4324 1296Q4436 1296 4498 1214Q4560 1132 4560 983Q4560 833 4498 751Q4436 669 4324 669ZM6140 110V426Q6017 371 5900 343Q5783 315 5679 315Q5541 315 5475 353Q5409 391 5409 471Q5409 531 5454 564Q5498 598 5615 622L5779 655Q6028 705 6133 807Q6238 909 6238 1097Q6238 1344 6092 1464Q5945 1585 5644 1585Q5502 1585 5359 1558Q5216 1531 5073 1478V1153Q5216 1229 5350 1268Q5483 1306 5607 1306Q5733 1306 5800 1264Q5867 1222 5867 1144Q5867 1074 5822 1036Q5776 998 5640 968L5491 935Q5267 887 5164 782Q5060 677 5060 499Q5060 276 5204 156Q5348 36 5618 36Q5741 36 5871 54Q6001 73 6140 110ZM7504 874V1556H7144V1445V1036Q7144 889 7138 834Q7131 779 7115 753Q7094 718 7058 698Q7022 679 6976 679Q6864 679 6800 766Q6736 852 6736 1005V1556H6378V0H6736V600Q6817 502 6908 456Q6999 409 7109 409Q7303 409 7404 528Q7504 647 7504 874ZM7644 436H8002V1556H7644ZM7644 0H8002V292H7644Z",
+    "width": 8002,
+    "height": 1998
+   }
+  },
+  {
+   "id": "mugua",
+   "name": "MuGua",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "MU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 27H490L830 826L1172 27H1661V1520H1297V428L953 1233H709L365 428V1520H0ZM1801 1084V400H2161V512Q2161 603 2160 740Q2159 878 2159 924Q2159 1059 2166 1118Q2173 1178 2190 1205Q2212 1240 2248 1259Q2283 1278 2329 1278Q2441 1278 2505 1192Q2569 1106 2569 953V400H2927V1520H2569V1358Q2488 1456 2398 1502Q2307 1549 2198 1549Q2004 1549 1902 1430Q1801 1311 1801 1084ZM4495 1409Q4351 1479 4196 1514Q4041 1549 3876 1549Q3503 1549 3285 1340Q3067 1132 3067 775Q3067 414 3289 207Q3511 0 3897 0Q4046 0 4182 28Q4319 56 4440 111V420Q4315 349 4192 314Q4068 279 3944 279Q3714 279 3590 408Q3465 536 3465 775Q3465 1012 3585 1141Q3705 1270 3926 1270Q3986 1270 4038 1262Q4089 1255 4130 1239V949H3895V691H4495ZM4635 1084V400H4995V512Q4995 603 4994 740Q4993 878 4993 924Q4993 1059 5000 1118Q5007 1178 5024 1205Q5046 1240 5082 1259Q5117 1278 5163 1278Q5275 1278 5339 1192Q5403 1106 5403 953V400H5761V1520H5403V1358Q5322 1456 5232 1502Q5141 1549 5032 1549Q4838 1549 4736 1430Q4635 1311 4635 1084ZM6487 1016Q6375 1016 6318 1054Q6262 1092 6262 1166Q6262 1234 6308 1272Q6353 1311 6434 1311Q6535 1311 6604 1238Q6673 1166 6673 1057V1016ZM7034 881V1520H6673V1354Q6601 1456 6511 1502Q6421 1549 6292 1549Q6118 1549 6010 1448Q5901 1346 5901 1184Q5901 987 6036 895Q6172 803 6462 803H6673V775Q6673 690 6606 650Q6539 611 6397 611Q6282 611 6183 634Q6084 657 5999 703V430Q6114 402 6230 388Q6346 373 6462 373Q6765 373 6900 492Q7034 612 7034 881Z",
+    "width": 7034,
+    "height": 1549
+   }
+  },
+  {
+   "id": "qj",
+   "name": "QJ",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "QJ",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M809 1547H779Q410 1547 205 1343Q0 1139 0 775Q0 412 204 206Q409 0 768 0Q1131 0 1334 204Q1536 408 1536 775Q1536 1027 1428 1209Q1321 1391 1119 1483L1420 1819H1053ZM768 279Q592 279 495 409Q398 539 398 775Q398 1015 493 1142Q588 1270 768 1270Q945 1270 1042 1140Q1139 1010 1139 775Q1139 539 1042 409Q945 279 768 279ZM1979 27H2364V1375Q2364 1654 2212 1792Q2061 1930 1754 1930H1676V1639H1736Q1856 1639 1918 1572Q1979 1505 1979 1375Z",
+    "width": 2364,
+    "height": 1930
+   }
+  },
+  {
+   "id": "vin-cube",
+   "name": "Vin Cube",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "VI",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H387L783 1165L1178 63H1565L1012 1556H553ZM1705 436H2063V1556H1705ZM1705 0H2063V292H1705ZM3329 874V1556H2969V1445V1034Q2969 889 2962 834Q2956 779 2940 753Q2919 718 2883 698Q2847 679 2801 679Q2689 679 2625 766Q2561 852 2561 1005V1556H2203V436H2561V600Q2642 502 2733 456Q2824 409 2934 409Q3128 409 3228 528Q3329 647 3329 874ZM5189 1474Q5083 1529 4968 1557Q4853 1585 4728 1585Q4355 1585 4137 1376Q3919 1168 3919 811Q3919 453 4137 244Q4355 36 4728 36Q4853 36 4968 64Q5083 92 5189 147V456Q5082 383 4978 349Q4874 315 4759 315Q4553 315 4435 447Q4317 579 4317 811Q4317 1042 4435 1174Q4553 1306 4759 1306Q4874 1306 4978 1272Q5082 1238 5189 1165ZM5329 1120V436H5689V548Q5689 639 5688 776Q5687 914 5687 960Q5687 1095 5694 1154Q5701 1214 5718 1241Q5740 1276 5776 1295Q5811 1314 5857 1314Q5969 1314 6033 1228Q6097 1142 6097 989V436H6455V1556H6097V1394Q6016 1492 5926 1538Q5835 1585 5726 1585Q5532 1585 5430 1466Q5329 1347 5329 1120ZM7191 1325Q7306 1325 7366 1241Q7427 1157 7427 997Q7427 837 7366 753Q7306 669 7191 669Q7076 669 7014 754Q6953 838 6953 997Q6953 1156 7014 1240Q7076 1325 7191 1325ZM6953 600Q7027 502 7117 456Q7207 409 7324 409Q7531 409 7664 574Q7797 738 7797 997Q7797 1256 7664 1420Q7531 1585 7324 1585Q7207 1585 7117 1538Q7027 1492 6953 1394V1556H6595V0H6953ZM9139 993V1095H8302Q8315 1221 8393 1284Q8471 1347 8611 1347Q8724 1347 8842 1314Q8961 1280 9086 1212V1488Q8959 1536 8832 1560Q8705 1585 8578 1585Q8274 1585 8106 1430Q7937 1276 7937 997Q7937 723 8102 566Q8268 409 8558 409Q8822 409 8980 568Q9139 727 9139 993ZM8771 874Q8771 772 8712 710Q8652 647 8556 647Q8452 647 8387 706Q8322 764 8306 874Z",
+    "width": 9139,
+    "height": 1585
+   }
+  },
+  {
+   "id": "witeden",
+   "name": "WitEden",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "WI",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H369L627 1148L883 63H1254L1510 1148L1768 63H2134L1782 1556H1338L1067 421L799 1556H355ZM2274 436H2632V1556H2274ZM2274 0H2632V292H2274ZM3308 118V436H3677V692H3308V1167Q3308 1245 3339 1272Q3370 1300 3462 1300H3646V1556H3339Q3127 1556 3038 1468Q2950 1379 2950 1167V692H2772V436H2950V118ZM3817 63H4856V354H4202V632H4817V923H4202V1265H4878V1556H3817ZM5860 600V0H6220V1556H5860V1394Q5786 1493 5697 1539Q5608 1585 5491 1585Q5284 1585 5151 1420Q5018 1256 5018 997Q5018 738 5151 574Q5284 409 5491 409Q5607 409 5696 456Q5786 502 5860 600ZM5624 1325Q5739 1325 5800 1241Q5860 1157 5860 997Q5860 837 5800 753Q5739 669 5624 669Q5510 669 5450 753Q5389 837 5389 997Q5389 1157 5450 1241Q5510 1325 5624 1325ZM7562 993V1095H6725Q6738 1221 6816 1284Q6894 1347 7034 1347Q7147 1347 7266 1314Q7384 1280 7509 1212V1488Q7382 1536 7255 1560Q7128 1585 7001 1585Q6697 1585 6528 1430Q6360 1276 6360 997Q6360 723 6526 566Q6691 409 6981 409Q7245 409 7404 568Q7562 727 7562 993ZM7194 874Q7194 772 7134 710Q7075 647 6979 647Q6875 647 6810 706Q6745 764 6729 874ZM8828 874V1556H8468V1445V1034Q8468 889 8462 834Q8455 779 8439 753Q8418 718 8382 698Q8346 679 8300 679Q8188 679 8124 766Q8060 852 8060 1005V1556H7702V436H8060V600Q8141 502 8232 456Q8323 409 8433 409Q8627 409 8728 528Q8828 647 8828 874Z",
+    "width": 8828,
+    "height": 1585
+   }
+  },
+  {
+   "id": "limcube",
+   "name": "LimCube",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "LI",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H385V1265H1061V1556H0ZM1201 436H1559V1556H1201ZM1201 0H1559V292H1201ZM2739 622Q2807 518 2900 464Q2994 409 3106 409Q3299 409 3400 528Q3501 647 3501 874V1556H3141V972Q3142 959 3142 945Q3143 931 3143 905Q3143 786 3108 732Q3073 679 2995 679Q2893 679 2838 763Q2782 847 2780 1006V1556H2420V972Q2420 786 2388 732Q2356 679 2274 679Q2171 679 2115 764Q2059 848 2059 1005V1556H1699V436H2059V600Q2125 505 2210 457Q2296 409 2399 409Q2515 409 2604 465Q2693 521 2739 622ZM4911 1474Q4805 1529 4690 1557Q4575 1585 4450 1585Q4077 1585 3859 1376Q3641 1168 3641 811Q3641 453 3859 244Q4077 36 4450 36Q4575 36 4690 64Q4805 92 4911 147V456Q4804 383 4700 349Q4596 315 4481 315Q4275 315 4157 447Q4039 579 4039 811Q4039 1042 4157 1174Q4275 1306 4481 1306Q4596 1306 4700 1272Q4804 1238 4911 1165ZM5051 1120V436H5411V548Q5411 639 5410 776Q5409 914 5409 960Q5409 1095 5416 1154Q5423 1214 5440 1241Q5462 1276 5498 1295Q5533 1314 5579 1314Q5691 1314 5755 1228Q5819 1142 5819 989V436H6177V1556H5819V1394Q5738 1492 5648 1538Q5557 1585 5448 1585Q5254 1585 5152 1466Q5051 1347 5051 1120ZM6913 1325Q7028 1325 7088 1241Q7149 1157 7149 997Q7149 837 7088 753Q7028 669 6913 669Q6798 669 6736 754Q6675 838 6675 997Q6675 1156 6736 1240Q6798 1325 6913 1325ZM6675 600Q6749 502 6839 456Q6929 409 7046 409Q7253 409 7386 574Q7519 738 7519 997Q7519 1256 7386 1420Q7253 1585 7046 1585Q6929 1585 6839 1538Q6749 1492 6675 1394V1556H6317V0H6675ZM8861 993V1095H8024Q8037 1221 8115 1284Q8193 1347 8333 1347Q8446 1347 8564 1314Q8683 1280 8808 1212V1488Q8681 1536 8554 1560Q8427 1585 8300 1585Q7996 1585 7828 1430Q7659 1276 7659 997Q7659 723 7824 566Q7990 409 8280 409Q8544 409 8702 568Q8861 727 8861 993ZM8493 874Q8493 772 8434 710Q8374 647 8278 647Q8174 647 8109 706Q8044 764 8028 874Z",
+    "width": 8861,
+    "height": 1585
+   }
+  },
+  {
+   "id": "cube4you",
+   "name": "Cube4You",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "CU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M1270 1474Q1164 1529 1049 1557Q934 1585 809 1585Q436 1585 218 1376Q0 1168 0 811Q0 453 218 244Q436 36 809 36Q934 36 1049 64Q1164 92 1270 147V456Q1163 383 1059 349Q955 315 840 315Q634 315 516 447Q398 579 398 811Q398 1042 516 1174Q634 1306 840 1306Q955 1306 1059 1272Q1163 1238 1270 1165ZM1410 1120V436H1770V548Q1770 639 1769 776Q1768 914 1768 960Q1768 1095 1775 1154Q1782 1214 1799 1241Q1821 1276 1856 1295Q1892 1314 1938 1314Q2050 1314 2114 1228Q2178 1142 2178 989V436H2536V1556H2178V1394Q2097 1492 2006 1538Q1916 1585 1807 1585Q1613 1585 1512 1466Q1410 1347 1410 1120ZM3272 1325Q3387 1325 3448 1241Q3508 1157 3508 997Q3508 837 3448 753Q3387 669 3272 669Q3157 669 3096 754Q3034 838 3034 997Q3034 1156 3096 1240Q3157 1325 3272 1325ZM3034 600Q3108 502 3198 456Q3288 409 3405 409Q3612 409 3745 574Q3878 738 3878 997Q3878 1256 3745 1420Q3612 1585 3405 1585Q3288 1585 3198 1538Q3108 1492 3034 1394V1556H2676V0H3034ZM5220 993V1095H4383Q4396 1221 4474 1284Q4552 1347 4692 1347Q4805 1347 4924 1314Q5042 1280 5167 1212V1488Q5040 1536 4913 1560Q4786 1585 4659 1585Q4355 1585 4186 1430Q4018 1276 4018 997Q4018 723 4184 566Q4349 409 4639 409Q4903 409 5062 568Q5220 727 5220 993ZM4852 874Q4852 772 4792 710Q4733 647 4637 647Q4533 647 4468 706Q4403 764 4387 874ZM6022 380L5600 1005H6022ZM5958 63H6386V1005H6599V1284H6386V1556H6022V1284H5360V954ZM6739 63H7160L7500 595L7840 63H8262L7693 927V1556H7308V927ZM9019 665Q8900 665 8838 750Q8775 836 8775 997Q8775 1158 8838 1244Q8900 1329 9019 1329Q9136 1329 9198 1244Q9260 1158 9260 997Q9260 836 9198 750Q9136 665 9019 665ZM9019 409Q9308 409 9470 565Q9633 721 9633 997Q9633 1273 9470 1429Q9308 1585 9019 1585Q8729 1585 8566 1429Q8402 1273 8402 997Q8402 721 8566 565Q8729 409 9019 409ZM9773 1120V436H10133V548Q10133 639 10132 776Q10131 914 10131 960Q10131 1095 10138 1154Q10145 1214 10162 1241Q10184 1276 10220 1295Q10255 1314 10301 1314Q10413 1314 10477 1228Q10541 1142 10541 989V436H10899V1556H10541V1394Q10460 1492 10370 1538Q10279 1585 10170 1585Q9976 1585 9874 1466Q9773 1347 9773 1120Z",
+    "width": 10899,
+    "height": 1585
+   }
+  },
+  {
+   "id": "lingao",
+   "name": "LingAo",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "LI",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H385V1265H1061V1556H0ZM1201 436H1559V1556H1201ZM1201 0H1559V292H1201ZM2825 874V1556H2465V1445V1034Q2465 889 2458 834Q2452 779 2436 753Q2415 718 2379 698Q2343 679 2297 679Q2185 679 2121 766Q2057 852 2057 1005V1556H1699V436H2057V600Q2138 502 2229 456Q2320 409 2430 409Q2624 409 2724 528Q2825 647 2825 874ZM3807 1366Q3733 1464 3644 1510Q3555 1556 3438 1556Q3233 1556 3099 1394Q2965 1233 2965 983Q2965 732 3099 572Q3233 411 3438 411Q3555 411 3644 457Q3733 503 3807 602V436H4167V1443Q4167 1713 3996 1856Q3826 1998 3502 1998Q3397 1998 3299 1982Q3201 1966 3102 1933V1654Q3196 1708 3286 1734Q3376 1761 3467 1761Q3643 1761 3725 1684Q3807 1607 3807 1443ZM3571 669Q3460 669 3398 751Q3336 833 3336 983Q3336 1137 3396 1216Q3456 1296 3571 1296Q3683 1296 3745 1214Q3807 1132 3807 983Q3807 833 3745 751Q3683 669 3571 669ZM5391 1284H4789L4694 1556H4307L4860 63H5319L5872 1556H5485ZM4885 1007H5294L5090 413ZM6629 665Q6510 665 6448 750Q6385 836 6385 997Q6385 1158 6448 1244Q6510 1329 6629 1329Q6746 1329 6808 1244Q6870 1158 6870 997Q6870 836 6808 750Q6746 665 6629 665ZM6629 409Q6918 409 7080 565Q7243 721 7243 997Q7243 1273 7080 1429Q6918 1585 6629 1585Q6339 1585 6176 1429Q6012 1273 6012 997Q6012 721 6176 565Q6339 409 6629 409Z",
+    "width": 7243,
+    "height": 1998
+   }
+  },
+  {
+   "id": "huameng",
+   "name": "HuaMeng",
+   "parentId": null,
+   "country": "Trung Quốc",
+   "summary": "Thường bán dưới tên MoYu HuaMeng; dòng YS3M nam châm.",
+   "mark": "HU",
+   "color": "FFD32F2F",
+   "logo": {
+    "path": "M0 0H385V569H953V0H1338V1493H953V860H385V1493H0ZM1478 1057V373H1838V485Q1838 576 1837 714Q1836 851 1836 897Q1836 1032 1843 1092Q1850 1151 1867 1178Q1889 1213 1924 1232Q1960 1251 2006 1251Q2118 1251 2182 1165Q2246 1079 2246 926V373H2604V1493H2246V1331Q2165 1429 2074 1476Q1984 1522 1875 1522Q1681 1522 1580 1403Q1478 1284 1478 1057ZM3330 989Q3218 989 3162 1027Q3105 1065 3105 1139Q3105 1207 3150 1246Q3196 1284 3277 1284Q3378 1284 3447 1212Q3516 1139 3516 1030V989ZM3877 854V1493H3516V1327Q3444 1429 3354 1476Q3264 1522 3135 1522Q2961 1522 2852 1420Q2744 1319 2744 1157Q2744 960 2880 868Q3015 776 3305 776H3516V748Q3516 663 3449 624Q3382 584 3240 584Q3125 584 3026 607Q2927 630 2842 676V403Q2957 375 3073 360Q3189 346 3305 346Q3608 346 3742 466Q3877 585 3877 854ZM4017 0H4507L4847 799L5189 0H5678V1493H5314V401L4970 1206H4726L4382 401V1493H4017ZM7020 930V1032H6183Q6196 1158 6274 1221Q6352 1284 6492 1284Q6605 1284 6724 1250Q6842 1217 6967 1149V1425Q6840 1473 6713 1498Q6586 1522 6459 1522Q6155 1522 5986 1368Q5818 1213 5818 934Q5818 660 5984 503Q6149 346 6439 346Q6703 346 6862 505Q7020 664 7020 930ZM6652 811Q6652 709 6592 646Q6533 584 6437 584Q6333 584 6268 642Q6203 701 6187 811ZM8286 811V1493H7926V1382V971Q7926 826 7920 771Q7913 716 7897 690Q7876 655 7840 636Q7804 616 7758 616Q7646 616 7582 702Q7518 789 7518 942V1493H7160V373H7518V537Q7599 439 7690 392Q7781 346 7891 346Q8085 346 8186 465Q8286 584 8286 811ZM9268 1303Q9194 1401 9105 1447Q9016 1493 8899 1493Q8694 1493 8560 1332Q8426 1170 8426 920Q8426 669 8560 508Q8694 348 8899 348Q9016 348 9105 394Q9194 440 9268 539V373H9628V1380Q9628 1650 9458 1792Q9287 1935 8963 1935Q8858 1935 8760 1919Q8662 1903 8563 1870V1591Q8657 1645 8747 1672Q8837 1698 8928 1698Q9104 1698 9186 1621Q9268 1544 9268 1380ZM9032 606Q8921 606 8859 688Q8797 770 8797 920Q8797 1074 8857 1154Q8917 1233 9032 1233Q9144 1233 9206 1151Q9268 1069 9268 920Q9268 770 9206 688Q9144 606 9032 606Z",
+    "width": 9628,
+    "height": 1935
+   }
+  },
+  {
+   "id": "haitun",
+   "name": "HaiTun",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "HA",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H385V632H953V63H1338V1556H953V923H385V1556H0ZM2064 1052Q1952 1052 1896 1090Q1839 1128 1839 1202Q1839 1270 1884 1308Q1930 1347 2011 1347Q2112 1347 2181 1274Q2250 1202 2250 1093V1052ZM2611 917V1556H2250V1390Q2178 1492 2088 1538Q1998 1585 1869 1585Q1695 1585 1586 1484Q1478 1382 1478 1220Q1478 1023 1614 931Q1749 839 2039 839H2250V811Q2250 726 2183 686Q2116 647 1974 647Q1859 647 1760 670Q1661 693 1576 739V466Q1691 438 1807 424Q1923 409 2039 409Q2342 409 2476 528Q2611 648 2611 917ZM2751 436H3109V1556H2751ZM2751 0H3109V292H2751ZM3249 63H4625V354H4130V1556H3745V354H3249ZM4765 1120V436H5125V548Q5125 639 5124 776Q5123 914 5123 960Q5123 1095 5130 1154Q5137 1214 5154 1241Q5176 1276 5212 1295Q5247 1314 5293 1314Q5405 1314 5469 1228Q5533 1142 5533 989V436H5891V1556H5533V1394Q5452 1492 5362 1538Q5271 1585 5162 1585Q4968 1585 4866 1466Q4765 1347 4765 1120ZM7157 874V1556H6797V1445V1034Q6797 889 6790 834Q6784 779 6768 753Q6747 718 6711 698Q6675 679 6629 679Q6517 679 6453 766Q6389 852 6389 1005V1556H6031V436H6389V600Q6470 502 6561 456Q6652 409 6762 409Q6956 409 7056 528Q7157 647 7157 874Z",
+    "width": 7157,
+    "height": 1585
+   }
+  },
+  {
+   "id": "kfcube",
+   "name": "KungFu Cube",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "KU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H385V608L940 63H1387L668 770L1461 1556H979L385 968V1556H0ZM1601 1120V436H1961V548Q1961 639 1960 776Q1959 914 1959 960Q1959 1095 1966 1154Q1973 1214 1990 1241Q2012 1276 2048 1295Q2083 1314 2129 1314Q2241 1314 2305 1228Q2369 1142 2369 989V436H2727V1556H2369V1394Q2288 1492 2198 1538Q2107 1585 1998 1585Q1804 1585 1702 1466Q1601 1347 1601 1120ZM3993 874V1556H3633V1445V1034Q3633 889 3626 834Q3620 779 3604 753Q3583 718 3547 698Q3511 679 3465 679Q3353 679 3289 766Q3225 852 3225 1005V1556H2867V436H3225V600Q3306 502 3397 456Q3488 409 3598 409Q3792 409 3892 528Q3993 647 3993 874ZM4975 1366Q4901 1464 4812 1510Q4723 1556 4606 1556Q4401 1556 4267 1394Q4133 1233 4133 983Q4133 732 4267 572Q4401 411 4606 411Q4723 411 4812 457Q4901 503 4975 602V436H5335V1443Q5335 1713 5164 1856Q4994 1998 4670 1998Q4565 1998 4467 1982Q4369 1966 4270 1933V1654Q4364 1708 4454 1734Q4544 1761 4635 1761Q4811 1761 4893 1684Q4975 1607 4975 1443ZM4739 669Q4628 669 4566 751Q4504 833 4504 983Q4504 1137 4564 1216Q4624 1296 4739 1296Q4851 1296 4913 1214Q4975 1132 4975 983Q4975 833 4913 751Q4851 669 4739 669ZM5475 63H6514V354H5860V632H6475V923H5860V1556H5475ZM6654 1120V436H7014V548Q7014 639 7013 776Q7012 914 7012 960Q7012 1095 7019 1154Q7026 1214 7043 1241Q7065 1276 7100 1295Q7136 1314 7182 1314Q7294 1314 7358 1228Q7422 1142 7422 989V436H7780V1556H7422V1394Q7341 1492 7250 1538Q7160 1585 7051 1585Q6857 1585 6756 1466Q6654 1347 6654 1120ZM9640 1474Q9534 1529 9419 1557Q9304 1585 9179 1585Q8806 1585 8588 1376Q8370 1168 8370 811Q8370 453 8588 244Q8806 36 9179 36Q9304 36 9419 64Q9534 92 9640 147V456Q9533 383 9429 349Q9325 315 9210 315Q9004 315 8886 447Q8768 579 8768 811Q8768 1042 8886 1174Q9004 1306 9210 1306Q9325 1306 9429 1272Q9533 1238 9640 1165ZM9780 1120V436H10140V548Q10140 639 10139 776Q10138 914 10138 960Q10138 1095 10145 1154Q10152 1214 10169 1241Q10191 1276 10226 1295Q10262 1314 10308 1314Q10420 1314 10484 1228Q10548 1142 10548 989V436H10906V1556H10548V1394Q10467 1492 10376 1538Q10286 1585 10177 1585Q9983 1585 9882 1466Q9780 1347 9780 1120ZM11642 1325Q11757 1325 11818 1241Q11878 1157 11878 997Q11878 837 11818 753Q11757 669 11642 669Q11527 669 11466 754Q11404 838 11404 997Q11404 1156 11466 1240Q11527 1325 11642 1325ZM11404 600Q11478 502 11568 456Q11658 409 11775 409Q11982 409 12115 574Q12248 738 12248 997Q12248 1256 12115 1420Q11982 1585 11775 1585Q11658 1585 11568 1538Q11478 1492 11404 1394V1556H11046V0H11404ZM13590 993V1095H12753Q12766 1221 12844 1284Q12922 1347 13062 1347Q13175 1347 13294 1314Q13412 1280 13537 1212V1488Q13410 1536 13283 1560Q13156 1585 13029 1585Q12725 1585 12556 1430Q12388 1276 12388 997Q12388 723 12554 566Q12719 409 13009 409Q13273 409 13432 568Q13590 727 13590 993ZM13222 874Q13222 772 13162 710Q13103 647 13007 647Q12903 647 12838 706Q12773 764 12757 874Z",
+    "width": 13590,
+    "height": 1998
+   }
+  },
+  {
+   "id": "lefun",
+   "name": "Lefun",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "LE",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 63H385V1265H1061V1556H0ZM2403 993V1095H1566Q1579 1221 1657 1284Q1735 1347 1875 1347Q1988 1347 2106 1314Q2225 1280 2350 1212V1488Q2223 1536 2096 1560Q1969 1585 1842 1585Q1538 1585 1370 1430Q1201 1276 1201 997Q1201 723 1366 566Q1532 409 1822 409Q2086 409 2244 568Q2403 727 2403 993ZM2035 874Q2035 772 1976 710Q1916 647 1820 647Q1716 647 1651 706Q1586 764 1570 874ZM3413 0V235H3215Q3139 235 3109 262Q3079 290 3079 358V436H3385V692H3079V1556H2721V692H2543V436H2721V358Q2721 175 2823 88Q2925 0 3139 0ZM3553 1120V436H3913V548Q3913 639 3912 776Q3911 914 3911 960Q3911 1095 3918 1154Q3925 1214 3942 1241Q3964 1276 4000 1295Q4035 1314 4081 1314Q4193 1314 4257 1228Q4321 1142 4321 989V436H4679V1556H4321V1394Q4240 1492 4150 1538Q4059 1585 3950 1585Q3756 1585 3654 1466Q3553 1347 3553 1120ZM5945 874V1556H5585V1445V1034Q5585 889 5578 834Q5572 779 5556 753Q5535 718 5499 698Q5463 679 5417 679Q5305 679 5241 766Q5177 852 5177 1005V1556H4819V436H5177V600Q5258 502 5349 456Q5440 409 5550 409Q5744 409 5844 528Q5945 647 5945 874Z",
+    "width": 5945,
+    "height": 1585
+   }
+  },
+  {
+   "id": "moretry",
+   "name": "MoreTry",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "MO",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 0H490L830 799L1172 0H1661V1493H1297V401L953 1206H709L365 401V1493H0ZM2418 602Q2299 602 2236 688Q2174 773 2174 934Q2174 1095 2236 1180Q2299 1266 2418 1266Q2535 1266 2597 1180Q2659 1095 2659 934Q2659 773 2597 688Q2535 602 2418 602ZM2418 346Q2707 346 2870 502Q3032 658 3032 934Q3032 1210 2870 1366Q2707 1522 2418 1522Q2128 1522 1964 1366Q1801 1210 1801 934Q1801 658 1964 502Q2128 346 2418 346ZM4004 678Q3957 656 3910 646Q3864 635 3817 635Q3679 635 3604 724Q3530 812 3530 977V1493H3172V373H3530V557Q3599 447 3688 396Q3778 346 3903 346Q3921 346 3942 348Q3963 349 4003 354ZM5346 930V1032H4509Q4522 1158 4600 1221Q4678 1284 4818 1284Q4931 1284 5050 1250Q5168 1217 5293 1149V1425Q5166 1473 5039 1498Q4912 1522 4785 1522Q4481 1522 4312 1368Q4144 1213 4144 934Q4144 660 4310 503Q4475 346 4765 346Q5029 346 5188 505Q5346 664 5346 930ZM4978 811Q4978 709 4918 646Q4859 584 4763 584Q4659 584 4594 642Q4529 701 4513 811ZM5486 0H6862V291H6367V1493H5982V291H5486ZM7834 678Q7787 656 7740 646Q7694 635 7647 635Q7509 635 7434 724Q7360 812 7360 977V1493H7002V373H7360V557Q7429 447 7518 396Q7608 346 7733 346Q7751 346 7772 348Q7793 349 7833 354ZM7974 373H8332L8633 1133L8889 373H9247L8776 1599Q8705 1786 8610 1860Q8516 1935 8361 1935H8154V1700H8266Q8357 1700 8398 1671Q8440 1642 8463 1567L8473 1536Z",
+    "width": 9247,
+    "height": 1935
+   }
+  },
+  {
+   "id": "ze-puzzles",
+   "name": "ZePuzzles",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "ZE",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M23 63H1278V296L477 1265H1301V1556H0V1323L801 354H23ZM2643 993V1095H1806Q1819 1221 1897 1284Q1975 1347 2115 1347Q2228 1347 2346 1314Q2465 1280 2590 1212V1488Q2463 1536 2336 1560Q2209 1585 2082 1585Q1778 1585 1610 1430Q1441 1276 1441 997Q1441 723 1606 566Q1772 409 2062 409Q2326 409 2484 568Q2643 727 2643 993ZM2275 874Q2275 772 2216 710Q2156 647 2060 647Q1956 647 1891 706Q1826 764 1810 874ZM2783 63H3422Q3707 63 3860 190Q4012 316 4012 550Q4012 785 3860 912Q3707 1038 3422 1038H3168V1556H2783ZM3168 342V759H3381Q3493 759 3554 704Q3615 650 3615 550Q3615 450 3554 396Q3493 342 3381 342ZM4152 1120V436H4512V548Q4512 639 4511 776Q4510 914 4510 960Q4510 1095 4517 1154Q4524 1214 4541 1241Q4563 1276 4598 1295Q4634 1314 4680 1314Q4792 1314 4856 1228Q4920 1142 4920 989V436H5278V1556H4920V1394Q4839 1492 4748 1538Q4658 1585 4549 1585Q4355 1585 4254 1466Q4152 1347 4152 1120ZM5443 436H6420V686L5830 1300H6420V1556H5418V1306L6008 692H5443ZM6585 436H7562V686L6972 1300H7562V1556H6560V1306L7150 692H6585ZM7702 0H8060V1556H7702ZM9402 993V1095H8565Q8578 1221 8656 1284Q8734 1347 8874 1347Q8987 1347 9106 1314Q9224 1280 9349 1212V1488Q9222 1536 9095 1560Q8968 1585 8841 1585Q8537 1585 8368 1430Q8200 1276 8200 997Q8200 723 8366 566Q8531 409 8821 409Q9085 409 9244 568Q9402 727 9402 993ZM9034 874Q9034 772 8974 710Q8915 647 8819 647Q8715 647 8650 706Q8585 764 8569 874ZM10483 471V743Q10368 695 10261 671Q10154 647 10059 647Q9957 647 9908 672Q9858 698 9858 751Q9858 794 9896 817Q9933 840 10030 851L10093 860Q10368 895 10463 975Q10558 1055 10558 1226Q10558 1405 10426 1495Q10294 1585 10032 1585Q9921 1585 9802 1568Q9684 1550 9559 1515V1243Q9666 1295 9778 1321Q9891 1347 10007 1347Q10112 1347 10165 1318Q10218 1289 10218 1232Q10218 1184 10182 1160Q10145 1137 10036 1124L9973 1116Q9734 1086 9638 1005Q9542 924 9542 759Q9542 581 9664 495Q9786 409 10038 409Q10137 409 10246 424Q10355 439 10483 471Z",
+    "width": 10558,
+    "height": 1585
+   }
+  },
+  {
+   "id": "z-cube",
+   "name": "Z-Cube",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "Z-",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M23 63H1278V296L477 1265H1301V1556H0V1323L801 354H23ZM1441 821H2069V1112H1441ZM3479 1474Q3373 1529 3258 1557Q3143 1585 3018 1585Q2645 1585 2427 1376Q2209 1168 2209 811Q2209 453 2427 244Q2645 36 3018 36Q3143 36 3258 64Q3373 92 3479 147V456Q3372 383 3268 349Q3164 315 3049 315Q2843 315 2725 447Q2607 579 2607 811Q2607 1042 2725 1174Q2843 1306 3049 1306Q3164 1306 3268 1272Q3372 1238 3479 1165ZM3619 1120V436H3979V548Q3979 639 3978 776Q3977 914 3977 960Q3977 1095 3984 1154Q3991 1214 4008 1241Q4030 1276 4066 1295Q4101 1314 4147 1314Q4259 1314 4323 1228Q4387 1142 4387 989V436H4745V1556H4387V1394Q4306 1492 4216 1538Q4125 1585 4016 1585Q3822 1585 3720 1466Q3619 1347 3619 1120ZM5481 1325Q5596 1325 5656 1241Q5717 1157 5717 997Q5717 837 5656 753Q5596 669 5481 669Q5366 669 5304 754Q5243 838 5243 997Q5243 1156 5304 1240Q5366 1325 5481 1325ZM5243 600Q5317 502 5407 456Q5497 409 5614 409Q5821 409 5954 574Q6087 738 6087 997Q6087 1256 5954 1420Q5821 1585 5614 1585Q5497 1585 5407 1538Q5317 1492 5243 1394V1556H4885V0H5243ZM7429 993V1095H6592Q6605 1221 6683 1284Q6761 1347 6901 1347Q7014 1347 7132 1314Q7251 1280 7376 1212V1488Q7249 1536 7122 1560Q6995 1585 6868 1585Q6564 1585 6396 1430Q6227 1276 6227 997Q6227 723 6392 566Q6558 409 6848 409Q7112 409 7270 568Q7429 727 7429 993ZM7061 874Q7061 772 7002 710Q6942 647 6846 647Q6742 647 6677 706Q6612 764 6596 874Z",
+    "width": 7429,
+    "height": 1585
+   }
+  },
+  {
+   "id": "cube-twist",
+   "name": "Cube Twist",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "CU",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M1270 1474Q1164 1529 1049 1557Q934 1585 809 1585Q436 1585 218 1376Q0 1168 0 811Q0 453 218 244Q436 36 809 36Q934 36 1049 64Q1164 92 1270 147V456Q1163 383 1059 349Q955 315 840 315Q634 315 516 447Q398 579 398 811Q398 1042 516 1174Q634 1306 840 1306Q955 1306 1059 1272Q1163 1238 1270 1165ZM1410 1120V436H1770V548Q1770 639 1769 776Q1768 914 1768 960Q1768 1095 1775 1154Q1782 1214 1799 1241Q1821 1276 1856 1295Q1892 1314 1938 1314Q2050 1314 2114 1228Q2178 1142 2178 989V436H2536V1556H2178V1394Q2097 1492 2006 1538Q1916 1585 1807 1585Q1613 1585 1512 1466Q1410 1347 1410 1120ZM3272 1325Q3387 1325 3448 1241Q3508 1157 3508 997Q3508 837 3448 753Q3387 669 3272 669Q3157 669 3096 754Q3034 838 3034 997Q3034 1156 3096 1240Q3157 1325 3272 1325ZM3034 600Q3108 502 3198 456Q3288 409 3405 409Q3612 409 3745 574Q3878 738 3878 997Q3878 1256 3745 1420Q3612 1585 3405 1585Q3288 1585 3198 1538Q3108 1492 3034 1394V1556H2676V0H3034ZM5220 993V1095H4383Q4396 1221 4474 1284Q4552 1347 4692 1347Q4805 1347 4924 1314Q5042 1280 5167 1212V1488Q5040 1536 4913 1560Q4786 1585 4659 1585Q4355 1585 4186 1430Q4018 1276 4018 997Q4018 723 4184 566Q4349 409 4639 409Q4903 409 5062 568Q5220 727 5220 993ZM4852 874Q4852 772 4792 710Q4733 647 4637 647Q4533 647 4468 706Q4403 764 4387 874ZM5810 63H7186V354H6691V1556H6306V354H5810ZM7326 436H7674L7862 1208L8051 436H8350L8538 1200L8727 436H9075L8780 1556H8389L8200 786L8012 1556H7621ZM9215 436H9573V1556H9215ZM9215 0H9573V292H9215ZM10654 471V743Q10539 695 10432 671Q10325 647 10230 647Q10128 647 10078 672Q10029 698 10029 751Q10029 794 10066 817Q10104 840 10201 851L10264 860Q10539 895 10634 975Q10729 1055 10729 1226Q10729 1405 10597 1495Q10465 1585 10203 1585Q10092 1585 9974 1568Q9855 1550 9730 1515V1243Q9837 1295 9950 1321Q10062 1347 10178 1347Q10283 1347 10336 1318Q10389 1289 10389 1232Q10389 1184 10352 1160Q10316 1137 10207 1124L10144 1116Q9905 1086 9809 1005Q9713 924 9713 759Q9713 581 9835 495Q9957 409 10209 409Q10308 409 10417 424Q10526 439 10654 471ZM11405 118V436H11774V692H11405V1167Q11405 1245 11436 1272Q11467 1300 11559 1300H11743V1556H11436Q11224 1556 11136 1468Q11047 1379 11047 1167V692H10869V436H11047V118Z",
+    "width": 11774,
+    "height": 1585
+   }
+  },
+  {
+   "id": "maru",
+   "name": "Maru",
+   "parentId": null,
+   "country": "",
+   "summary": "",
+   "mark": "MA",
+   "color": "FF37474F",
+   "logo": {
+    "path": "M0 0H490L830 799L1172 0H1661V1493H1297V401L953 1206H709L365 401V1493H0ZM2387 989Q2275 989 2218 1027Q2162 1065 2162 1139Q2162 1207 2208 1246Q2253 1284 2334 1284Q2435 1284 2504 1212Q2573 1139 2573 1030V989ZM2934 854V1493H2573V1327Q2501 1429 2411 1476Q2321 1522 2192 1522Q2018 1522 1910 1420Q1801 1319 1801 1157Q1801 960 1936 868Q2072 776 2362 776H2573V748Q2573 663 2506 624Q2439 584 2297 584Q2182 584 2083 607Q1984 630 1899 676V403Q2014 375 2130 360Q2246 346 2362 346Q2665 346 2800 466Q2934 585 2934 854ZM3906 678Q3859 656 3812 646Q3766 635 3719 635Q3581 635 3506 724Q3432 812 3432 977V1493H3074V373H3432V557Q3501 447 3590 396Q3680 346 3805 346Q3823 346 3844 348Q3865 349 3905 354ZM4046 1057V373H4406V485Q4406 576 4405 714Q4404 851 4404 897Q4404 1032 4411 1092Q4418 1151 4435 1178Q4457 1213 4492 1232Q4528 1251 4574 1251Q4686 1251 4750 1165Q4814 1079 4814 926V373H5172V1493H4814V1331Q4733 1429 4642 1476Q4552 1522 4443 1522Q4249 1522 4148 1403Q4046 1284 4046 1057Z",
+    "width": 5172,
+    "height": 1522
+   }
+  },
+  {
+   "id": "monster-go",
+   "name": "Monster Go",
+   "parentId": "gan",
+   "country": "Trung Quốc",
+   "summary": "Thương hiệu con của GAN hướng tới người mới và giáo dục.",
+   "mark": "MO",
+   "color": "FF43A047",
+   "logo": {
+    "path": "M0 27H490L830 826L1172 27H1661V1520H1297V428L953 1233H709L365 428V1520H0ZM2418 629Q2299 629 2236 714Q2174 800 2174 961Q2174 1122 2236 1208Q2299 1293 2418 1293Q2535 1293 2597 1208Q2659 1122 2659 961Q2659 800 2597 714Q2535 629 2418 629ZM2418 373Q2707 373 2870 529Q3032 685 3032 961Q3032 1237 2870 1393Q2707 1549 2418 1549Q2128 1549 1964 1393Q1801 1237 1801 961Q1801 685 1964 529Q2128 373 2418 373ZM4298 838V1520H3938V1409V998Q3938 853 3932 798Q3925 743 3909 717Q3888 682 3852 662Q3816 643 3770 643Q3658 643 3594 730Q3530 816 3530 969V1520H3172V400H3530V564Q3611 466 3702 420Q3793 373 3903 373Q4097 373 4198 492Q4298 611 4298 838ZM5379 435V707Q5264 659 5157 635Q5050 611 4955 611Q4853 611 4804 636Q4754 662 4754 715Q4754 758 4792 781Q4829 804 4926 815L4989 824Q5264 859 5359 939Q5454 1019 5454 1190Q5454 1369 5322 1459Q5190 1549 4928 1549Q4817 1549 4698 1532Q4580 1514 4455 1479V1207Q4562 1259 4674 1285Q4787 1311 4903 1311Q5008 1311 5061 1282Q5114 1253 5114 1196Q5114 1148 5078 1124Q5041 1101 4932 1088L4869 1080Q4630 1050 4534 969Q4438 888 4438 723Q4438 545 4560 459Q4682 373 4934 373Q5033 373 5142 388Q5251 403 5379 435ZM6130 82V400H6499V656H6130V1131Q6130 1209 6161 1236Q6192 1264 6284 1264H6468V1520H6161Q5949 1520 5860 1432Q5772 1343 5772 1131V656H5594V400H5772V82ZM7841 957V1059H7004Q7017 1185 7095 1248Q7173 1311 7313 1311Q7426 1311 7544 1278Q7663 1244 7788 1176V1452Q7661 1500 7534 1524Q7407 1549 7280 1549Q6976 1549 6808 1394Q6639 1240 6639 961Q6639 687 6804 530Q6970 373 7260 373Q7524 373 7682 532Q7841 691 7841 957ZM7473 838Q7473 736 7414 674Q7354 611 7258 611Q7154 611 7089 670Q7024 728 7008 838ZM8813 705Q8766 683 8720 672Q8673 662 8626 662Q8488 662 8414 750Q8339 839 8339 1004V1520H7981V400H8339V584Q8408 474 8498 424Q8587 373 8712 373Q8730 373 8751 374Q8772 376 8812 381ZM10831 1409Q10687 1479 10532 1514Q10377 1549 10212 1549Q9839 1549 9621 1340Q9403 1132 9403 775Q9403 414 9625 207Q9847 0 10233 0Q10382 0 10518 28Q10655 56 10776 111V420Q10651 349 10528 314Q10404 279 10280 279Q10050 279 9926 408Q9801 536 9801 775Q9801 1012 9921 1141Q10041 1270 10262 1270Q10322 1270 10374 1262Q10425 1255 10466 1239V949H10231V691H10831ZM11588 629Q11469 629 11406 714Q11344 800 11344 961Q11344 1122 11406 1208Q11469 1293 11588 1293Q11705 1293 11767 1208Q11829 1122 11829 961Q11829 800 11767 714Q11705 629 11588 629ZM11588 373Q11877 373 12040 529Q12202 685 12202 961Q12202 1237 12040 1393Q11877 1549 11588 1549Q11298 1549 11134 1393Q10971 1237 10971 961Q10971 685 11134 529Q11298 373 11588 373Z",
+    "width": 12202,
+    "height": 1549
+   }
+  },
+  {
+   "id": "swift-block",
+   "name": "Swift Block",
+   "parentId": "gan",
+   "country": "Trung Quốc",
+   "summary": "Thương hiệu con của GAN với các mẫu giá mềm.",
+   "mark": "SW",
+   "color": "FFE65100",
+   "logo": {
+    "path": "M1080 110V426Q957 371 840 343Q723 315 619 315Q481 315 415 353Q349 391 349 471Q349 531 394 564Q438 598 555 622L719 655Q968 705 1073 807Q1178 909 1178 1097Q1178 1344 1032 1464Q885 1585 584 1585Q442 1585 299 1558Q156 1531 13 1478V1153Q156 1229 290 1268Q423 1306 547 1306Q673 1306 740 1264Q807 1222 807 1144Q807 1074 762 1036Q716 998 580 968L431 935Q207 887 104 782Q0 677 0 499Q0 276 144 156Q288 36 558 36Q681 36 811 54Q941 73 1080 110ZM1318 436H1666L1854 1208L2043 436H2342L2530 1200L2719 436H3067L2772 1556H2381L2192 786L2004 1556H1613ZM3207 436H3565V1556H3207ZM3207 0H3565V292H3207ZM4575 0V235H4377Q4301 235 4271 262Q4241 290 4241 358V436H4547V692H4241V1556H3883V692H3705V436H3883V358Q3883 175 3985 88Q4087 0 4301 0ZM5251 118V436H5620V692H5251V1167Q5251 1245 5282 1272Q5313 1300 5405 1300H5589V1556H5282Q5070 1556 4982 1468Q4893 1379 4893 1167V692H4715V436H4893V118ZM6808 641Q6899 641 6946 601Q6993 561 6993 483Q6993 406 6946 366Q6899 325 6808 325H6595V641ZM6821 1294Q6937 1294 6996 1245Q7054 1196 7054 1097Q7054 1000 6996 952Q6938 903 6821 903H6595V1294ZM7179 757Q7303 793 7371 890Q7439 987 7439 1128Q7439 1344 7293 1450Q7147 1556 6849 1556H6210V63H6788Q7099 63 7238 157Q7378 251 7378 458Q7378 567 7327 644Q7276 720 7179 757ZM7579 0H7937V1556H7579ZM8694 665Q8575 665 8512 750Q8450 836 8450 997Q8450 1158 8512 1244Q8575 1329 8694 1329Q8811 1329 8873 1244Q8935 1158 8935 997Q8935 836 8873 750Q8811 665 8694 665ZM8694 409Q8983 409 9146 565Q9308 721 9308 997Q9308 1273 9146 1429Q8983 1585 8694 1585Q8404 1585 8240 1429Q8077 1273 8077 997Q8077 721 8240 565Q8404 409 8694 409ZM10437 471V763Q10364 713 10290 689Q10217 665 10138 665Q9988 665 9904 752Q9821 840 9821 997Q9821 1154 9904 1242Q9988 1329 10138 1329Q10222 1329 10298 1304Q10373 1279 10437 1230V1523Q10353 1554 10266 1570Q10180 1585 10093 1585Q9790 1585 9619 1430Q9448 1274 9448 997Q9448 720 9619 564Q9790 409 10093 409Q10181 409 10266 424Q10352 440 10437 471ZM10577 0H10935V847L11347 436H11763L11216 950L11806 1556H11372L10935 1089V1556H10577Z",
+    "width": 11806,
+    "height": 1585
+   }
+  }
+ ],
+ "puzzles": [
+  {
+   "id": "moyu-wrm-v11",
+   "name": "MoYu WeiLong WRM V11",
+   "brandId": "moyu",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Mới",
+    "Flagship",
+    "Maglev",
+    "UV"
+   ],
+   "features": [
+    "Thiết kế 'capped pieces'",
+    "Nhiều phiên bản: nam châm thường, UV, ball-core 8 nam châm, ball-core 20 nam châm + maglev"
+   ],
+   "reviews": [
+    "Flagship mới nhất của MoYu",
+    "Được Yiheng Wang dùng khi lập kỷ lục trung bình dưới 4 giây"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "moyu-super-rs3m-v2",
+   "name": "MoYu Super RS3M V2",
+   "brandId": "moyu",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá tốt",
+    "UV"
+   ],
+   "features": [
+    "Thiết kế bên trong đơn giản hoá",
+    "Phủ UV"
+   ],
+   "reviews": [
+    "Hiệu năng nằm giữa Super RS3M V1 và WeiLong V9",
+    "Chắc, ổn định, xoay mượt"
+   ],
+   "audience": "Người mới đến trung cấp"
+  },
+  {
+   "id": "moyu-rs3m-v5",
+   "name": "MoYu RS3M V5",
+   "brandId": "moyu",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá rẻ",
+    "Nam châm"
+   ],
+   "features": [
+    "Hệ thống chỉnh kép (dual-adjustment)",
+    "Rất nhẹ, mặt nhám"
+   ],
+   "reviews": [
+    "Nhiều người gọi là 'cube giá rẻ tốt nhất'",
+    "Một số ý kiến chê nam châm yếu, cần chỉnh lại vì quá nhanh"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "moyu-weipo-v5",
+   "name": "MoYu WeiPo V5",
+   "brandId": "moyu",
+   "category": "2x2",
+   "shape": "CUBE",
+   "size": 2,
+   "tags": [
+    "Flagship"
+   ],
+   "features": [
+    "2x2 nam châm cao cấp"
+   ],
+   "reviews": [
+    "Được nhà giữ kỷ lục thế giới Yiheng Wang sử dụng"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "moyu-aosu-wrm",
+   "name": "MoYu AoSu WR M",
+   "brandId": "moyu",
+   "category": "4x4",
+   "shape": "CUBE",
+   "size": 4,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "4x4 nam châm"
+   ],
+   "reviews": [
+    "Được ưa chuộng trong thi đấu 4x4"
+   ],
+   "audience": "Trung cấp trở lên"
+  },
+  {
+   "id": "moyu-weilong-skewb",
+   "name": "MoYu WeiLong Skewb Maglev",
+   "brandId": "moyu",
+   "category": "Skewb",
+   "shape": "SKEWB",
+   "size": 3,
+   "tags": [
+    "Maglev"
+   ],
+   "features": [
+    "Skewb có maglev"
+   ],
+   "reviews": [
+    "Được giới thiệu là lựa chọn tốt trong tầm giá"
+   ],
+   "audience": "Mọi trình độ"
+  },
+  {
+   "id": "moyu-meilong-megaminx",
+   "name": "MoYu MeiLong Megaminx",
+   "brandId": "moyu",
+   "category": "Megaminx",
+   "shape": "MEGAMINX",
+   "size": 3,
+   "tags": [
+    "Giá rẻ"
+   ],
+   "features": [
+    "12 mặt ngũ giác"
+   ],
+   "reviews": [
+    "Khởi đầu tốt cho Megaminx"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "pbcube-wr",
+   "name": "PBCube WR 3x3",
+   "brandId": "pbcube",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Mới",
+    "Flagship",
+    "Maglev",
+    "UV"
+   ],
+   "features": [
+    "Ball-core 20 nam châm",
+    "Maglev, phủ UV"
+   ],
+   "reviews": [
+    "Flagship của thương hiệu con PBCube (MoYu)",
+    "Được nhà vô địch thế giới Yiheng Wang tham gia phát triển và giới thiệu"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "huameng-ys3m",
+   "name": "HuaMeng YS3M",
+   "brandId": "huameng",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Maglev",
+    "Ball-core",
+    "UV"
+   ],
+   "features": [
+    "Maglev, ball-core, phủ UV, không dán sticker"
+   ],
+   "reviews": [
+    "Độ mạnh nam châm được so sánh tương đương Super RS3M V2"
+   ],
+   "audience": "Trung cấp"
+  },
+  {
+   "id": "gan-16-maglev",
+   "name": "GAN16 Maglev",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Mới",
+    "Flagship",
+    "Maglev"
+   ],
+   "features": [
+    "Maglev giảm ma sát",
+    "Nam châm lõi–góc tự căn tầng khi đang xoay"
+   ],
+   "reviews": [
+    "Flagship thế hệ mới của GAN"
+   ],
+   "audience": "Người mới đến thi đấu"
+  },
+  {
+   "id": "gan-16-ui-maglev-max",
+   "name": "GAN16 ui Maglev Max",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Mới",
+    "Smart",
+    "Maglev"
+   ],
+   "features": [
+    "Cube thông minh Bluetooth",
+    "Ghi lại từng góc xoay để phân tích và luyện tập"
+   ],
+   "reviews": [
+    "Flagship thông minh thế hệ mới của GAN"
+   ],
+   "audience": "Người muốn luyện tập có số liệu"
+  },
+  {
+   "id": "gan-15-maglev",
+   "name": "GAN15 Maglev",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Maglev",
+    "Siêu nhẹ"
+   ],
+   "features": [
+    "Dưới 60 g",
+    "Rất nhiều tuỳ chỉnh cảm giác tay (GAN công bố 1296 kiểu)"
+   ],
+   "reviews": [
+    "Nhẹ, tuỳ chỉnh sâu"
+   ],
+   "audience": "Trung cấp trở lên"
+  },
+  {
+   "id": "gan-14-maglev",
+   "name": "GAN14 Maglev",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Maglev"
+   ],
+   "features": [
+    "Nam châm + maglev"
+   ],
+   "reviews": [
+    "Kiểm soát tốt, phù hợp thi đấu"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "gan-12-maglev",
+   "name": "GAN 12 Maglev",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Maglev"
+   ],
+   "features": [
+    "Nam châm + maglev",
+    "Nhiều tuỳ chỉnh"
+   ],
+   "reviews": [
+    "Nhanh và ổn định, từng là flagship được ưa chuộng"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "gan-356-m",
+   "name": "GAN 356 M",
+   "brandId": "gan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Chỉnh được lực nam châm và độ căng"
+   ],
+   "reviews": [
+    "Lựa chọn phổ biến khi lên đời cube nam châm"
+   ],
+   "audience": "Người mới đến trung cấp"
+  },
+  {
+   "id": "gan-251m-pro",
+   "name": "GAN 251 M Pro",
+   "brandId": "gan",
+   "category": "2x2",
+   "shape": "CUBE",
+   "size": 2,
+   "tags": [
+    "Flagship"
+   ],
+   "features": [
+    "2x2 nam châm",
+    "Dòng 251 M gồm Air, Pro, Leap, Leap UV"
+   ],
+   "reviews": [
+    "Dòng 251 M được phần lớn top 10 thế giới 2x2 sử dụng; bản Pro phổ biến nhất"
+   ],
+   "audience": "Trung cấp trở lên"
+  },
+  {
+   "id": "gan-460-m",
+   "name": "GAN 460 M",
+   "brandId": "gan",
+   "category": "4x4",
+   "shape": "CUBE",
+   "size": 4,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "4x4 nam châm"
+   ],
+   "reviews": [
+    "Ổn định khi ghép cạnh"
+   ],
+   "audience": "Người chơi 4x4 nghiêm túc"
+  },
+  {
+   "id": "swift-super-maglev",
+   "name": "Swift Block 3x3 Super Maglev",
+   "brandId": "swift-block",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Maglev",
+    "Giá tốt"
+   ],
+   "features": [
+    "Maglev"
+   ],
+   "reviews": [
+    "Hướng tới cả người mới và người chơi nâng cao"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "monster-go-skewb",
+   "name": "Monster Go Skewb",
+   "brandId": "monster-go",
+   "category": "Skewb",
+   "shape": "SKEWB",
+   "size": 3,
+   "tags": [
+    "Giá tốt"
+   ],
+   "features": [
+    "Skewb"
+   ],
+   "reviews": [
+    "Được đánh giá chính xác, mượt"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "xman-tornado-v4-pioneer",
+   "name": "X-Man Tornado V4 Pioneer",
+   "brandId": "x-man-design",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Mới",
+    "Flagship",
+    "Maglev",
+    "UV"
+   ],
+   "features": [
+    "Maglev, lõi nam châm, phủ UV"
+   ],
+   "reviews": [
+    "Thế hệ sau của Tornado V3 — mẫu Max Park dùng khi lập kỷ lục 3.13 giây"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "xman-tornado-v4-flagship",
+   "name": "X-Man Tornado V4 Flagship",
+   "brandId": "x-man-design",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Flagship"
+   ],
+   "features": [
+    "8 nam châm lõi, tự căn tầng",
+    "Nhựa nhám, độ bám vừa"
+   ],
+   "reviews": [
+    "Xoay nhanh, chính xác, ổn định hơn"
+   ],
+   "audience": "Người chơi thi đấu"
+  },
+  {
+   "id": "xman-volt-sq1",
+   "name": "X-Man Volt Square-1",
+   "brandId": "x-man-design",
+   "category": "Square-1",
+   "shape": "SQUARE1",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Square-1 nam châm"
+   ],
+   "reviews": [
+    "Cảm giác 'giòn', cắt góc tốt"
+   ],
+   "audience": "Trung cấp trở lên"
+  },
+  {
+   "id": "valk-3-elite",
+   "name": "Valk 3 Elite M",
+   "brandId": "the-valk",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Ổn định"
+   ],
+   "features": [
+    "Nam châm"
+   ],
+   "reviews": [
+    "Flagship 2019 của QiYi, thiên về ổn định"
+   ],
+   "audience": "Trung cấp"
+  },
+  {
+   "id": "qiyi-ms",
+   "name": "QiYi MS 3x3",
+   "brandId": "qiyi",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá rẻ",
+    "Nam châm"
+   ],
+   "features": [
+    "Nam châm, giá rẻ"
+   ],
+   "reviews": [
+    "Hiệu năng tốt so với giá"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "qiyi-sail-w",
+   "name": "QiYi Sail W",
+   "brandId": "qiyi",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá rẻ"
+   ],
+   "features": [
+    "Không nam châm"
+   ],
+   "reviews": [
+    "Ra mắt 2019, rẻ mà nhanh và tin cậy"
+   ],
+   "audience": "Người mới bắt đầu"
+  },
+  {
+   "id": "qiyi-ms-pyraminx",
+   "name": "QiYi MS Pyraminx",
+   "brandId": "qiyi",
+   "category": "Pyraminx",
+   "shape": "PYRAMINX",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Pyraminx nam châm"
+   ],
+   "reviews": [
+    "Mượt và nhanh"
+   ],
+   "audience": "Mọi trình độ"
+  },
+  {
+   "id": "qiyi-clock",
+   "name": "QiYi Clock",
+   "brandId": "qiyi",
+   "category": "Clock",
+   "shape": "CLOCK",
+   "size": 3,
+   "tags": [
+    "WCA"
+   ],
+   "features": [
+    "Puzzle đồng hồ 2 mặt"
+   ],
+   "reviews": [
+    "Cách giải khác hẳn cube, thú vị"
+   ],
+   "audience": "Người thích puzzle lạ"
+  },
+  {
+   "id": "yj-mgc-evo-ii",
+   "name": "YJ MGC Evo II",
+   "brandId": "mgc",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Flagship",
+    "Nam châm"
+   ],
+   "features": [
+    "Chỉnh bằng tay; nam châm chỉnh bằng tua vít"
+   ],
+   "reviews": [
+    "Xoay nhanh và ổn định, hợp mọi trình độ"
+   ],
+   "audience": "Mọi trình độ"
+  },
+  {
+   "id": "yj-yulong-v2m",
+   "name": "YJ YuLong V2 M",
+   "brandId": "yj",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá rẻ",
+    "Nam châm"
+   ],
+   "features": [
+    "Nam châm"
+   ],
+   "reviews": [
+    "Từng là cube chính của nhiều speedcuber"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "yj-mgc-4x4",
+   "name": "YJ MGC 4x4",
+   "brandId": "mgc",
+   "category": "4x4",
+   "shape": "CUBE",
+   "size": 4,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "4x4 nam châm"
+   ],
+   "reviews": [
+    "Cảm giác hơi 'rẻ' nhưng nhanh, ổn định, cắt góc tốt"
+   ],
+   "audience": "Mọi trình độ"
+  },
+  {
+   "id": "yj-yuhu-megaminx-v2m",
+   "name": "YJ YuHu Megaminx V2 M",
+   "brandId": "yj",
+   "category": "Megaminx",
+   "shape": "MEGAMINX",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Megaminx nam châm"
+   ],
+   "reviews": [
+    "Được mô tả là một trong những Megaminx nhanh nhất, cắt góc rất tốt"
+   ],
+   "audience": "Trung cấp trở lên"
+  },
+  {
+   "id": "yj-mgc-square1",
+   "name": "YJ MGC Square-1",
+   "brandId": "mgc",
+   "category": "Square-1",
+   "shape": "SQUARE1",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Thiết kế Square-1 mới"
+   ],
+   "reviews": [
+    "Thiết kế sáng tạo"
+   ],
+   "audience": "Trung cấp"
+  },
+  {
+   "id": "yuxin-little-magic-pyraminx",
+   "name": "YuXin Little Magic Pyraminx",
+   "brandId": "yuxin",
+   "category": "Pyraminx",
+   "shape": "PYRAMINX",
+   "size": 3,
+   "tags": [
+    "Giá rẻ"
+   ],
+   "features": [
+    "Pyraminx giá rẻ"
+   ],
+   "reviews": [
+    "Mượt và nhanh"
+   ],
+   "audience": "Người mới"
+  },
+  {
+   "id": "dayan-tengyun-v2",
+   "name": "DaYan TengYun V2",
+   "brandId": "dayan",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Nam châm"
+   ],
+   "reviews": [
+    "Mềm, ít 'tactile'; dòng TengYun xoay nhanh, slice tốt"
+   ],
+   "audience": "Trung cấp"
+  },
+  {
+   "id": "shengshou-mrm-5x5",
+   "name": "ShengShou Mr. M 5x5",
+   "brandId": "shengshou",
+   "category": "5x5",
+   "shape": "CUBE",
+   "size": 5,
+   "tags": [
+    "Giá rẻ",
+    "Nam châm"
+   ],
+   "features": [
+    "5x5 nam châm"
+   ],
+   "reviews": [
+    "Giá tốt để thử 5x5 có nam châm"
+   ],
+   "audience": "Người mới chơi 5x5"
+  },
+  {
+   "id": "shengshou-7x7",
+   "name": "ShengShou 7x7",
+   "brandId": "shengshou",
+   "category": "7x7",
+   "shape": "CUBE",
+   "size": 7,
+   "tags": [
+    "Giá rẻ"
+   ],
+   "features": [
+    "Cube lớn giá rẻ"
+   ],
+   "reviews": [
+    "Lựa chọn tiết kiệm để thử cube lớn"
+   ],
+   "audience": "Người muốn thử cube lớn"
+  },
+  {
+   "id": "cyclone-boys-3x3",
+   "name": "Cyclone Boys 3x3",
+   "brandId": "cyclone-boys",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Giá rẻ"
+   ],
+   "features": [
+    "Không sticker, 56 mm"
+   ],
+   "reviews": [
+    "Giá rẻ cho người mới làm quen"
+   ],
+   "audience": "Người mới bắt đầu"
+  },
+  {
+   "id": "rubiks-original",
+   "name": "Rubik's Cube 3x3 (bản gốc)",
+   "brandId": "rubiks",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Kinh điển"
+   ],
+   "features": [
+    "Thiết kế gốc"
+   ],
+   "reviews": [
+    "Bền, mang tính biểu tượng",
+    "Xoay nặng hơn speedcube"
+   ],
+   "audience": "Người chơi giải trí"
+  },
+  {
+   "id": "rubiks-speed",
+   "name": "Rubik's Speed Cube",
+   "brandId": "rubiks",
+   "category": "3x3",
+   "shape": "CUBE",
+   "size": 3,
+   "tags": [
+    "Nam châm"
+   ],
+   "features": [
+    "Phiên bản tốc độ của thương hiệu gốc"
+   ],
+   "reviews": [
+    "Tốt hơn nhiều bản gốc khi giải nhanh"
+   ],
+   "audience": "Người mới đến trung cấp"
+  }
+ ]
 }

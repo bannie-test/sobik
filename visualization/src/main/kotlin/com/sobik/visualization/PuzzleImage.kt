@@ -9,6 +9,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.drawscope.scale
+import androidx.compose.ui.graphics.drawscope.translate
+import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.font.FontWeight
@@ -16,6 +19,7 @@ import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.sp
 import com.sobik.engine.applyMoves
 import com.sobik.model.CubeState
+import com.sobik.model.BrandLogo
 import com.sobik.model.CubeType
 import com.sobik.model.PuzzleShape
 import kotlin.math.cos
@@ -30,13 +34,22 @@ private val BODY = Color(0xFF161616)
  * Cubes are drawn in 3D (white facing the viewer); other puzzles as a flat white face outline.
  */
 @Composable
-fun PuzzleImage(shape: PuzzleShape, gridSize: Int, mark: String, markColor: Color, modifier: Modifier = Modifier) {
+fun PuzzleImage(
+    shape: PuzzleShape,
+    gridSize: Int,
+    mark: String,
+    markColor: Color,
+    modifier: Modifier = Modifier,
+    logo: BrandLogo? = null,
+) {
     val measurer = rememberTextMeasurer()
+    val logoPath = remember(logo) { logo?.let { PathParser().parsePathString(it.path).toPath() } }
     val n = gridSize.coerceIn(2, 7)
     val scene = remember(n) { CubeScene(n) }
     // Standard scheme turned so white faces front (x'): blue on top, red on the right.
     val colors = remember(n) { CubeState.solved(CubeType.ofSize(n)).applyMoves("x'").toArgb() }
     Canvas(modifier) {
+        var logoWidth = min(size.width, size.height) * 0.34f
         val center: Offset = when (shape) {
             PuzzleShape.CUBE -> {
                 val yaw = -0.45f; val pitch = 0.35f
@@ -46,6 +59,11 @@ fun PuzzleImage(shape: PuzzleShape, gridSize: Int, mark: String, markColor: Colo
                     drawPath(p, Color(c.red * q.shade, c.green * q.shade, c.blue * q.shade, 1f))
                 }
                 val pt = scene.projectPoint(floatArrayOf(0f, 0f, n + 0.05f), yaw, pitch, size.width, size.height)
+                // Logo fits the center sticker (odd cubes) or the middle of the face (even cubes).
+                val half = if (n % 2 == 1) 0.78f else 1.3f
+                val l = scene.projectPoint(floatArrayOf(-half, 0f, n + 0.05f), yaw, pitch, size.width, size.height)
+                val r = scene.projectPoint(floatArrayOf(half, 0f, n + 0.05f), yaw, pitch, size.width, size.height)
+                logoWidth = (r[0] - l[0]) * 0.92f
                 Offset(pt[0], pt[1])
             }
             PuzzleShape.PYRAMINX -> drawPyraminx()
@@ -53,6 +71,10 @@ fun PuzzleImage(shape: PuzzleShape, gridSize: Int, mark: String, markColor: Colo
             PuzzleShape.SKEWB -> drawSkewb()
             PuzzleShape.SQUARE1 -> drawSquare1()
             PuzzleShape.CLOCK -> drawClock()
+        }
+        if (logo != null && logoPath != null) {
+            drawLogo(logoPath, logo, center, logoWidth, logoWidth * 0.8f, markColor)
+            return@Canvas
         }
         val text = measurer.measure(mark, TextStyle(color = markColor, fontWeight = FontWeight.Black, fontSize = (min(this.size.width, this.size.height) / 9f / density).sp))
         drawText(text, topLeft = Offset(center.x - text.size.width / 2f, center.y - text.size.height / 2f))
@@ -127,4 +149,27 @@ private fun DrawScope.drawClock(): Offset {
         drawLine(BODY, o, Offset(o.x, o.y - r * 0.12f), 4f)
     }
     return c
+}
+
+/** Draws a wordmark centered at [center], scaled to fit [maxWidth] x [maxHeight]. */
+fun DrawScope.drawLogo(path: Path, logo: BrandLogo, center: Offset, maxWidth: Float, maxHeight: Float, color: Color) {
+    val s = minOf(maxWidth / logo.width, maxHeight / logo.height)
+    translate(center.x - logo.width * s / 2, center.y - logo.height * s / 2) {
+        scale(s, s, pivot = Offset.Zero) { drawPath(path, color) }
+    }
+}
+
+/** A brand wordmark on its own (brand shelf, product cards). Falls back to [fallback] text. */
+@Composable
+fun BrandLogoView(logo: BrandLogo?, color: Color, modifier: Modifier = Modifier, fallback: String = "") {
+    val path = remember(logo) { logo?.let { PathParser().parsePathString(it.path).toPath() } }
+    val measurer = rememberTextMeasurer()
+    Canvas(modifier) {
+        if (logo != null && path != null) {
+            drawLogo(path, logo, Offset(size.width / 2, size.height / 2), size.width * 0.92f, size.height * 0.8f, color)
+        } else if (fallback.isNotEmpty()) {
+            val t = measurer.measure(fallback, TextStyle(color = color, fontWeight = FontWeight.Black, fontSize = (size.height * 0.5f / density).sp))
+            drawText(t, topLeft = Offset((size.width - t.size.width) / 2f, (size.height - t.size.height) / 2f))
+        }
+    }
 }

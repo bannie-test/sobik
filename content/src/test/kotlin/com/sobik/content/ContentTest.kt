@@ -125,7 +125,13 @@ class PuzzleCatalogTest {
 
     @Test
     fun `puzzle catalog is consistent`() {
-        assertTrue(repo.puzzleBrands.size >= 5)
+        assertTrue(repo.puzzleBrands.size >= 40)
+        assertTrue(repo.puzzleBrands.all { it.logo != null && it.logo!!.width > 0 }, "every brand has a wordmark")
+        assertEquals(repo.puzzleBrands.size, repo.puzzleBrands.map { it.id }.toSet().size)
+        for (b in repo.puzzleBrands) b.parentId?.let { assertNotNull(repo.brand(it), "parent of ${b.id}") }
+        assertEquals("x-man-design", repo.findBrand("xman")?.id)
+        assertEquals("pbcube", repo.brand("pbcube")?.id)
+        assertTrue(repo.puzzleSources.size >= 5)
         assertTrue(repo.puzzles.size >= 15)
         assertEquals(repo.puzzles.size, repo.puzzles.map { it.id }.toSet().size)
         for (p in repo.puzzles) {

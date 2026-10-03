@@ -64,18 +64,28 @@ data class CubeGuide(
 @Serializable
 enum class PuzzleShape { CUBE, PYRAMINX, MEGAMINX, SKEWB, SQUARE1, CLOCK }
 
-/** A puzzle manufacturer in the catalog. */
+/** Vector wordmark: SVG-style path data (absolute M/L/H/V/Q/Z) in a width x height box, y down. */
+@Serializable
+data class BrandLogo(val path: String, val width: Float, val height: Float)
+
+/** A puzzle manufacturer or sub-brand in the catalog. */
 @Serializable
 data class PuzzleBrand(
     val id: String,
     val name: String,
-    val country: String,
-    val summary: String,
-    /** Short mark drawn on the white center of the picture (a plain monogram, not the official logo). */
+    /** Parent brand for sub-brands (e.g. X-Man Design -> QiYi). */
+    val parentId: String? = null,
+    val country: String = "",
+    val summary: String = "",
+    /** Fallback text when no [logo] is available. */
     val mark: String,
-    /** Accent color of the mark, ARGB hex like "FF1565C0". */
+    /** Logo color, ARGB hex like "FF1565C0". */
     val color: String,
+    val logo: BrandLogo? = null,
 )
+
+@Serializable
+data class SourceLink(val name: String, val url: String)
 
 /** A puzzle model in the catalog. */
 @Serializable
@@ -88,6 +98,8 @@ data class PuzzleProduct(
     val shape: PuzzleShape,
     /** Grid size for cube-shaped puzzles. */
     val size: Int = 3,
+    /** Shelf badges such as "Mới", "Flagship", "Maglev", "Smart", "Giá rẻ". */
+    val tags: List<String> = emptyList(),
     val features: List<String> = emptyList(),
     val reviews: List<String> = emptyList(),
     val audience: String = "",

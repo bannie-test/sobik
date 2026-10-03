@@ -10,6 +10,7 @@ import com.sobik.app.ui.home.HomeScreen
 import com.sobik.app.ui.othercubes.BigCubeGuideScreen
 import com.sobik.app.ui.othercubes.OtherCubesScreen
 import com.sobik.app.ui.puzzles.PuzzleCatalogScreen
+import com.sobik.app.ui.puzzles.PuzzleDetailScreen
 import com.sobik.app.ui.review.ManualInputScreen
 import com.sobik.app.ui.review.ReviewScreen
 import com.sobik.app.ui.scan.ScanScreen
@@ -35,6 +36,7 @@ fun SobikApp(container: AppContainer, nav: Navigator) {
             Screen.OtherCubes -> OtherCubesScreen(container, nav)
             is Screen.BigCubeGuide -> BigCubeGuideScreen(container, nav, screen.size)
             Screen.Puzzles -> PuzzleCatalogScreen(container, nav)
+            is Screen.PuzzleDetail -> PuzzleDetailScreen(container, nav, screen.id)
         }
     }
 }

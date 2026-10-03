@@ -74,11 +74,9 @@ fun HomeScreen(container: AppContainer, nav: Navigator) {
         Tile("Cube lớn", Color(0xFF5D4037), onClick = { nav.push(Screen.OtherCubes) }) {
             CubeImage(CubeState.solved(CubeType.CUBE_5X5, ColorScheme.YELLOW_TOP), Modifier.fillMaxSize())
         },
-        Tile("Loại Rubik", Color(0xFFC62828), onClick = { nav.push(Screen.Puzzles) }) {
-            Row(Modifier.fillMaxSize()) {
-                PuzzleImage(PuzzleShape.PYRAMINX, 3, "", Color.Black, Modifier.weight(1f).fillMaxSize())
-                PuzzleImage(PuzzleShape.MEGAMINX, 3, "", Color.Black, Modifier.weight(1f).fillMaxSize())
-            }
+        Tile("Kệ Rubik", Color(0xFFC62828), onClick = { nav.push(Screen.Puzzles) }) {
+            val moyu = remember { container.content.brand("moyu") }
+            PuzzleImage(PuzzleShape.CUBE, 3, "MY", com.sobik.app.ui.puzzles.brandColor(moyu), Modifier.fillMaxSize(), logo = moyu?.logo)
         },
     )
 

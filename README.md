@@ -14,6 +14,55 @@ Chọn 2x2/3x3 → chọn chế độ quét (Thủ công / Hẹn giờ / Tự đ
   → lời giải + mô hình 3D: Next / Previous / Play / Pause
 ```
 
+## Cài đặt ứng dụng vào điện thoại
+
+Yêu cầu: điện thoại Android 7.0 (API 24) trở lên, có camera sau. Ứng dụng chạy hoàn toàn offline.
+
+### Cách 1 — Tải APK từ GitHub Actions (không cần cài công cụ)
+
+1. Mở repository trên GitHub → tab **Actions** → chọn workflow **build** → chọn lần chạy mới nhất có dấu ✓ xanh.
+2. Kéo xuống mục **Artifacts**, tải **sobik-debug-apk** (file `.zip`, cần đăng nhập GitHub).
+3. Giải nén để lấy file `app-debug.apk`, rồi chép file vào điện thoại (cáp USB, Google Drive, Zalo, email...).
+4. Trên điện thoại, mở file `app-debug.apk` bằng ứng dụng Files / Trình quản lý tệp.
+5. Nếu Android báo chặn cài ứng dụng không rõ nguồn gốc: bấm **Cài đặt (Settings)** → bật
+   **Cho phép từ nguồn này (Allow from this source)** cho ứng dụng bạn dùng để mở file → quay lại và bấm **Cài đặt**.
+   - Nếu Google Play Protect cảnh báo, chọn **Vẫn cài đặt (Install anyway)** — đây là bản debug tự build nên chưa được Google xác minh.
+6. Mở ứng dụng **Sobik**, cấp quyền **Camera** khi được hỏi (chỉ cần cho chức năng quét).
+
+### Cách 2 — Cài bằng máy tính qua USB (adb)
+
+1. Trên điện thoại: **Cài đặt → Thông tin điện thoại → bấm 7 lần vào "Số hiệu bản tạo (Build number)"** để bật
+   Tùy chọn nhà phát triển, sau đó vào **Tùy chọn nhà phát triển → bật Gỡ lỗi USB (USB debugging)**.
+2. Cắm điện thoại vào máy tính, chọn **Cho phép (Allow)** khi điện thoại hỏi về gỡ lỗi USB.
+3. Trên máy tính đã cài Android SDK Platform Tools:
+
+   ```bash
+   adb devices                          # kiểm tra điện thoại đã được nhận
+   adb install -r app-debug.apk         # cài (hoặc cập nhật) ứng dụng
+   ```
+
+### Cách 3 — Build từ mã nguồn
+
+Cần JDK 17 và Android SDK (compileSdk 35), cách đơn giản nhất là cài **Android Studio**.
+
+- **Android Studio**: *File → Open* thư mục dự án, chờ Gradle sync xong, cắm điện thoại (đã bật Gỡ lỗi USB),
+  chọn cấu hình **app** và bấm **Run ▶**.
+- **Dòng lệnh**:
+
+  ```bash
+  ./gradlew :app:installDebug                   # build và cài thẳng lên điện thoại đang cắm
+  # hoặc chỉ build APK:
+  ./gradlew :app:assembleDebug                  # -> app/build/outputs/apk/debug/app-debug.apk
+  ```
+
+### Gỡ cài đặt / cập nhật
+
+- Cập nhật: cài đè file APK mới (cùng chữ ký debug của cùng một máy build). Nếu báo xung đột chữ ký, gỡ bản cũ trước.
+- Gỡ: giữ biểu tượng Sobik → **Gỡ cài đặt**, hoặc `adb uninstall com.sobik.app`.
+
+> Ghi chú: APK debug dùng để thử nghiệm. Để phát hành (Google Play), cần build bản `release` ký bằng khóa riêng
+> (`./gradlew :app:bundleRelease` kèm cấu hình `signingConfigs`).
+
 ## Kiến trúc module
 
 | Module | Loại | Vai trò |

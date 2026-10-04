@@ -1,5 +1,7 @@
 package com.sobik.app
 
+import com.sobik.app.ui.common.CatalogImageLoader
+import com.sobik.content.CatalogFileSystem
 import com.sobik.content.ContentRepository
 import com.sobik.data.CubeStateStore
 import com.sobik.data.FileCubeStateStore
@@ -20,8 +22,13 @@ import java.io.File
  * Manual dependency container (no DI framework: fewer classes to load, faster startup).
  * Everything heavy is lazy: solver tables are only built when a solver is first used.
  */
-class AppContainer(filesDir: File) {
-    val content: ContentRepository by lazy { ContentRepository() }
+class AppContainer(
+    filesDir: File,
+    /** Folder catalog of puzzle models (the APK's assets on Android). */
+    private val catalogFiles: CatalogFileSystem? = null,
+    val catalogImages: CatalogImageLoader = CatalogImageLoader.NONE,
+) {
+    val content: ContentRepository by lazy { ContentRepository(catalogFiles = catalogFiles) }
     val store: CubeStateStore by lazy { FileCubeStateStore(filesDir) }
     val cubeSession: CubeSessionRepository by lazy { CubeSessionRepository(store) }
 

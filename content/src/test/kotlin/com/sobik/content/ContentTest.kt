@@ -121,7 +121,36 @@ class ContentTest {
 }
 
 class PuzzleCatalogTest {
-    private val repo = ContentRepository()
+    /** The app's asset folder is the catalog's source of models. */
+    private val assets = java.io.File("../app/src/main/assets")
+    private val repo = ContentRepository(catalogFiles = DirectoryCatalogFileSystem(assets))
+
+    @Test
+    fun `folder catalog reads brand, category and model folders`() {
+        val moyu = repo.puzzles.filter { it.brandId == "moyu" }
+        assertTrue(moyu.any { it.id == "moyu-wrm-v11" && it.category == "3x3" && it.name == "MoYu WeiLong WRM V11" })
+        assertTrue(moyu.any { it.category == "2x2" && it.size == 2 })
+        assertTrue(repo.puzzles.first { it.category == "Megaminx" }.shape == com.sobik.model.PuzzleShape.MEGAMINX)
+        // every brand in puzzles.json has a folder, every model folder belongs to a known brand
+        val folders = RubikCatalog(DirectoryCatalogFileSystem(assets)).brandFolders().toSet()
+        assertEquals(repo.puzzleBrands.map { it.id }.toSet(), folders)
+        assertTrue(brandFamily(repo.puzzleBrands, "moyu").containsAll(listOf("moyu", "pbcube")))
+    }
+
+    @Test
+    fun `models without info or image fall back gracefully`() {
+        val dir = java.nio.file.Files.createTempDirectory("catalog").toFile()
+        val model = java.io.File(dir, "rubik/brands/gan/4x4/gan-mystery-cube").apply { mkdirs() }
+        java.io.File(model, "image.png").writeBytes(byteArrayOf(1))
+        val bare = java.io.File(dir, "rubik/brands/gan/3x3/no-image-yet").apply { mkdirs() }
+        java.io.File(bare, "info.json").writeText("{\"tags\": [\"Mới\"]}")
+        val products = RubikCatalog(DirectoryCatalogFileSystem(dir)).products().associateBy { it.id }
+        assertEquals("Gan Mystery Cube", products.getValue("gan-mystery-cube").name)
+        assertEquals("rubik/brands/gan/4x4/gan-mystery-cube/image.png", products.getValue("gan-mystery-cube").image)
+        assertEquals(4, products.getValue("gan-mystery-cube").size)
+        assertEquals(null, products.getValue("no-image-yet").image)
+        assertEquals(listOf("Mới"), products.getValue("no-image-yet").tags)
+    }
 
     @Test
     fun `puzzle catalog is consistent`() {

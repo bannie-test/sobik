@@ -103,4 +103,6 @@ data class PuzzleProduct(
     val features: List<String> = emptyList(),
     val reviews: List<String> = emptyList(),
     val audience: String = "",
+    /** Path of the model's image in the catalog file tree, or null to show a placeholder. */
+    val image: String? = null,
 )

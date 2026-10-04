@@ -9,6 +9,6 @@ class SobikApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        container = AppContainer(filesDir)
+        container = AppContainer(filesDir, AssetCatalogFileSystem(assets), AssetImageLoader(assets))
     }
 }

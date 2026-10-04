@@ -23,7 +23,8 @@ internal data class PuzzleFile(
     val sources: List<SourceLink> = emptyList(),
     val aliases: Map<String, String> = emptyMap(),
     val brands: List<PuzzleBrand>,
-    val puzzles: List<PuzzleProduct>,
+    /** Legacy inline models; the folder catalog ([RubikCatalog]) is the source of models now. */
+    val puzzles: List<PuzzleProduct> = emptyList(),
 )
 
 @Serializable
@@ -34,7 +35,11 @@ internal data class GuideFile(val version: Int, val guides: List<CubeGuide>, val
  * Content is data, not code: editing the JSON (or later downloading a newer version) changes
  * guides and the algorithm library without touching UI or solvers.
  */
-class ContentRepository(private val source: ContentSource = ClasspathContentSource) {
+class ContentRepository(
+    private val source: ContentSource = ClasspathContentSource,
+    /** Folder catalog of puzzle models (Android assets in the app); null = no models. */
+    private val catalogFiles: CatalogFileSystem? = null,
+) {
     private val json = Json { ignoreUnknownKeys = true }
 
     val algorithms3x3: List<Algorithm> by lazy {
@@ -51,7 +56,8 @@ class ContentRepository(private val source: ContentSource = ClasspathContentSour
 
     private val puzzleFile: PuzzleFile by lazy { json.decodeFromString(source.read("puzzles.json")) }
     val puzzleBrands: List<PuzzleBrand> get() = puzzleFile.brands
-    val puzzles: List<PuzzleProduct> get() = puzzleFile.puzzles
+    /** Models from the folder catalog, scanned once. */
+    val puzzles: List<PuzzleProduct> by lazy { catalogFiles?.let { RubikCatalog(it).products() } ?: puzzleFile.puzzles }
     val puzzleDisclaimer: String get() = puzzleFile.disclaimer
     val puzzleSources: List<SourceLink> get() = puzzleFile.sources
     fun brand(id: String): PuzzleBrand? = puzzleBrands.firstOrNull { it.id == id }

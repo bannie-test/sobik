@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -47,20 +46,19 @@ import com.sobik.app.AppContainer
 import com.sobik.app.ui.Navigator
 import com.sobik.app.ui.Screen
 import com.sobik.app.ui.common.AppScaffold
+import com.sobik.app.ui.common.CatalogImage
+import com.sobik.app.ui.common.CatalogImageLoader
 import com.sobik.app.ui.common.SectionCard
+import com.sobik.content.brandFamily
 import com.sobik.model.PuzzleBrand
 import com.sobik.model.PuzzleProduct
 import com.sobik.visualization.BrandLogoView
-import com.sobik.visualization.PuzzleImage
 
 private val CATEGORY_ORDER = listOf("3x3", "2x2", "4x4", "5x5", "6x6", "7x7", "Pyraminx", "Megaminx", "Skewb", "Square-1", "Clock")
 
 fun brandColor(brand: PuzzleBrand?): Color =
     brand?.color?.toLongOrNull(16)?.let { Color(it.toInt()) } ?: Color.DarkGray
 
-/** Ids of a brand and all of its sub-brands. */
-private fun family(brands: List<PuzzleBrand>, id: String): Set<String> =
-    setOf(id) + brands.filter { it.parentId == id }.flatMap { family(brands, it.id) }
 
 /** Showcase ("kệ trưng bày", no prices): brand shelf, category filter and a product grid. */
 @OptIn(ExperimentalLayoutApi::class)
@@ -71,9 +69,9 @@ fun PuzzleCatalogScreen(container: AppContainer, nav: Navigator) {
     val puzzles = remember { content.puzzles }
     var brandFilter by rememberSaveable { mutableStateOf<String?>(null) }
     var category by rememberSaveable { mutableStateOf<String?>(null) }
-    val brandsWithProducts = remember { brands.filter { b -> puzzles.any { it.brandId in family(brands, b.id) } } }
+    val brandsWithProducts = remember { brands.filter { b -> puzzles.any { it.brandId in brandFamily(brands, b.id) } } }
     val shown = remember(brandFilter, category) {
-        val allowed = brandFilter?.let { family(brands, it) }
+        val allowed = brandFilter?.let { brandFamily(brands, it) }
         puzzles.filter { (allowed == null || it.brandId in allowed) && (category == null || it.category == category) }
             .sortedWith(compareBy({ CATEGORY_ORDER.indexOf(it.category).let { i -> if (i < 0) 99 else i } }, { if ("Mới" in it.tags) 0 else 1 }))
     }
@@ -113,7 +111,7 @@ fun PuzzleCatalogScreen(container: AppContainer, nav: Navigator) {
                     Text("${shown.size} mẫu", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
-            items(shown, key = { it.id }) { p -> ProductCard(p, content.brand(p.brandId)) { nav.push(Screen.PuzzleDetail(p.id)) } }
+            items(shown, key = { it.id }) { p -> ProductCard(p, content.brand(p.brandId), container.catalogImages) { nav.push(Screen.PuzzleDetail(p.id)) } }
             item(span = { GridItemSpan(maxLineSpan) }) {
                 Text(content.puzzleDisclaimer, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp))
             }
@@ -122,11 +120,11 @@ fun PuzzleCatalogScreen(container: AppContainer, nav: Navigator) {
 }
 
 @Composable
-private fun ProductCard(p: PuzzleProduct, brand: PuzzleBrand?, onClick: () -> Unit) {
+private fun ProductCard(p: PuzzleProduct, brand: PuzzleBrand?, images: CatalogImageLoader, onClick: () -> Unit) {
     Card(Modifier.fillMaxWidth().clickable(onClick = onClick), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f))) {
         Column(Modifier.padding(10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Box(Modifier.fillMaxWidth().aspectRatio(1f).background(Color.White, RoundedCornerShape(12.dp))) {
-                PuzzleImage(p.shape, p.size, brand?.mark ?: "", brandColor(brand), Modifier.fillMaxSize().padding(6.dp), logo = brand?.logo)
+            Box(Modifier.fillMaxWidth().background(Color.White, RoundedCornerShape(12.dp))) {
+                CatalogImage(p.image, images, p.name, Modifier.fillMaxWidth(), maxSidePx = 480)
                 if ("Mới" in p.tags) Badge("MỚI", Color(0xFFD32F2F), Modifier.align(Alignment.TopStart).padding(6.dp))
             }
             BrandLogoView(brand?.logo, brandColor(brand), Modifier.width(72.dp).height(18.dp), brand?.name ?: "")
@@ -163,9 +161,7 @@ fun PuzzleDetailScreen(container: AppContainer, nav: Navigator, id: String) {
             Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(12.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            Box(Modifier.fillMaxWidth().aspectRatio(1.2f).background(Color.White, RoundedCornerShape(16.dp))) {
-                PuzzleImage(p.shape, p.size, brand?.mark ?: "", brandColor(brand), Modifier.fillMaxSize().padding(16.dp), logo = brand?.logo)
-            }
+            CatalogImage(p.image, container.catalogImages, p.name, Modifier.fillMaxWidth(), maxSidePx = 1000)
             Row(verticalAlignment = Alignment.CenterVertically) {
                 BrandLogoView(brand?.logo, brandColor(brand), Modifier.width(120.dp).height(32.dp), brand?.name ?: "")
                 if (parent != null) Text("thuộc ${parent.name}", style = MaterialTheme.typography.labelMedium, modifier = Modifier.padding(start = 8.dp))
